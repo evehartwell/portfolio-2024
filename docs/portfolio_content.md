@@ -1,5 +1,5 @@
 # Portfolio
-
+<!-- could use list -->
 | Projects|
 |----------|
 | [2023](#section1) |
@@ -7,8 +7,8 @@
 | [2019](#section3) |
 
 <div id="section1"></div>
+
 ## The Center for Functional Fabrics
-![alt text](.jpg) 
 
 This is the work I have done for The Center for Functional Fabrics at the Pennsylvania Fabric Discovery Center.
 
@@ -24,20 +24,19 @@ These screenshots display the web iteration of my designs on Sitecore.
 The video walkthrough shows one iteration of the final live website. 
 
 <div id="section2"></div>
+
 ## LeBow College of Business
-![alt text](.jpg) 
 
 I worked on two Figma projects at the LeBow College of Business. One for the School of Economics page and another for the Undergraduate page. These two projects were dedicated to wireframing and implementing redesigned elements to organize the content in an evergreen fashion. My main goal was to utilize UI/UX practices to create an efficient and eye-catching flow of information.
 
 <div id="section3"></div>
+
 ## Audrey’s Hair Care Studio 
-![alt text](.jpg) 
 
 I worked with a local hair studio to build a website from scratch. I consulted, wireframed, and built this site to draw in more clients to the studio.
 <!-- add more text -->
 
 ## Bank Redesign
-![alt text](.jpg) 
 
 I designed and prototyped an intuitive website for a local bank with InVision, incorporating UX/UI
 tactics to enhance site features and create a seamless user experience. 
