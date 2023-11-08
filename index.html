@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link charset="utf-8" href="css/screen.css" media="screen" rel="stylesheet"/>
+    <!--tinyicon-->
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contacts</li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <img src="images/EH.svg">
+            <div id="toggleMenu">
+                <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="16">
+                    <path class="icon-top" fill="none" stroke="#000AEE" stroke-width="4" d="M0 1h40" stroke-linecap="butt"/>
+                    <path class="icon-middle" fill="none" stroke="#000AEE" stroke-width="3" d="M0 10h40" stroke-linecap="butt"/>
+                </svg>
+            <ul id="menu" hidden>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="#"><li>Portfolio</li></a>
+            </ul>
+            </div>
+        </nav>
+    </header>
     <main>
-        <img>
+        <bgimg>
+        <div id="bg-gradient">
+            <img id="star" src="images/Star.svg">
+        </div>
         <container>
-            <h1></h1>
-            <p></p>
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ultricies ex.</p>
+            <button><a href="#">Enter</a></button>
         </container>
     </main>
     <footer></footer>
