@@ -18,23 +18,35 @@
 body {
     background-color: var(--primary-color-3);
     color: var(--primary-color-1);
-    font-family: var(--header-font);
+    font-family: var(--body-font);
+}
+
+main {
     margin: 1rem;
     padding: 1rem;
+    padding-top: 60px;
     position: relative;
 }
 
+#about {
+        font-family: var(--header-font);
+        margin: 1rem;
+        padding: 1rem;
+        position: relative;
+}
+
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding-bottom: 1rem;
+    padding: 0;
 }
 
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    position: fixed;
+    padding: 0.5rem;
+    z-index: 1;
 }
 
 h1 {
@@ -46,7 +58,6 @@ h1 {
 }
 
 h2 {
-    font-family: var(--body-font);
     font-size: 2rem;
     color: var(--accent-color-2);
     text-transform: uppercase;
@@ -91,4 +102,9 @@ a {
 
 a:hover {
     color: var(--accent-color-1)
+}
+
+img {
+    width: 3rem;
+    filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%);
 }

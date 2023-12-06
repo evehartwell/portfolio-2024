@@ -16,7 +16,8 @@
 }
 
 body {
-    background-image: url('/images/flowerbg.png');
+    background: url('/images/flowerbg.png');
+    background-size: 100%;
     font-family: var(--body-font);
     font-size: 0.875rem;
     text-transform: uppercase;
@@ -47,7 +48,7 @@ p {
     font-weight: 700;
     padding: 1rem;
 }
-
+/*
 header {
     display: flex;
     flex-direction: row;
@@ -56,19 +57,18 @@ header {
     position: relative;
     padding-bottom: 1rem;
 }
-
-nav {
+*/
+#menu {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0;
 }
 
-div.left {
-    justify-content: flex-start;
-    position: fixed;
-}
-
-div.right {
-    justify-content: flex-end;
-    position: fixed;
+ul {
+    list-style-type: none
 }
 
 .overlay {
@@ -128,7 +128,7 @@ container {
 }
 
 img {
-    width: 4rem;
+    width: 3rem;
     filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%);
 }
 
@@ -145,4 +145,3 @@ img {
     padding-top: 5rem;
     justify-content: end;
 }
-

@@ -10,19 +10,23 @@
     <!--tinyicon-->
 </head>
 <body>
-    <header id="menu">
-        <nav class="left"><img src="images/EH.svg"></nav>
-        <nav class="right" id="toggleMenu"></nav>
-            <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="16" onclick="openNav()">
-                <path class="icon-top" fill="none" stroke="#000AEE" stroke-width="4" d="M0 1h40" stroke-linecap="butt"/>
-                <path class="icon-bottom" fill="none" stroke="#000AEE" stroke-width="3" d="M0 10h40" stroke-linecap="butt"/>
-            </svg>
+    <header>
+        <ul id="menu">
+            <li><a href="index.html"><img src="images/EH.svg"></a></li>
+            <li hidden><img src="images/Star.svg"></li>
+            <li>
+                <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="16" onclick="openNav()">
+                    <path class="icon-top" fill="none" stroke="#000AEE" stroke-width="4" d="M0 1h40" stroke-linecap="butt"/>
+                    <path class="icon-bottom" fill="none" stroke="#000AEE" stroke-width="3" d="M0 10h40" stroke-linecap="butt"/>
+                </svg>
+            </li>
+        </ul>
             <!-- button idea 
                 <button class="svg style ig">
                     ::before
                     ::after
                 </button>
-            -->
+         -->
         <div id="Nav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
@@ -33,6 +37,7 @@
                 <a href="/portfolio.html">Portfolio</a>
             </div>
         </div>
+       
     </header>
     <div id="bg-gradient">
         <img id="star" src="images/Star.svg">
@@ -54,5 +59,6 @@
             document.getElementById("Nav").style.height = "100%";
         }
     </script>
+
 </body>
 </html>

@@ -21,6 +21,20 @@ body {
     position: relative;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+main {
+    padding-top: 4rem;
+}
+
 summary {
     font-family: var(--header-font);
     font-weight: 800;
@@ -73,9 +87,8 @@ div.last-column {
 }
 
 img {
-    width: 100%;
-    position: relative;
-    background-size: cover;
+    width: 3rem;
+    filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%);
 }
 
 hr {
