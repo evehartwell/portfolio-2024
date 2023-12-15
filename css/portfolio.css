@@ -1,3 +1,4 @@
+/* define colors, fonts, etc */
 :root {
     margin: 0;
     padding: 0;
@@ -42,6 +43,7 @@ ul {
     list-style-type: none
 }
 
+/* nav overlay styles */
 .overlay {
     width: 100%;
     height: 0;
@@ -54,6 +56,7 @@ ul {
     transition: 0.5s;
 }
 
+/* menu list styles */
 .overlay-content {
     font-family: var(--header-font);
     position: relative;
@@ -78,6 +81,7 @@ ul {
     color: var(--accent-color-1);
 }
 
+/* close button styles */
 .overlay .closebtn {
     position: absolute;
     padding: 0;
@@ -86,6 +90,7 @@ ul {
     font-weight: 200;
 } 
 
+/* divider line for menu items */
 hr {
     border-style: solid;
     border-width: 1.2px;
@@ -120,6 +125,7 @@ main {
     padding-top: 5rem;
 }
 
+/* project title styling */
 summary {
     font-family: var(--header-font);
     font-weight: 800;
@@ -127,6 +133,7 @@ summary {
     list-style: none;
 }
 
+/* project title hover color */
 summary:hover {
     color: var(--primary-color-2);
 }
@@ -138,16 +145,17 @@ article {
 
 .first-column {
     padding-top: 1rem;
-    margin-left: -2.2rem;
+    margin-left: -2.2rem; /* image full width sizing */
     margin-right: -2.2rem;
     height: auto; 
 }
 
 #screenshot {
     width: 100%; 
-    filter: none;
+    filter: none; /* override blue img filter */
 }
 
+/* paragraph padding */
 .last-column {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -155,9 +163,10 @@ article {
 
 img {
     width: 3rem;
-    filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%);
+    filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%); /* svg filter blue */
 }
 
+/* divider line for article items */
 #article {
     border-style: solid;
     border-width: 1px;

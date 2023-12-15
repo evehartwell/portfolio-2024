@@ -7,19 +7,23 @@
     <link charset="utf-8" href="css/portfolio.css" media="screen" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.typekit.net/uhk0qen.css">
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/inter">
+    <link rel="icon" type="image/x-icon" href="/images/Star.svg">
 </head>
 <body>
+    <!-- top menu navigation -->
     <header>
         <ul id="menu">
+            <!-- navigation items -->
             <li><a href="index.html"><img src="images/EH.svg"></a></li>
             <li><img src="images/Star.svg"></li>
-            <li>
+            <li> <!-- trigger "Nav" -->
                 <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="16" id="closebtn" onclick="toggleNav()">
                     <path class="icon-top" fill="none" stroke="#000AEE" stroke-width="4" d="M0 1h40" stroke-linecap="butt"/>
                     <path class="icon-bottom" fill="none" stroke="#000AEE" stroke-width="3" d="M0 10h40" stroke-linecap="butt"/>
                 </svg>                
             </li>
         </ul>
+        <!-- navigaton overlay list -->
         <div id="Nav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
@@ -32,16 +36,22 @@
         </div>   
     </header>
 
+<!-- main content -->
     <main>
+        <!-- project 1 -->
         <article>
             <details>
                 <summary>2023</summary>
+                <!-- project images -->
                 <div class="first-column">
                         <img id="screenshot" src="images/mac-cff.png">
                 </div>
+                <!-- project details -->
                 <div class="last-column">
                     <h2>The Center for Functional Fabrics</h2>
+                    <!-- h3 callout -->
                     <h3>In this project, I enhanced a Figma prototype for a virtual space tour and constructed a website to showcase the space's features.</h3>
+                    
                     <p>The goal of this project was to optimize the Figma prototype of the manufacturing space tour and be able to display it live on the Center’s webpage. 
                         I spent time organizing, optimizing, brainstorming, and implementing new designs onto previous Figma work. 
                         I also wireframed and prototyped new designs, footage, and photography and used those assets to fully build new pages in Sitecore.</p> 
@@ -53,16 +63,22 @@
                 </div>
             </details>
         </article>
-        <hr id="article">
+        <hr id="article"> <!-- line divide (different from menu divider) -->
+
+        <!-- project 2 -->
         <article>
             <details>
                 <summary>2022</summary>
+                <!-- project images -->
                 <div class="first-column">
                     <img id="screenshot" src="images/tab-labow2.png">
                 </div>
+                <!-- project details -->
                 <div class="last-column">
                     <h2>LeBow College of Business</h2>
+                    <!-- h3 callout -->
                     <h3>I worked on two Figma projects at the LeBow College of Business.</h3>
+
                     <p>I designed and prototyped wireframes using Figma while collaborating with the marketing and communications team on a comprehensive brand campaign and website redesign.
                         These designs were crafted to ensure responsiveness across various screen sizes and aimed at enhancing the online presence and functionality of the college's websites.</p>
                     <p>The projects were dedicated to wireframing and implementing redesigned elements to organize the content in an evergreen fashion. My involvement extended to conducting 
@@ -70,16 +86,22 @@
                 </div>
             </details>
         </article>
-        <hr id="article">
+        <hr id="article"> <!-- line divide -->
+
+        <!-- project 3 -->
         <article>
             <details>
                 <summary>2020</summary>
+                <!-- project images -->
                 <div class="first-column">
                     <img id="screenshot" src="images/bank2.png">
                 </div>
+                <!-- project details -->
                 <div class="last-column">
                     <h2>Local Bank Redesign</h2>
+                    <!-- h3 callout -->
                     <h3>I designed and prototyped an intuitive website for a local bank with InVision.</h3>
+
                     <p>This project incorporated UX/UI tactics to enhance site features of a local bank in order to improve the user experience. 
                         I created detailed wireframes of 8 pages and 19 frames in total. This comprehensive approach aimed to ensure an accurate representation of the website's functionality and design, 
                         laying the foundation for a user-friendly interface.</p>
@@ -88,16 +110,22 @@
                         the specific needs and preferences of the identified audience, further enhancing the overall effectiveness of the website.</p>
                 </div>
         </article>
-        <hr id="article">
+        <hr id="article"> <!-- line divide -->
+
+        <!-- project 4 -->
         <article>
             <details>
                 <summary>2019</summary>
+                <!-- project images -->
                 <div class="first-column">
                     <img id="screenshot" src="images/mac-aud1.png">
                 </div>
+                <!-- project details -->
                 <div class="last-column">
                     <h2>Audrey’s Hair Care Studio </h2>
+                    <!-- h3 callout -->
                     <h3>In my senior year of high school, I worked with a local hair studio to build a website from scratch.</h3>
+                    
                     <p>I designed, prototyped, and built a sophisticated, user-friendly website. 
                         I revamped an outdated and inefficient site by incorporating interactive Javascript-based applications for clients.</p>
                     <p>Additionally, I dedicated over 20 hours to maintaining the site, ensuring constant content updates and debugging code to enhance overall usability. 
@@ -105,11 +133,12 @@
                 </div>
             </details>
         </article>
-        <hr id="article">
+        <hr id="article"> <!-- line divide -->
     </main>
-    <footer></footer>
 
+    <!-- navigation script -->
     <script>
+        // function to toggle navigation overlay
         function toggleNav() {
             var navElement = document.getElementById("Nav");
             if (navElement.style.height === "100%") {
@@ -119,10 +148,12 @@
             }
         }
 
+        // function to close navigation overlay
         function closeNav() {
             document.getElementById("Nav").style.height = "0%";
         }
 
+        // function to open navigation overlay
         function openNav() {
             document.getElementById("Nav").style.height = "100%";
         }

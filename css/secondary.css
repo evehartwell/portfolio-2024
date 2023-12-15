@@ -1,3 +1,4 @@
+/* define colors, fonts, etc */
 :root {
     margin: 0;
     padding: 0;
@@ -24,7 +25,7 @@ body {
 
 header {
     position: relative;
-    z-index: 1;
+    z-index: 1; /* float above content */
 }
 
 #menu {
@@ -36,6 +37,7 @@ header {
     padding: 0.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    backdrop-filter: blur(10px); /* blur menu background */
 }
 
 ul {
@@ -46,6 +48,7 @@ li {
     margin: 0;
 }
 
+/* nav overlay styles */
 .overlay {
     width: 100%;
     height: 0;
@@ -58,6 +61,7 @@ li {
     transition: 0.5s;
 }
 
+/* menu list styles */
 .overlay-content {
     font-family: var(--header-font);
     position: relative;
@@ -82,6 +86,7 @@ li {
     color: var(--accent-color-1);
 }
 
+/* close button styles */
 .overlay .closebtn {
     position: absolute;
     padding: 0;
@@ -90,6 +95,7 @@ li {
     font-weight: 200;
 } 
 
+/* divider line for menu items */
 hr {
     border-style: solid;
     border-width: 1.2px;
@@ -134,6 +140,7 @@ p {
     line-height: 1.2rem;
 }
 
+/* contact links */
 #links {
     display: flex;
     justify-content: space-between;
@@ -146,16 +153,19 @@ p {
     padding-top: 30px;
 }
 
+/* contact links spacing */
 .link-layout {
     display: inline;
     margin-left: 2rem;
     margin-right: 2rem;
 }
 
+/* contact pg center content */
 main {
     padding-top: 6rem;
 }
 
+/* about pg spacing */
 #about {
     font-family: var(--header-font);
     position: relative;
@@ -164,7 +174,7 @@ main {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* remove link decoration */
     color: var(--accent-color-1)
 }
 
@@ -174,5 +184,5 @@ a:hover {
 
 img {
     width: 3rem;
-    filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%);
+    filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%); /* svg filter blue */
 }
