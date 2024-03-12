@@ -33,7 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: relative;
     padding: 0.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -57,7 +57,7 @@ li {
     top: 0; 
     left: 0;
     background-color: var(--primary-color-2);
-    overflow-x: hidden;
+    overflow-y: hidden;
     transition: 0.5s;
 }
 
@@ -102,42 +102,48 @@ hr {
     color: #FFFFFF;
 }
 
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 h1 {
     font-family: var(--header-font);
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 400;
-    padding-top: 4rem;
-    padding-bottom: 1rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
     color: var(--accent-color-2);
-    text-transform: uppercase;
+    font-size: 2rem;
     text-decoration: underline;
-    font-weight: 400;
-    text-align: center;
     margin: 2rem;
 }
 
 h3 {
     font-family: var(--body-font);
-    font-size: 0.875rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
     font-weight: 400;
-    padding: 1rem;
-    padding-bottom: 0.2rem;
 }
 
 p {
-    font-size: 0.875rem;
-    font-weight: 400;
-    padding: 1rem;
-    padding-top: 1px;
-    padding-bottom: 0.5rem;
-    line-height: 1.2rem;
+    font-size: 0.7rem;
+    font-family: var(--header-font);
+}
+
+a {
+    text-decoration: none; /* remove link decoration */
+    color: var(--accent-color-1)
+}
+
+a:hover {
+    color: var(--primary-color-3);
+}
+
+#text {
+    margin: 1rem;
+    line-height: 1.5rem;
 }
 
 /* contact links */
@@ -160,29 +166,38 @@ p {
     margin-right: 2rem;
 }
 
-/* contact pg center content */
 main {
-    padding-top: 6rem;
-}
-
-/* about pg spacing */
-#about {
-    font-family: var(--header-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    padding: 1.5rem;
-    padding-top: 3rem;
-}
-
-a {
-    text-decoration: none; /* remove link decoration */
-    color: var(--accent-color-1)
-}
-
-a:hover {
-    color: var(--accent-color-1)
+    padding: 2rem;
+    gap: 1rem;
 }
 
 img {
     width: 3rem;
     filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%); /* svg filter blue */
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        height: 50rem;
+        padding: 10rem;
+    } 
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        height: 45rem;
+        padding: 10rem;
+    } 
+
+    p, h3 {
+        font-size: 0.9rem;
+    }
 }

@@ -17,7 +17,7 @@
 }
 
 body {
-    background: url('/images/flowerbg.png'); /* background image */
+    background: url(''); /* background image */
     background-size: 100%;
     font-family: var(--body-font);
     font-size: 0.875rem;
@@ -43,12 +43,17 @@ p {
 /* enter button */
 .button {
     font-family: var(--body-font);
+    font-size: 1rem;
     color: var(--primary-color-2);
     text-transform: uppercase;
     text-decoration: none;
     border: none;
     font-weight: 700;
     padding: 1rem;
+}
+
+.button:hover {
+    color: var(--accent-color-1);
 }
 
 #menu {
@@ -73,7 +78,7 @@ ul {
     top: 0; 
     left: 0;
     background-color: var(--primary-color-2);
-    overflow-x: hidden;
+    overflow-y: hidden;
     transition: 0.5s;
 }
 
@@ -124,6 +129,7 @@ container {
     justify-content: center;
     align-items: center;
     margin: 1rem;
+    gap: 1rem;
 }
 
 img {
@@ -143,4 +149,21 @@ img {
     width: 10rem; 
     padding-top: 5rem;
     justify-content: end;
+}
+#star:hover {
+    filter: invert(86%) sepia(68%) saturate(1829%) hue-rotate(274deg) brightness(102%) contrast(100%);
+}
+
+/* media queries */
+@media screen and (min-width: 768px) {
+    p {
+        width: 45rem;
+    }
+    
+    #star {
+        width: 15rem;
+    }
+    container {
+        padding-top: 5rem;
+    }
 }
