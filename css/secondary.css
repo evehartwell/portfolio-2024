@@ -156,7 +156,6 @@ a:hover {
     text-transform: uppercase;
     width: 100%;
     padding: 0;
-    padding-top: 30px;
 }
 
 /* contact links spacing */
@@ -175,6 +174,10 @@ main {
     gap: 1rem;
 }
 
+#contact {
+    padding-top: 7rem;
+}
+
 img {
     width: 3rem;
     filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%); /* svg filter blue */
@@ -189,6 +192,11 @@ img {
     h1 {
         font-size: 4rem;
     }
+
+    #contact {
+        height: 40rem;
+        padding-top: 1rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -199,5 +207,16 @@ img {
 
     p, h3 {
         font-size: 0.9rem;
+    }
+
+    #contact {
+        height: 50rem;
+        padding-top: 10rem;
+    }
+
+    .link-layout {
+        display: inline;
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
 }
