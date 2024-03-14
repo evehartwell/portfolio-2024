@@ -128,6 +128,10 @@ main {
     padding-top: 5rem;
 }
 
+details {
+    transition: ease-in;
+}
+
 /* project title styling */
 summary {
     font-family: var(--header-font);
@@ -156,22 +160,37 @@ article {
 
 }
 
+/* image hover styles */
+a.grid-item {
+    opacity: 1.0;
+    transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+a.grid-item:hover {
+    opacity: 0.6;
+    transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+
 #screenshot {
     width: 100%; 
-    filter: none; /* override blue img filter */
 }
 
 #description {
     padding: 2rem; 
 }
 
-img {
+/* svg styles */
+img.svg {
     width: 3rem;
-    filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%); /* svg filter blue */
+    filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%); /* svg fill blue */
 }
 
-img:hover {
-    filter: invert(86%) sepia(68%) saturate(1829%) hue-rotate(274deg) brightness(102%) contrast(100%);
+img.svg:hover {
+    filter: invert(86%) sepia(68%) saturate(1829%) hue-rotate(274deg) brightness(102%) contrast(100%); /* svg hover pink */
 }
 
 /* divider line for article items */
@@ -199,6 +218,6 @@ img:hover {
 
 @media screen and (min-width: 1024px) {
     .grid-container {
-        grid-column-gap: 10rem; 
+        grid-column-gap: 5rem; 
     }
 }
