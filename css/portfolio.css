@@ -75,6 +75,8 @@ header {
 
 .card {
     width: 100%;
+    z-index: 2;
+
 }
 
 .card-title {
@@ -110,10 +112,7 @@ a.img:hover {
 
 /* svg styles */
 img.svg {
-    width: 3rem;
+    width: 50rem;
+    z-index: -1;
     filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%); /* svg fill blue */
-}
-
-img.svg:hover {
-    filter: invert(86%) sepia(68%) saturate(1829%) hue-rotate(274deg) brightness(102%) contrast(100%); /* svg hover pink */
 }
