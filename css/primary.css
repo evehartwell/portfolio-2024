@@ -155,9 +155,10 @@ img {
     width: 10rem; 
     justify-content: end;
 }
+/*
 #star:hover {
     filter: invert(86%) sepia(68%) saturate(1829%) hue-rotate(274deg) brightness(102%) contrast(100%);
-}
+} */
 
 /* media queries */
 
