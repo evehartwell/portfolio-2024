@@ -26,15 +26,17 @@ body {
 
 h1 {
     font-family: var(--secondary-font);
+    font-size: 8rem !important;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 h2 {
     font-family: var(--secondary-font);
-    font-weight: 400;
-    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 2rem;
 }
 
 h3, .card-title {
@@ -44,11 +46,22 @@ h3, .card-title {
     text-align: left; 
 }
 
-p {
+p.text {
     font-family: var(--prinary-font);
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-align: left;
     text-transform: uppercase;
+    padding: 2rem;
+    width: 80%;
+    text-align: center;
+}
+
+p {
+    font-family: var(--prinary-font);
+    font-size: 0.8rem;
+    text-align: left;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 header {
@@ -56,7 +69,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: var(--primary-color-1);
+    background-color: #fff;
 }
 
 .nav {
@@ -69,6 +82,33 @@ header {
     color: var(--primary-color-3)
 }
 
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35rem;
+}
+
+.text {
+    justify-content: end;
+}
+
+/* enter button */
+.button {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    color: var(--primary-color-2);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.button:hover {
+    color: var(--accent-color-1);
+}
+
 .row {
     padding: 2rem;
 }
@@ -76,7 +116,6 @@ header {
 .card {
     width: 100%;
     z-index: 2;
-
 }
 
 .card-title {
@@ -115,4 +154,10 @@ img.svg {
     width: 50rem;
     z-index: -1;
     filter: invert(10%) sepia(99%) saturate(7428%) hue-rotate(244deg) brightness(75%) contrast(134%); /* svg fill blue */
+}
+
+#star {
+    display: flex;
+    width: 10rem; 
+    justify-content: end;
 }
