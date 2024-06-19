@@ -41,7 +41,7 @@ h2 {
     padding-bottom: 2rem;
 }
 
-h3, .card-title {
+h3 {
     font-family: var(--secondary-font);
     font-weight: 400;
     font-size: 1.3rem;
@@ -49,22 +49,11 @@ h3, .card-title {
     padding-bottom: 1rem;
 }
 
-p.text {
-    font-family: var(--prinary-font);
-    font-size: 1rem;
-    text-align: left;
-    text-transform: uppercase;
-    padding: 2rem;
-    width: 80%;
-    text-align: center;
-}
-
 p {
     font-family: var(--prinary-font);
     font-size: 0.8rem;
     text-align: left;
     text-transform: uppercase;
-    text-align: left;
 }
 
 main {
@@ -99,7 +88,7 @@ header {
 }
 
 #text {
-    width: 60%;
+    width: 50%;
 }
 
 /* list styles for button links */
