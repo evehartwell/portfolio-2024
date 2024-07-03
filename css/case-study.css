@@ -20,9 +20,7 @@ body {
     font-family: var(--primary-font);
     font-size: 16px;
     overflow-x: hidden;
-    overflow-y: hidden;
-    background-color: var(--primary-color-2);
-    background: url('/images/koi.png'); /* background image */
+    background-color: var(--accent-color-1);
 }
 
 main {
@@ -53,7 +51,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    color: var(--accent-color-1);
+    color: var(--primary-color-2);
 }
 
 .row { /* nav spacing */
@@ -73,79 +71,6 @@ header {
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: rgba(255, 253, 248, 0.80);
-    backdrop-filter: blur(4px);
-    border-radius: 15px;
-    font-size: 0.8rem;
-    padding: 2rem;
-    /* remove bootstrap styles */
-    border: none;
-}
-
-.container::after {
-    content: '';
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    border: 1px dashed #000000; 
-    border-radius: 8px;
-    pointer-events: none; /* ensure border doesn't interfere with content interactions */
-}
-
-.banner {
-    display: flex; 
-    justify-content: space-between; /* svg img spacing */
-    padding-bottom: 1.5rem;
-    /* remove bootstrap styles */
-    border: none;
-    background-color: transparent; 
-}
-
-.details {
-    /* remove bootstrap styles */
-    border: none;
-    background-color: transparent; 
-}
-
-.list-group {
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    /* remove bootstrap styles */
-    border: none;
-}
-
-ul {
-    padding: 0; /* remove nested list indent */
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-li {
-    list-style-type: none; 
-}
-
-hr {
-    border-top: 1px solid rgb(0 0 0 / 40%);
-    height: 0.3rem;
-}
-
-.nested-list-item {
-    padding-top: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.nested-list-desc {
-    font-family: var(--secondary-font);
-    font-size: 0.9rem;
-    text-transform: lowercase;
 }
 
 a {
@@ -174,18 +99,6 @@ a:hover {
 .btn-primary:hover {
     border-color: var(--primary-color-2);
     background-color: var(--primary-color-2); 
-}
-
-/* styles for contact links */
-
-#btn-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.contact {
-    font-size: 1rem;
 }
 
 /* svg sizing */
