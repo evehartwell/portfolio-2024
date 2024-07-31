@@ -32,21 +32,22 @@ const Homepage = () => {
             {/* My Work Section */}
             <Box mt={10} w="full">
             <Text fontSize="3xl" fontWeight="bold" mb={5}>My Work</Text>
+            <Box w="full" h="300px" bg="gray.300" mb={5} p={5}>
+                <Text fontSize="2xl" fontWeight="bold">Modesens</Text>
+                {/* Additional details about the project can go here */}
+            </Box>
             <Flex wrap="wrap" justify="space-between">
                 <Box w="48%" h="200px" bg="gray.200" mb={5}>
-                <Text mt={5}>Modesens</Text>
+                <Text fontSize="2xl" fontWeight="bold">Black Hippie Art</Text>
                 </Box>
                 <Box w="48%" h="200px" bg="gray.200" mb={5}>
-                <Text mt={5}>Black Hippie Art</Text>
+                <Text fontSize="2xl" fontWeight="bold">Center For Functional Fabrics</Text>
                 </Box>
                 <Box w="48%" h="200px" bg="gray.200" mb={5}>
-                <Text mt={5}>Center For Functional Fabrics</Text>
+                <Text fontSize="2xl" fontWeight="bold">LeBow College of Business</Text>
                 </Box>
                 <Box w="48%" h="200px" bg="gray.200" mb={5}>
-                <Text mt={5}>LeBow College of Business</Text>
-                </Box>
-                <Box w="48%" h="200px" bg="gray.200" mb={5}>
-                <Text mt={5}>PA Central Credit Union</Text>
+                <Text fontSize="2xl" fontWeight="bold">PA Central Credit Union</Text>
                 </Box>
             </Flex>
             </Box>

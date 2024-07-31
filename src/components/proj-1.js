@@ -24,7 +24,7 @@ const Project1 = () => {
 
             {/* Title and Description */}
             <Box textAlign="center" mt={10}>
-            <Text fontSize="5xl" fontWeight="bold">TITLE NAME</Text>
+            <Text fontSize="5xl" fontWeight="bold">Project Name</Text>
             <Text mt={5}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ultricies ex. Aliquam convallis scelerisque lacus consequat bibendum.
             </Text>
@@ -32,7 +32,7 @@ const Project1 = () => {
 
             {/* Project Overview */}
             <Box mt={10} textAlign="center">
-            <Text fontSize="3xl" fontWeight="bold">PROJECT OVERVIEW</Text>
+            <Text fontSize="3xl" fontWeight="bold">Project Overview</Text>
             <Flex justify="center" gap={4} mt={4}>
                 <Tag>#web design</Tag>
                 <Tag>#web development</Tag>
