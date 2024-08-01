@@ -9,6 +9,7 @@ import {
     Stack,
 } from '@chakra-ui/react';
 import ProjectBox from "./portfolio.js";
+import Navbar from './navbar.js';
 import '../style.css';
 
 const projects = [
@@ -37,17 +38,11 @@ const projects = [
 const Homepage = () => {
     return (
         <Container maxW="container.xl" py={5}>
+            <Flex justify="flex-start">
+                <img src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" className="logo" />
+            </Flex>
+            <Navbar />
             <Flex direction="column" align="center">
-            {/* Navbar */}
-                <Flex justify="space-between" w="full" py={5}>
-                    <Text fontSize="xl" fontWeight="bold">Logo</Text>
-                    <Flex gap={4}>
-                        <Button variant="ghost">Work</Button>
-                        <Button variant="ghost">About</Button>
-                        <Button variant="ghost">Contact</Button>
-                    </Flex>
-                </Flex>
-
             {/* Header */}
                 <Box maxW="50rem" textAlign="center" py={20} mt={10}>
                     <Text fontSize="5xl" fontWeight="medium">Hartwell</Text>
@@ -57,7 +52,7 @@ const Homepage = () => {
                 </Box>
 
             {/* portfolio */}
-                <Box mt={10} w="full">
+                <Box mt={10} w="full" id="portfolio">
                     <Text fontSize="3xl" fontWeight="medium" mb={5}>My Work <Divider borderColor="#422D2D" /></Text>  
             {/* most recent */}
                 <Box w="full" h="700px" mb={10} position="relative" borderRadius="10px" overflow="hidden">
