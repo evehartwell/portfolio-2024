@@ -5,53 +5,83 @@ import {
     Flex,
     Button,
     Container,
+    Divider,
+    Stack,
 } from '@chakra-ui/react';
+import ProjectBox from "./portfolio.js";
+import '../style.css';
+
+const projects = [
+    {
+        title: "Modesens",
+        imageSrc: "/images/LUXR-preview.png",
+    },
+    {
+        title: "Black Hippie Art",
+        imageSrc: "/images/BHA-preview.png",
+    },
+    {
+        title: "Center For Functional Fabrics",
+        imageSrc: "/images/CFF-preview.png",
+    },
+    {
+        title: "LeBow College of Business",
+        imageSrc: "/images/lebow-preview.png",
+    },
+    {
+        title: "PA Central Credit Union",
+        imageSrc: "/images/bank-preview.png",
+    },
+];
 
 const Homepage = () => {
     return (
-        <Container maxW="container.xl" py={10}>
-        <Flex direction="column" align="center">
+        <Container maxW="container.xl" py={5}>
+            <Flex direction="column" align="center">
             {/* Navbar */}
-            <Flex justify="space-between" w="full" py={5}>
-            <Text fontSize="xl" fontWeight="bold">Logo</Text>
-            <Flex gap={4}>
-                <Button variant="ghost">Work</Button>
-                <Button variant="ghost">About</Button>
-                <Button variant="ghost">Contact</Button>
-            </Flex>
-            </Flex>
+                <Flex justify="space-between" w="full" py={5}>
+                    <Text fontSize="xl" fontWeight="bold">Logo</Text>
+                    <Flex gap={4}>
+                        <Button variant="ghost">Work</Button>
+                        <Button variant="ghost">About</Button>
+                        <Button variant="ghost">Contact</Button>
+                    </Flex>
+                </Flex>
 
             {/* Header */}
-            <Box textAlign="center" mt={10}>
-            <Text fontSize="5xl" fontWeight="bold">Hartwell</Text>
-            <Text mt={5}>
-                I’m a UX Designer based in Philadelphia, passionate about HCI, fashion, and building meaningful communities online. 
-            </Text>
-            </Box>
+                <Box maxW="50rem" textAlign="center" py={20} mt={10}>
+                    <Text fontSize="5xl" fontWeight="medium">Hartwell</Text>
+                    <Text mt={8}>
+                        I’m a UX Designer based in Philadelphia, passionate about HCI, fashion, and building meaningful communities online. 
+                    </Text>
+                </Box>
 
-            {/* My Work Section */}
-            <Box mt={10} w="full">
-            <Text fontSize="3xl" fontWeight="bold" mb={5}>My Work</Text>
-            <Box w="full" h="300px" bg="gray.300" mb={5} p={5}>
-                <Text fontSize="2xl" fontWeight="bold">Modesens</Text>
-                {/* Additional details about the project can go here */}
-            </Box>
-            <Flex wrap="wrap" justify="space-between">
-                <Box w="48%" h="200px" bg="gray.200" mb={5}>
-                <Text fontSize="2xl" fontWeight="bold">Black Hippie Art</Text>
+            {/* portfolio */}
+                <Box mt={10} w="full">
+                    <Text fontSize="3xl" fontWeight="medium" mb={5}>My Work <Divider borderColor="#422D2D" /></Text>  
+            {/* most recent */}
+                <Box w="full" h="700px" mb={10} position="relative" borderRadius="10px" overflow="hidden">
+                    <Box
+                        as="img"
+                        src={projects[0].imageSrc}
+                        alt={projects[0].title}
+                        objectFit="cover"
+                        width="100%"
+                        height="100%"
+                    />
+                    <Box className="project-text-overlay">
+                        <Text className="project-text">{projects[0].title}</Text>
+                    </Box>
                 </Box>
-                <Box w="48%" h="200px" bg="gray.200" mb={5}>
-                <Text fontSize="2xl" fontWeight="bold">Center For Functional Fabrics</Text>
-                </Box>
-                <Box w="48%" h="200px" bg="gray.200" mb={5}>
-                <Text fontSize="2xl" fontWeight="bold">LeBow College of Business</Text>
-                </Box>
-                <Box w="48%" h="200px" bg="gray.200" mb={5}>
-                <Text fontSize="2xl" fontWeight="bold">PA Central Credit Union</Text>
-                </Box>
+
+            {/* previous projects */}
+                    <Flex wrap="wrap" gap={5} justify="space-between">
+                        {projects.slice(1).map((project, index) => (
+                            <ProjectBox key={index} title={project.title} imageSrc={project.imageSrc} />
+                        ))}
+                    </Flex>
+                </Box> 
             </Flex>
-            </Box>
-        </Flex>
         </Container>
     );
 };
