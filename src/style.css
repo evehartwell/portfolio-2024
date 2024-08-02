@@ -5,8 +5,25 @@
     --primary-color-1: #422D2D;
     --box-gradient: linear-gradient(rgba(217, 217, 217, 0.10), rgba(108, 108, 108, 0.70) 95%);
     --bg-gradient: linear-gradient(rgba(225, 225, 225, 0) 5%, rgba(248, 248, 248) 95%);
-    --primary-font: Inter, sans-serif;
-    --secondary-font: "Cormorant Garamond", serif; /* change */
+    --primary-font: 'Inter', sans-serif;
+    --secondary-font: 'Times Now', serif;
+    --accent-font: 'Old London', serif;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter/Inter-VariableFont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Old London';
+    src: url('./fonts/old_london/OldLondon.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('./fonts/times-now/TimesNow-SemiLight.ttf') format('truetype');
 }
 
 * {
@@ -21,6 +38,7 @@ body {
     font-weight: 400;
     background: #f8f8f8 !important;
     color: var(--primary-color-1) !important;
+    line-height: 1.5rem;
 }
 
 .logo {
@@ -55,7 +73,7 @@ body {
 
 .navbar-button {
     cursor: pointer;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 }
 
 .navbar-button:hover {
@@ -99,6 +117,12 @@ body {
     font-size: 1.5rem; 
     font-weight: 500;
 }
+
+/* about page custom table */
+
+
+
+/* media screens */
 
 @media (max-width: 1025px) {
     .project-box {

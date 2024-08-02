@@ -45,14 +45,14 @@ const Homepage = () => {
             <Flex direction="column" align="center">
             {/* Header */}
                 <Box maxW="50rem" textAlign="center" py={20} mt={10}>
-                    <Text fontSize="5xl" fontWeight="medium">Hartwell</Text>
+                    <Text fontFamily="'Old London', serif" textTransform="capitalize" fontSize="5xl" fontWeight="medium">Hartwell</Text>
                     <Text mt={8}>
                         I’m a UX Designer based in Philadelphia, passionate about HCI, fashion, and building meaningful communities online. 
                     </Text>
                 </Box>
 
             {/* portfolio */}
-                <Box mt={10} w="full" id="portfolio">
+                <Box mt={10} w="full">
                     <Text fontSize="3xl" fontWeight="medium" mb={5}>My Work <Divider borderColor="#422D2D" /></Text>  
             {/* most recent */}
                 <Box w="full" h="700px" mb={10} position="relative" borderRadius="10px" overflow="hidden">
@@ -77,6 +77,7 @@ const Homepage = () => {
                     </Flex>
                 </Box> 
             </Flex>
+            
         </Container>
     );
 };
