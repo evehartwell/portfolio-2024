@@ -13,14 +13,10 @@ const Project1 = () => {
         <Container maxW="container.xl" py={10}>
         <Flex direction="column" align="center">
             {/* Navbar */}
-            <Flex justify="space-between" w="full" py={5}>
-            <Text fontSize="xl" fontWeight="bold">Logo</Text>
-            <Flex gap={4}>
-                <Button variant="ghost">Work</Button>
-                <Button variant="ghost">About</Button>
-                <Button variant="ghost">Contact</Button>
+            <Flex justify="flex-start">
+                <img src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" className="logo" />
             </Flex>
-            </Flex>
+            <Navbar />
 
             {/* Title and Description */}
             <Box textAlign="center" mt={10}>

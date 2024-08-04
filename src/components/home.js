@@ -3,19 +3,21 @@ import {
     Box,
     Text,
     Flex,
-    Button,
     Container,
     Divider,
-    Stack,
 } from '@chakra-ui/react';
 import ProjectBox from "./portfolio.js";
 import Navbar from './navbar.js';
+import Footer from './footer.js';
 import '../style.css';
+
 
 const projects = [
     {
         title: "Modesens",
         imageSrc: "/images/LUXR-preview.png",
+        videoSrc: "/media/modesens-mobile-edit.mp4",
+        link: "/proj-1",
     },
     {
         title: "Black Hippie Art",
@@ -56,14 +58,19 @@ const Homepage = () => {
                     <Text fontSize="3xl" fontWeight="medium" mb={5}>My Work <Divider borderColor="#422D2D" /></Text>  
             {/* most recent */}
                 <Box w="full" h="700px" mb={10} position="relative" borderRadius="10px" overflow="hidden">
-                    <Box
-                        as="img"
-                        src={projects[0].imageSrc}
-                        alt={projects[0].title}
-                        objectFit="cover"
+                    {projects[0].videoSrc ? (
+                        <video  autoPlay
+                        muted
+                        loop
                         width="100%"
                         height="100%"
-                    />
+                        className="project-media">
+                            <source src={projects[0].videoSrc} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    ) : (
+                        <img src={projects[0].imageSrc} alt={projects[0].title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    )}
                     <Box className="project-text-overlay">
                         <Text className="project-text">{projects[0].title}</Text>
                     </Box>
@@ -77,7 +84,7 @@ const Homepage = () => {
                     </Flex>
                 </Box> 
             </Flex>
-            
+            <Footer />
         </Container>
     );
 };

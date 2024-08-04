@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Flex, Button } from '@chakra-ui/react';
+import { Flex, Button, Link as ChakraLink } from '@chakra-ui/react';
 import '../style.css';
 
 const Navbar = () => {
     return (
         <Flex className="navbar" align="center">
             <Flex className="navbar-links">
-                <Link to="#portfolio" className="navbar-button">
-                    <Button variant="ghost">
+                <Link to="/" className="navbar-button">
+                    <Button className="navbar-button" variant="ghost">
                         Work
                     </Button>
                 </Link>
@@ -17,11 +17,11 @@ const Navbar = () => {
                         About
                     </Button>
                 </Link>
-                <Link to="/contact" className="navbar-button">
+                <ChakraLink href="mailto:evehartwell@gmail.com" isExternal className="navbar-button"> 
                     <Button className="navbar-button" variant="ghost">
                         Contact
                     </Button>
-                </Link>
+                </ChakraLink>
             </Flex>
         </Flex>
     );
