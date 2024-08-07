@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     --primary-color-1: #422D2D;
-    --box-gradient: linear-gradient(rgba(217, 217, 217, 0.10), rgba(108, 108, 108, 0.70) 95%);
+    --box-gradient: linear-gradient(rgba(217, 217, 217, 0.10), rgba(118, 118, 118, 0.5) 95%);
     --bg-gradient: linear-gradient(rgba(225, 225, 225, 0) 5%, rgba(248, 248, 248) 95%);
     --primary-font: 'Inter', sans-serif;
     --secondary-font: 'Times Now', serif;
@@ -34,7 +34,7 @@
 
 body {
     font-family: var(--primary-font);
-    text-transform: uppercase;
+    
     font-weight: 400;
     background: #f8f8f8 !important;
     color: var(--primary-color-1) !important;
@@ -88,13 +88,14 @@ body {
 /* portfolio styles */
 
 .project-box {
-    position: relative;
-    width: calc(50% - 10px);
-    height: 25rem;
+    position: relative; /*
+    width: calc(50% - 10px); <<<<<< fix sizing on page
+    height: 25rem; */
     background: #FFFFFF;
     border-radius: 10px; 
     overflow: hidden; 
     margin-bottom: 10px;
+    transition: background 0.5s ease;
 }
 
 .project-image {
@@ -114,6 +115,13 @@ body {
     padding: 12px; 
     color: white;
     background: var(--box-gradient);
+    opacity: 1;
+    transition: opacity 0.5s ease, background 0.5s ease;
+}
+
+.project-text-overlay:hover {
+    background: transparent;
+    opacity: 0;
 }
 
 .project-text {
@@ -164,7 +172,8 @@ footer a:hover {
 
 @media (max-width: 768px) {
     .project-box {
-        width: calc(100% - 10px);
-        height: 25rem;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 }

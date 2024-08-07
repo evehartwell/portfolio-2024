@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Flex, Image, IconButton, Link as ChakraLink } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdAlternateEmail } from 'react-icons/md'; 

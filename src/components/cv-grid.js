@@ -18,21 +18,21 @@ const CustomTable = () => {
                     p={6}
                     mb={{ base: 4, md: 0 }} // Margin-bottom on mobile screens
                 >
-                    <Text fontWeight="medium" mb={2}>Experience</Text>
-                    <Text fontFamily="var(--secondary-font)" mt={4}>Govbrain</Text>
-                        <Text fontFamily="var(--secondary-font)" textTransform="capitalize">
+                    <Text fontWeight="medium" textTransform="uppercase" mb={2}>Experience</Text>
+                    <Text fontFamily="var(--secondary-font)" textTransform="uppercase" mt={4}>Govbrain</Text>
+                        <Text fontFamily="var(--secondary-font)">
                             UX Designer<br/>
                             June 2024  &mdash; Current</Text>
-                    <Text fontFamily="var(--secondary-font)" mt={4}>Black Hippie Art</Text>
-                        <Text fontFamily="var(--secondary-font)" textTransform="capitalize">
+                    <Text fontFamily="var(--secondary-font)" textTransform="uppercase" mt={4}>Black Hippie Art</Text>
+                        <Text fontFamily="var(--secondary-font)">
                             Social Media Manager<br/>
                             April 2024  &mdash; Current</Text>
-                    <Text fontFamily="var(--secondary-font)" mt={4}>Center for Functional Fabrics</Text>
-                        <Text fontFamily="var(--secondary-font)" textTransform="capitalize">
+                    <Text fontFamily="var(--secondary-font)" textTransform="uppercase" mt={4}>Center for Functional Fabrics</Text>
+                        <Text fontFamily="var(--secondary-font)">
                             UX Designer & Web Developer<br/>
                             September 2022  &mdash; March 2023</Text>
-                    <Text fontFamily="var(--secondary-font)" mt={4}>Drexel LeBow College</Text>
-                        <Text fontFamily="var(--secondary-font)" textTransform="capitalize">
+                    <Text fontFamily="var(--secondary-font)" textTransform="uppercase" mt={4}>Drexel LeBow College</Text>
+                        <Text fontFamily="var(--secondary-font)">
                             Web Designer & Communications Assistant<br/>
                             September 2021  &mdash; September 2022</Text>
                 </Box>
@@ -41,17 +41,17 @@ const CustomTable = () => {
                     p={4}
                     mb={{ base: 4, md: 0 }} // Margin-bottom on mobile screens
                 >
-                    <Text fontWeight="medium" mb={2}>Education</Text>
-                    <Text fontFamily="var(--secondary-font)">Drexel University</Text>
-                        <Text fontFamily="var(--secondary-font)" textTransform="capitalize">
+                    <Text fontWeight="medium" textTransform="uppercase" mb={2}>Education</Text>
+                    <Text fontFamily="var(--secondary-font)" textTransform="uppercase">Drexel University</Text>
+                        <Text fontFamily="var(--secondary-font)">
                         BS in Information Systems<br/>
                         Minor in User Experience & Interaction Design, 2024</Text>
                 </Box>
                 <Box flex="1"
                     p={4}
                 >
-                    <Text fontWeight="medium" mb={2}>Contact</Text>
-                    <Text fontFamily="var(--secondary-font)">Email</Text>
+                    <Text fontWeight="medium" textTransform="uppercase" mb={2}>Contact</Text>
+                    <Text fontFamily="var(--secondary-font)" textTransform="uppercase">Email</Text>
                         <Text fontFamily="var(--secondary-font)" textTransform="lowercase">
                             evehartwell@gmail.com</Text>
                 </Box>
