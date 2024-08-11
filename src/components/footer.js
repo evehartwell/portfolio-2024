@@ -27,6 +27,7 @@ const Footer = () => {
                         icon={<FaLinkedin />}
                         aria-label="LinkedIn"
                         variant="ghost"
+                        className="footer-icon"
                     />
                 </ChakraLink>
                 <ChakraLink href="https://github.com/evehartwell" isExternal>
@@ -34,20 +35,21 @@ const Footer = () => {
                         icon={<FaGithub />}
                         aria-label="GitHub"
                         variant="ghost"
+                        className="footer-icon"
                     />
                 </ChakraLink>
                 <ChakraLink href="mailto:evehartwell@gmail.com" isExternal>
                     <IconButton
                         icon={<MdAlternateEmail />}
                         aria-label="Email"
-                        variant="ghost"
+                        className="footer-icon"
                     />
                 </ChakraLink>
                 <ChakraLink href="/resume" isExternal>
                     <IconButton
                         icon={<IoDocumentAttachOutline />}
                         aria-label="Resume"
-                        variant="ghost"
+                        className="footer-icon"
                     />
                 </ChakraLink>
             </Flex>

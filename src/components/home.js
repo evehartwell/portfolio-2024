@@ -5,6 +5,7 @@ import {
     Flex,
     Container,
     Divider,
+    Grid,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import ProjectBox from "./projectbox.js";
@@ -23,22 +24,22 @@ const projects = [
     {
         title: "Black Hippie Art",
         imageSrc: "/images/BHA-preview.png",
-        link: "/",
+        link: "/bha-study",
     },
     {
         title: "Center For Functional Fabrics",
-        imageSrc: "/images/CFF-preview.png",
-        link: "/",
+        imageSrc: "/images/CFF-prev.png",
+        link: "/cff-study",
     },
     {
         title: "LeBow College of Business",
         imageSrc: "/images/lebow-preview.png",
-        link: "/",
+        link: "/lebow-study",
     },
     {
         title: "PA Central Credit Union",
         imageSrc: "/images/bank-preview.png",
-        link: "/",
+        link: "/bank-study",
     },
 ];
 
@@ -54,7 +55,7 @@ const Homepage = () => {
                 <Box maxW="50rem" textAlign="center" py={20} mt={10}>
                     <Text fontFamily="'Old London', serif" textTransform="capitalize" fontSize="5xl" fontWeight="medium">Hartwell</Text>
                     <Text mt={8}>
-                        I’m a UX Designer & Web Developer based in Philadelphia, passionate about HCI, fashion, and building meaningful communities online. 
+                        I’m a UX designer and web developer in Philadelphia, blending a passion for HCI and fashion to create impactful user-centered experiences. 
                     </Text>
                 </Box>
 
@@ -63,7 +64,7 @@ const Homepage = () => {
                     <Text fontSize="3xl" fontWeight="medium" mb={5}>My Work <Divider borderColor="#422D2D" /></Text>  
             {/* most recent */}
                 <Link to={projects[0].link}> 
-                    <Box w="full" h="700px" mb={10} position="relative" borderRadius="10px" overflow="hidden">
+                    <Box w="full" mb={10} position="relative" borderRadius="10px" overflow="hidden">
                         {projects[0].videoSrc ? (
                             <video  autoPlay
                             muted
@@ -82,14 +83,16 @@ const Homepage = () => {
                         </Box>
                     </Box>
                 </Link>
-
-            {/* previous projects */}
-                    <Flex wrap="wrap" gap={5} justify="space-between">
-                        {projects.slice(1).map((project, index) => (
-                            <ProjectBox key={index} title={project.title} imageSrc={project.imageSrc} link={project.link} />
-                        ))}
-                    </Flex>
                 </Box> 
+                {/* previous projects */}
+                <Grid 
+                    templateColumns={{ base: '1fr', sm: '1fr 1fr', md: 'repeat(2, 1fr)' }} 
+                    gap={10}
+                >
+                    {projects.slice(1).map((project, index) => (
+                        <ProjectBox key={index} title={project.title} imageSrc={project.imageSrc} link={project.link} />
+                    ))}
+                </Grid>
             </Flex>
             <Footer />
         </Container>
