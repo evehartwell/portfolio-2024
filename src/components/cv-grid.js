@@ -26,7 +26,7 @@ const CustomTable = () => {
                     <Text fontFamily="var(--secondary-font)" textTransform="uppercase" mt={4}>Black Hippie Art</Text>
                         <Text fontFamily="var(--secondary-font)">
                             Social Media Manager<br/>
-                            April 2024  &mdash; Current</Text>
+                            May 2024  &mdash; Current</Text>
                     <Text fontFamily="var(--secondary-font)" textTransform="uppercase" mt={4}>Center for Functional Fabrics</Text>
                         <Text fontFamily="var(--secondary-font)">
                             UX Designer & Web Developer<br/>

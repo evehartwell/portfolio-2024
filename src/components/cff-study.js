@@ -7,6 +7,9 @@ import {
     Container,
     Tag,
     Image,
+    List,
+    ListItem,
+    UnorderedList,
     Link as ChakraLink,
 } from '@chakra-ui/react';
 import Navbar from './navbar.js';
@@ -15,7 +18,7 @@ import '../style.css';
 
 const MapStudy = () => {
     return (
-        <Container maxW="container.xl" textTransform="uppercase" py={5}>
+        <Container maxW="container.xl" lineHeight="2rem" py={5}>
             {/* Navbar */}
             <Flex justify="flex-start">
                 <img src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" className="logo" />
@@ -25,9 +28,10 @@ const MapStudy = () => {
             <Flex direction="column" align="center">
                 {/* Title and Description */}
                 <Box maxW="50rem" textAlign="center" p={10} pt={20}>
-                    <Text fontSize="5xl" fontWeight="regular">Center for Functional Fabrics</Text>
+                    <Text fontSize="5xl" textTransform="uppercase" fontWeight="regular" lineHeight="3rem">Center for Functional Fabrics</Text>
+                    <Text textTransform="uppercase" fontWeight="medium" mt={5}>September 2022 &mdash; March 2023</Text>
                     <Text mt={5}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ultricies ex. Aliquam convallis scelerisque lacus consequat bibendum.
+                        I developed and launched an interactive map to showcase the Center’s capabilities to stakeholders, improve accessibility, and optimize the user experience.
                     </Text> 
                 </Box>
                 {/* Cover Image */} 
@@ -41,47 +45,81 @@ const MapStudy = () => {
                             height="100%"
                             style={{ objectFit: 'cover' }} 
                         >
-                            <source src={`/media/.mp4`} type="video/mp4" /> {/* record figma proto */} 
+                            <source src={`/media/cff-map-1.mp4`} type="video/mp4" /> 
                             Your browser does not support the video tag.
                         </video>
                     </Box>
                 </Flex>
                 {/* Overview */} 
-                <Text fontSize="3xl" fontWeight="medium">Project Overview</Text>
-                <Flex justify="center" gap={4} p={6}>
-                    <Tag className="button">#tag</Tag>
-                    <Tag className="button">#tag</Tag>
-                    <Tag className="button">#tag</Tag>
+                <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Project Overview</Text>
+                <Flex justify="center" textTransform="uppercase" gap={4} p={6}>
+                    <Tag className="button">#Web Design</Tag>
+                    <Tag className="button">#Web Development</Tag>
+                    <Tag className="button">#UX Design</Tag>
                 </Flex>
                 {/* Client and Deliverables */}
                 <Flex
-                    direction={{ base: 'column', md: 'row' }}  
-                    wrap="wrap"  
-                    justify="space-between"
+                    direction={{ base: 'column', md: 'row' }} // Stack vertically on small screens, horizontally on larger screens
+                    wrap="wrap"
+                    gap={5} // Adjust spacing between items
                     mt={10}
-                    mb={20}
                     p={5}
                     w="full"
                 >
-                    <Box textAlign="left" flex="1" minW="200px" pr={8} mb={{ base: 4, md: 0 }}>
-                        <Text fontSize="xl" fontWeight="medium">Problem Space</Text>
-                        <Text textTransform="lowercase" mt={2}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </Text>
-                    </Box>
-                    <Box textAlign="left" flex="1" minW="200px" pr={8}>
-                        <Text fontSize="xl" fontWeight="medium">Deliverables</Text>
-                        <Text textTransform="lowercase" mt={2}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </Text>
-                    </Box>
+                {/* column 1 */}
+                    <Flex
+                        direction="column" // Stack items vertically in each column
+                        flex="1"
+                        gap={5}
+                    >
+                        <Box textAlign="left" p={4}>
+                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">The Team</Text>
+                            <Text mt={2}>
+                                Communications Manager, Director of Business Development
+                            </Text>
+                        </Box>
+                        <Box textAlign="left" p={4}>
+                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">My Role</Text>
+                            <Text mt={2}>
+                                Web Designer and Developer
+                            </Text>
+                            <UnorderedList fontSize="sm" mt={2} lineHeight="1.5rem">
+                                <ListItem mb={2}>Salvaged and redesigned an interactive map prototype initially built on an inaccessible platform.</ListItem>
+                                <ListItem mb={2}>Optimized Figma files to ensure smooth animations and reduced buffering errors.</ListItem>
+                                <ListItem mb={2}>Edited over 40 wireframes and 6 pages of web content.</ListItem>
+                                <ListItem mb={2}>Implemented the design in Sitecore CMS to meet accessibility standards and enhance visual appeal.</ListItem>
+                            </UnorderedList>
+                        </Box>
+                    </Flex>
+                {/* column 2 */}
+                    <Flex
+                        direction="column" // Stack items vertically in each column
+                        flex="1"
+                        gap={5}
+                    >
+                        <Box textAlign="left" p={4}>
+                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Problem Space</Text>
+                            <Text fontSize="sm" mt={2}>
+                                The initial interactive map prototype was built on a platform that did not meet accessibility standards, limiting its usability for a wider audience. 
+                                The challenge was to salvage the existing prototype while creating a functional, accessible version that effectively highlighted the Center’s manufacturing capabilities.
+                            </Text>
+                        </Box>
+                        <Box textAlign="left" p={4}>
+                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
+                            <UnorderedList fontSize="sm" mt={2} lineHeight="1.5rem">
+                                <ListItem mb={2}>Refined Figma prototype for a high-performance interactive map that enhanced stakeholder engagement.</ListItem>
+                                <ListItem mb={2}>Developed an accessible version of the map with limitations of Sitecore components to increase audience reach</ListItem>
+                            </UnorderedList>
+                        </Box>
+                    </Flex>
                 </Flex>
                 <Flex justify="center" gap={4} p={6}>
                     <ChakraLink href="https://drexel.edu/functional-fabrics/about/virtual-tour/" isExternal>
                         <Button className="button" textTransform="uppercase" p={6}>Visit Website</Button>
                     </ChakraLink>
                 </Flex>
-                {/* Process Stage 1 */}
+                {/* Process Stage 1 --- include figma optimization screenshots */}
+                {/* Process Stage 2 */}
                 <Flex 
                     direction={{ base: 'column', md: 'row' }}  
                     w="full" 
@@ -98,6 +136,7 @@ const MapStudy = () => {
                         />
                     </Box>
                 </Flex>
+                {/* Process Stage 3 */}
                 <Flex 
                     direction={{ base: 'column', md: 'row' }}  
                     w="full" 
@@ -106,9 +145,15 @@ const MapStudy = () => {
                     justify="space-between"
                 >
                     <Box w="full" textAlign="left" p={10}>
-                        <Text fontSize="xl" fontWeight="medium">Header</Text>
-                        <Text textTransform="lowercase" mt={2}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Design</Text>
+                        <Text mt={2}>
+                            Designed a version of the map using Sitecore components, ensuring compliance with accessibility standards.
+                            Created an innovative display of manufacturing capabilities to enhance visual appeal and user engagement.
+                        </Text>
+                        <Text mt={2}>
+                            Developed and evaluated several versions of accessible designs to refine the user experience while balancing ideal design with practical constraints.
+                            Enhanced vector graphics and patterns in Adobe Illustrator and reintegrated the brand color palette for more engaging and visually striking pages.
+                            Ensured that design elements reflected the actual manufacturing materials used.
                         </Text>
                     </Box>
                     <Box>
@@ -120,6 +165,7 @@ const MapStudy = () => {
                         />
                     </Box>
                 </Flex>
+                {/* Process Stage 4 */}
                 <Flex 
                     direction={{ base: 'column', md: 'row' }}  
                     w="full" 
@@ -134,6 +180,37 @@ const MapStudy = () => {
                             height="100%" 
                         />
                     </Box>
+                </Flex>
+                <Box w="full" textAlign="left" p={10}>
+                    <Text fontSize="xl" fontWeight="medium">Deployment</Text>
+                    <Text textTransform="lowercase" mt={2}>
+                    Created an accessible and visually engaging map using approved Sitecore components, effectively showcasing the Center’s capabilities.
+                    </Text>
+                </Box>
+                {/* Process Stage 5 */}
+                <Flex 
+                    direction={{ base: 'column', md: 'row' }}  
+                    w="full" 
+                    gap={5} 
+                    mt={20}
+                    justify="space-between"
+                >
+                    <Box>
+                        <Image 
+                            src="/images/CFF-risk.png" 
+                            alt="alt" 
+                            objectFit="cover"  
+                            height="100%" 
+                        />
+                    </Box>
+                    <Box w="full" textAlign="left" p={10}>
+                        <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">User Testing</Text>
+                        <Text mt={2}>
+                            I conducted user testing to gather feedback on web content and usability, using insights to inform design decisions.
+                            I also developed a detailed risk assessment to prioritize updates based on their impact and importance.
+                        </Text>
+                    </Box>
+                    
                 </Flex>
             </Flex>
             {/* button to go next to other proj */}
