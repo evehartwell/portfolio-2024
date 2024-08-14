@@ -8,9 +8,9 @@ import {
     Grid,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import ProjectBox from "./projectbox.js";
-import Navbar from './navbar.js';
-import Footer from './footer.js';
+import ProjectBox from "./projectbox";
+import Navbar from './navbar';
+import Footer from './footer';
 import '../style.css';
 
 

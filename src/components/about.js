@@ -7,9 +7,9 @@ import {
     Container,
     Divider,
 } from '@chakra-ui/react';
-import Navbar from './navbar.js';
-import CustomTable from './cv-grid.js';
-import Footer from './footer.js';
+import Navbar from './navbar';
+import CustomTable from './cv-grid';
+import Footer from './footer';
 import '../style.css';
 
 const About = () => {

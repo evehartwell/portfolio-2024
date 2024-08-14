@@ -12,8 +12,8 @@ import {
     UnorderedList,
     Link as ChakraLink,
 } from '@chakra-ui/react';
-import Navbar from './navbar.js';
-import Footer from './footer.js';
+import Navbar from './navbar';
+import Footer from './footer';
 import '../style.css';
 
 const BlackhippieStudy = () => {
@@ -95,14 +95,13 @@ const BlackhippieStudy = () => {
                     <Box textAlign="left" flex="1" minW="200px" pr={8}>
                         <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">What I am working on</Text>
                         <Text mt={2}>
-                            I am actively managing and enhancing various aspects of Black Hippie Art's digital presence and community engagement. My tasks include:
+                            I am actively managing and enhancing various aspects of Black Hippie Art's digital presence and community engagement.
                         </Text>
                         <UnorderedList fontSize="sm" mt={2} lineHeight="1.5rem">
                             <ListItem mb={2}><b>Social Media and Engagement:</b>  I’m leveraging Meta Business Suite to track growth and interaction, aiming to translate social media success into in-person engagement. I plan to update social media audits, improve Instagram analytics, and schedule posts consistently using Planoly.</ListItem>
-                            <ListItem mb={2}><b>Brand and Communication:</b> I’m working on comprehensive brand guideline documentation, updating the color palette, and encouraging donations through UX improvements. I’m also setting up a Discord group, connecting it to meetups, and drafting the August newsletter.</ListItem>
+                            <ListItem mb={2}><b>Brand and Communication:</b> I’m working on comprehensive brand guideline documentation, updating the color palette, and encouraging donations through UX improvements. I’m also setting up a Discord group, connecting it to meetups, and designing a newsletter.</ListItem>
                             <ListItem mb={2}><b>Resource Management:</b> I am updating and managing various documents, including job lists, resource hubs, and strategies. I’ve identified gaps in the resource hub and plan to address them.</ListItem>
                             <ListItem mb={2}><b>Design and Development:</b> I’ve worked on improving the Black Hippie Art website and am planning to update it with award recognitions. I’ve been involved in various design tasks, including grant flyers and updating the resource hub.</ListItem>
-                            <ListItem mb={2}><b>Administrative Tasks:</b> My responsibilities include sending invoices, managing feedback, and scheduling tasks. I’ve also outlined ongoing tasks such as finding grants and resources for web accessibility writing.</ListItem>
                         </UnorderedList>
                     </Box>
                 </Flex>
