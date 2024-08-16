@@ -27,16 +27,20 @@ const MapStudy = () => {
 
             <Flex direction="column" align="center">
                 {/* Title and Description */}
-                <Box maxW="50rem" textAlign="center" p={10} pt={20}>
+                <Box maxW="65rem" textAlign="center" mt={20}>
                     <Text fontSize="5xl" textTransform="uppercase" fontWeight="regular" lineHeight="3rem">Center for Functional Fabrics</Text>
-                    <Text textTransform="uppercase" fontWeight="medium" mt={5}>September 2022 &mdash; March 2023</Text>
-                    <Text mt={5}>
+                    <Flex justify="center" textTransform="uppercase" gap={4} p={6} mt={2}>
+                        <Tag className="button">#Web Design</Tag>
+                        <Tag className="button">#Web Development</Tag>
+                        <Tag className="button">#UX Design</Tag>
+                    </Flex>
+                    <Text textAlign="left" mt={2}>
                         I developed and launched an interactive map to showcase the Center’s capabilities to stakeholders, improve accessibility, and optimize the user experience.
                     </Text> 
                 </Box>
                 {/* Cover Image */} 
                 <Flex justify="space-between" mt={10}>
-                    <Box w="full" mb={20} position="relative" borderRadius="10px" overflow="hidden">
+                    <Box className="case-image" w="full" mb={20} position="relative" borderRadius="10px" overflow="hidden">
                         <video
                             autoPlay
                             muted
@@ -52,17 +56,11 @@ const MapStudy = () => {
                 </Flex>
                 {/* Overview */} 
                 <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Project Overview</Text>
-                <Flex justify="center" textTransform="uppercase" gap={4} p={6}>
-                    <Tag className="button">#Web Design</Tag>
-                    <Tag className="button">#Web Development</Tag>
-                    <Tag className="button">#UX Design</Tag>
-                </Flex>
                 {/* Client and Deliverables */}
                 <Flex
                     direction={{ base: 'column', md: 'row' }} // Stack vertically on small screens, horizontally on larger screens
                     wrap="wrap"
                     gap={5} // Adjust spacing between items
-                    mt={10}
                     p={5}
                     w="full"
                 >
@@ -99,17 +97,17 @@ const MapStudy = () => {
                     >
                         <Box textAlign="left" p={4}>
                             <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Problem Space</Text>
-                            <Text fontSize="sm" mt={2}>
+                            <Text mt={2}>
                                 The initial interactive map prototype was built on a platform that did not meet accessibility standards, limiting its usability for a wider audience. 
                                 The challenge was to salvage the existing prototype while creating a functional, accessible version that effectively highlighted the Center’s manufacturing capabilities.
                             </Text>
                         </Box>
                         <Box textAlign="left" p={4}>
                             <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
-                            <UnorderedList fontSize="sm" mt={2} lineHeight="1.5rem">
-                                <ListItem mb={2}>Refined Figma prototype for a high-performance interactive map that enhanced stakeholder engagement.</ListItem>
-                                <ListItem mb={2}>Developed an accessible version of the map with limitations of Sitecore components to increase audience reach</ListItem>
-                            </UnorderedList>
+                            <Text mt={2}>
+                                Refined Figma prototype for a high-performance interactive map that enhanced stakeholder engagement.
+                                Developed an accessible version of the map with limitations of Sitecore components to increase audience reach
+                            </Text>
                         </Box>
                     </Flex>
                 </Flex>
@@ -124,7 +122,7 @@ const MapStudy = () => {
                     direction={{ base: 'column', md: 'row' }}  
                     w="full" 
                     gap={5} 
-                    mt={10}
+                    mt={20}
                     justify="space-between"
                 >
                     <Box className="case-image">
@@ -145,8 +143,8 @@ const MapStudy = () => {
                     justify="space-between"
                 >
                     <Box w="full" textAlign="left" p={10}>
-                        <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Design</Text>
-                        <Text mt={2}>
+                        <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Design</Text>
+                        <Text mt={5}>
                             Designed a version of the map using Sitecore components, ensuring compliance with accessibility standards.
                             Created an innovative display of manufacturing capabilities to enhance visual appeal and user engagement.
                         </Text>
@@ -161,7 +159,7 @@ const MapStudy = () => {
                             src="/images/CFF-assets.png" 
                             alt="alt" 
                             objectFit="cover"  
-                            height="100%" 
+                            width="100%"
                         />
                     </Box>
                 </Flex>
@@ -170,6 +168,7 @@ const MapStudy = () => {
                     direction={{ base: 'column', md: 'row' }}  
                     w="full" 
                     gap={5} 
+                    mt={20}
                     justify="space-between"
                 >
                     <Box className="case-image">
@@ -182,8 +181,8 @@ const MapStudy = () => {
                     </Box>
                 </Flex>
                 <Box w="full" textAlign="left" p={10}>
-                    <Text fontSize="xl" fontWeight="medium">Deployment</Text>
-                    <Text textTransform="lowercase" mt={2}>
+                    <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Deployment</Text>
+                    <Text textTransform="lowercase" mt={5}>
                     Created an accessible and visually engaging map using approved Sitecore components, effectively showcasing the Center’s capabilities.
                     </Text>
                 </Box>
@@ -204,8 +203,8 @@ const MapStudy = () => {
                         />
                     </Box>
                     <Box w="full" textAlign="left" p={10}>
-                        <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">User Testing</Text>
-                        <Text mt={2}>
+                        <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">User Testing</Text>
+                        <Text mt={5}>
                             I conducted user testing to gather feedback on web content and usability, using insights to inform design decisions.
                             I also developed a detailed risk assessment to prioritize updates based on their impact and importance.
                         </Text>

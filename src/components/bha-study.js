@@ -27,10 +27,14 @@ const BlackhippieStudy = () => {
 
             <Flex direction="column" align="center">
                 {/* Title and Description */}
-                <Box maxW="50rem" textAlign="center" p={10} pt={20}>
-                    <Text fontSize="5xl" textTransform="uppercase" fontWeight="regular">Black Hippie Art</Text>
-                    <Text textTransform="uppercase" fontWeight="medium" mt={5}>May 2024 &mdash; Current</Text>
-                    <Text mt={5}>
+                <Box maxW="65rem" textAlign="center" mt={20}>
+                    <Text fontSize="5xl" textTransform="uppercase" fontWeight="regular" lineHeight="3rem">Black Hippie Art</Text>
+                    <Flex justify="center" textTransform="uppercase" gap={4} p={6} mt={2}>
+                        <Tag className="button">#squarespace</Tag>
+                        <Tag className="button">#canva</Tag>
+                        <Tag className="button">#web design</Tag>
+                    </Flex>
+                    <Text textAlign="left" mt={2}>
                         Enhancing the Black Hippie Art Club’s digital presence and community engagement through social media management, brand updates, and website improvements to better support and connect with the artistic community.
                     </Text> 
                 </Box>
@@ -52,47 +56,54 @@ const BlackhippieStudy = () => {
                 </Flex>
                 {/* Overview */} 
                 <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Project Overview</Text>
-                <Flex justify="center" textTransform="uppercase" gap={4} p={6}>
-                    <Tag className="button">#squarespace</Tag>
-                    <Tag className="button">#canva</Tag>
-                    <Tag className="button">#web design</Tag>
-                </Flex>
                 {/* Client and Deliverables */}
                 <Flex
-                    direction={{ base: 'column', md: 'row' }}  
-                    wrap="wrap"  
-                    justify="space-between"
-                    gap={5}
-                    mt={10}
+                    direction={{ base: 'column', md: 'row' }} // Stack vertically on small screens, horizontally on larger screens
+                    wrap="wrap"
+                    gap={10} // Adjust spacing between items
+                    mt={5}
                     p={5}
                     w="full"
                 >
-                    <Box textAlign="left" flex="1" minW="200px" pr={8} mb={{ base: 4, md: 0 }}>
-                        <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">About The Client</Text>
-                        <Text mt={2}>
-                            The Black Hippie Art Club meetup is a BIPOC art meet up based in Philadelphia that hosts sketch clubs, gallery tours, art making workshops and more. 
-                            The group is a way for underrepresented artists to get resources needed to be successful in the creative industry while meeting new, local artists in the area.
-                        </Text>
-                    </Box>
-                    <Box textAlign="left" flex="1" minW="200px" pr={8}>
-                        <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Project Goal</Text>
-                        <Text mt={2}>
-                            Enhance various aspects of Black Hippie Art's digital presence and community engagement to better support underrepresented BIPOC artists in Philadelphia. 
-                            This involves improving the accessibility and functionality of the website, optimizing social media strategies, and expanding community outreach. 
-                            The aim is to provide valuable resources and foster connections among local artists and advance their success in the creative industry.
-                        </Text>
-                    </Box>
+                {/* column 1 */}
+                    <Flex
+                        direction="column" // Stack items vertically in each column
+                        flex="1"
+                        gap={5}
+                    >
+                        <Box textAlign="left">
+                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">About The Client</Text>
+                            <Text mt={2}>
+                                The Black Hippie Art Club meetup is a BIPOC art meet up based in Philadelphia that hosts sketch clubs, gallery tours, art making workshops and more. 
+                                The group is a way for underrepresented artists to get resources needed to be successful in the creative industry while meeting new, local artists in the area.
+                            </Text>
+                        </Box>
+                    </Flex>
+                {/* column 2 */}
+                    <Flex
+                        direction="column" // Stack items vertically in each column
+                        flex="1"
+                        gap={5}
+                    >
+                        <Box textAlign="left">
+                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Project Goal</Text>
+                            <Text mt={2}>
+                                Enhance various aspects of Black Hippie Art's digital presence and community engagement to better support underrepresented BIPOC artists in Philadelphia. 
+                                This involves improving the accessibility and functionality of the website, optimizing social media strategies, and expanding community outreach. 
+                                The aim is to provide valuable resources and foster connections among local artists and advance their success in the creative industry.
+                            </Text>
+                        </Box>
+                    </Flex>
                 </Flex>
                 <Flex
                     direction={{ base: 'column', md: 'row' }}  
                     wrap="wrap"  
-                    justify="space-between"
                     gap={5}
                     p={5}
-                    mb={10}
+                    pt={0}
                     w="full"
                 >
-                    <Box textAlign="left" flex="1" minW="200px" pr={8}>
+                    <Box textAlign="left" flex="1" minW="200px">
                         <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">What I am working on</Text>
                         <Text mt={2}>
                             I am actively managing and enhancing various aspects of Black Hippie Art's digital presence and community engagement.

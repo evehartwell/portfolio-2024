@@ -27,11 +27,14 @@ const LeBowStudy = () => {
 
             <Flex direction="column" align="center">
                 {/* Title and Description */}
-                <Box maxW="50rem" position="relative" textAlign="center" pt={20} pb={10}>
-                    <Text fontSize="5xl" textTransform="uppercase" fontWeight="regular">LeBow College of Business</Text>
-                    <Text textTransform="uppercase" fontWeight="medium" mt={5}>September 2021 &mdash; September 2022</Text>
-                    <Text mt={5}>
-                    Updated the LeBow College branding and redesign website to improve user experience, enhance brand consistency, and update the Drupal backend system.
+                <Box maxW="65rem" textAlign="center" mt={20}>
+                    <Text fontSize="5xl" textTransform="uppercase" fontWeight="regular" lineHeight="3rem">LeBow College of Business</Text>
+                    <Flex justify="center" textTransform="uppercase" gap={4} p={6} mt={2}>
+                        <Tag className="button">#UX Design</Tag>
+                        <Tag className="button">#Brand Research</Tag>
+                    </Flex>
+                    <Text mt={2}>
+                        Updated the LeBow College branding and redesign website to improve user experience, enhance brand consistency, and update the Drupal backend system.
                     </Text> 
                 </Box>
                 {/* Cover Image */} 
@@ -47,16 +50,11 @@ const LeBowStudy = () => {
                 </Flex>
                 {/* Overview */} 
                 <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Project Overview</Text>
-                <Flex justify="center" textTransform="uppercase" gap={4} p={6}>
-                    <Tag className="button">#UX Design</Tag>
-                    <Tag className="button">#Brand Research</Tag>
-                </Flex>
                 {/* Client and Deliverables */}
                 <Flex
                     direction={{ base: 'column', md: 'row' }} // Stack vertically on small screens, horizontally on larger screens
                     wrap="wrap"
                     gap={5} // Adjust spacing between items
-                    mt={10}
                     p={5}
                     w="full"
                 >
@@ -95,7 +93,7 @@ const LeBowStudy = () => {
                     >
                         <Box textAlign="left" p={4}>
                             <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Problem Space</Text>
-                            <Text fontSize="sm" mt={2}>
+                            <Text mt={2}>
                                 The existing LeBow College of Business website faced challenges amid Drexel University's university-wide digital redesign, 
                                 which aimed to unify and modernize the online presence across all colleges. The site suffered from outdated design elements, 
                                 inconsistent branding, and complex information formatting that blurred the distinct identity of the School of Economics compared to the School of Business. 
@@ -104,7 +102,7 @@ const LeBowStudy = () => {
                         </Box>
                         <Box textAlign="left" p={4}>
                             <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
-                            <UnorderedList fontSize="sm" mt={2} lineHeight="1.5rem">
+                            <UnorderedList mt={2} lineHeight="1.5rem">
                                 <ListItem mb={2}>Successfully redesigned the LeBow website, enhancing user experience and brand consistency.</ListItem>
                                 <ListItem mb={2}>Implemented a new Drupal backend system and built and edited over 100 pages.</ListItem>
                                 <ListItem mb={2}>Improved the visual and functional aspects of the site, contributing to a more engaging and user-friendly experience.</ListItem>
@@ -122,8 +120,7 @@ const LeBowStudy = () => {
                     direction={{ base: 'column', md: 'row' }}  
                     w="full" 
                     gap={5} 
-                    mt={10}
-                    justify="space-between"
+                    mt={20}
                 >
                     <Box maxw='lg' className="case-image">
                         <Image 
@@ -144,8 +141,8 @@ const LeBowStudy = () => {
                     justify="space-between"
                 >
                     <Box w="full" textAlign="left" p={10}>
-                        <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Brand Research</Text>
-                        <Text mt={2}>
+                        <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Brand Research</Text>
+                        <Text mt={5}>
                             I conducted research on competing colleges and analyzed their university-wide ads vs. 
                             business college ads to understand industry trends and benchmark against peer institutions.
                         </Text>
@@ -160,7 +157,7 @@ const LeBowStudy = () => {
                         <Image 
                             src="/images/lebow-ads.png" 
                             alt="" 
-                            objectFit="cover"  
+                            objectFit="contain"
                             height="100%" 
                         />
                     </Box>
@@ -183,8 +180,8 @@ const LeBowStudy = () => {
                     </Box>
                 </Flex>
                 <Box w="full" textAlign="left" p={10}>
-                    <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Atomic Design</Text>
-                    <Text mt={2}>
+                    <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Atomic Design</Text>
+                    <Text mt={5}>
                         We used atomic design principles to ensure efficiency and consistency of the design system.
                         I collaborated with the design team to brainstorm and iterate on wireframes and design solutions.
                     </Text>
@@ -200,8 +197,8 @@ const LeBowStudy = () => {
                     mt={20}
                     justify="space-between"
                 >
-                    <Box maxW={{ base: '100%', md: '50%' }}>
-                        <Image className="case-image" 
+                    <Box className="case-image">
+                        <Image
                             src="/images/lebow-desk.png" 
                             alt="" 
                             objectFit="cover" 
@@ -209,8 +206,8 @@ const LeBowStudy = () => {
                         />
                     </Box>
                     <Box w="full" textAlign="left" p={10}>
-                        <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Web Design</Text>
-                        <Text mt={2}>
+                        <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Web Design</Text>
+                        <Text mt={5}>
                             I created and edited wireframes and graphics that aligned with the updated brand guidelines, 
                             integrating the updated icons, color palette, and typography consistently throughout the site.
                             I redesigned the School of Economics to with improved information formatting to present detailed content effectively and highlight its distinct identity.
