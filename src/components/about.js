@@ -19,15 +19,15 @@ const About = () => {
                 <Link to="/">
                     <img src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" className="logo"/>
                 </Link>
-        </Flex>
+            </Flex>
             <Navbar />
             <Flex direction="column" align="center">
-                <Flex direction={{ base: 'column', md: 'row' }} align="center" maxW="55rem" textAlign="left" py={20} mt={10}>
-                    <Box flex="1">
-                        <img src={`${process.env.PUBLIC_URL}/images/Hartwell-Headshot-4.jpg`} alt="Description" style={{ maxWidth: '70%', height: 'auto', borderRadius: '10px'}} />
+                <Flex direction={{ base: 'column', md: 'row' }} align="center" w="full" textAlign="left" p={10} mt={10}>
+                    <Box flex="1" align="center">
+                        <img className="headshot" src={`${process.env.PUBLIC_URL}/images/Hartwell-Headshot-4.jpg`} alt="headshot"/>
                     </Box>
                     <Box flex="2">
-                        <Text fontSize="md" fontFamily="'Times Now', serif">
+                        <Text textTransform="uppercase" fontSize="sm">
                             With a degree in Information Systems, my expertise lies in functionality and a comprehensive understanding of system management and design. 
                             My background in human-computer interaction enables me to create user-centered experiences that enhance accessibility and ease of use for 
                             users while reducing stress for development teams.<br />

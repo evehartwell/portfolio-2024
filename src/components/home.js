@@ -47,7 +47,9 @@ const Homepage = () => {
     return (
         <Container maxW="container.xl" textTransform="uppercase" py={5}>
             <Flex justify="flex-start">
-                <img src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" className="logo" />
+                <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                    <img src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" className="logo" />
+                </Link>
             </Flex>
             <Navbar />
             <Flex direction="column" align="center">

@@ -100,7 +100,6 @@ const BlackhippieStudy = () => {
                     wrap="wrap"  
                     gap={5}
                     p={5}
-                    pt={0}
                     w="full"
                 >
                     <Box textAlign="left" flex="1" minW="200px">

@@ -171,6 +171,13 @@ body {
     object-fit: cover; /* Cover the area, maintaining aspect ratio */
 }
 
+/* about page */
+
+.headshot {
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 25px;
+}
 
 /* footer */
 

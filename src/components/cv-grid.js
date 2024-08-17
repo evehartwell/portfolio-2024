@@ -10,12 +10,11 @@ const CustomTable = () => {
                 wrap="wrap"
                 width="80%"
                 overflowX="auto"
-                gap={3} // Space between columns on larger screens
-                marginTop="5rem"
+                gap={3}
             >
                 <Box
                     flex="1"
-                    p={6}
+                    p={4}
                     mb={{ base: 4, md: 0 }} // Margin-bottom on mobile screens
                 >
                     <Text fontWeight="medium" textTransform="uppercase" mb={2}>Experience</Text>
