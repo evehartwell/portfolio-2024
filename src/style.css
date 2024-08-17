@@ -35,9 +35,8 @@
 
 body {
     font-family: var(--primary-font);
-    
     font-weight: 400;
-    background: #f8f8f8 !important;
+    background-color: var(--primary-color-2) !important;
     color: var(--primary-color-1) !important;
     line-height: 1.5rem;
 }
@@ -118,7 +117,7 @@ body {
     height: 100%;
     background: var(--box-gradient); 
     z-index: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.8s ease;
 }
 
 .project-box:hover::before,
