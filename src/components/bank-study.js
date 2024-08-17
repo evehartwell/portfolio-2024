@@ -7,6 +7,7 @@ import {
     Container,
     Tag,
     Image,
+    Divider,
     List,
     ListItem,
     UnorderedList,
@@ -93,13 +94,6 @@ const BankStudy = () => {
                                 The original PA Central Federal Credit Union website suffered from several issues. The color scheme did not meet accessibility standards, 
                                 making it difficult for users with visual impairments to navigate. The site’s structure led to a frustrating user experience with redundant information and complex navigation. 
                                 Branding elements were not uniform, detracting from the overall visual coherence and professionalism of the site. Text was often difficult to read due to poor contrast and font choices.
-                            </Text>
-                        </Box>
-                        <Box textAlign="left" p={4}>
-                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
-                            <Text mt={2}>
-                                A redesigned website with enhanced user experience by making key information more accessible and improving visual clarity. 
-                                The updated design aligned with modern accessibility standards and made for an improved heuristic evaluation in user testing.
                             </Text>
                         </Box>
                     </Flex>
@@ -267,6 +261,14 @@ const BankStudy = () => {
                     </Text>
                 </Box>
             </Flex>
+            <Divider borderColor="#422D2D" mt={10}/>
+            <Box textAlign="left" w="full" p={10} mt={5}>
+                <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
+                <Text mt={5}>
+                    A redesigned website with enhanced user experience by making key information more accessible and improving visual clarity. 
+                    The updated design aligned with modern accessibility standards and made for an improved heuristic evaluation in user testing.
+                </Text>
+            </Box>
             {/* button to go next to other proj */}
             <Footer />
         </Container>

@@ -7,6 +7,7 @@ import {
     Container,
     Tag,
     Image,
+    Divider,
     List,
     ListItem,
     UnorderedList,
@@ -30,7 +31,7 @@ const MapStudy = () => {
                 <Box maxW="65rem" textAlign="center" mt={20}>
                     <Text fontSize="5xl" textTransform="uppercase" fontWeight="regular" lineHeight="3rem">Center for Functional Fabrics</Text>
                     <Flex justify="center" textTransform="uppercase" gap={4} p={6} mt={2}>
-                        <Tag className="button">#Web Design</Tag>
+                        <Tag className="button">#Sitecore</Tag>
                         <Tag className="button">#Web Development</Tag>
                         <Tag className="button">#UX Design</Tag>
                     </Flex>
@@ -100,13 +101,6 @@ const MapStudy = () => {
                             <Text mt={2}>
                                 The initial interactive map prototype was built on a platform that did not meet accessibility standards, limiting its usability for a wider audience. 
                                 The challenge was to salvage the existing prototype while creating a functional, accessible version that effectively highlighted the Center’s manufacturing capabilities.
-                            </Text>
-                        </Box>
-                        <Box textAlign="left" p={4}>
-                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
-                            <Text mt={2}>
-                                Refined Figma prototype for a high-performance interactive map that enhanced stakeholder engagement.
-                                Developed an accessible version of the map with limitations of Sitecore components to increase audience reach
                             </Text>
                         </Box>
                     </Flex>
@@ -183,7 +177,7 @@ const MapStudy = () => {
                 <Box w="full" textAlign="left" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Deployment</Text>
                     <Text textTransform="lowercase" mt={5}>
-                    Created an accessible and visually engaging map using approved Sitecore components, effectively showcasing the Center’s capabilities.
+                        Created an accessible and visually engaging map using approved Sitecore components, effectively showcasing the Center’s capabilities.
                     </Text>
                 </Box>
                 {/* Process Stage 5 */}
@@ -199,6 +193,7 @@ const MapStudy = () => {
                             src="/images/CFF-risk.png" 
                             alt="alt" 
                             objectFit="cover"  
+                            width="100%" 
                             height="100%" 
                         />
                     </Box>
@@ -209,8 +204,15 @@ const MapStudy = () => {
                             I also developed a detailed risk assessment to prioritize updates based on their impact and importance.
                         </Text>
                     </Box>
-                    
                 </Flex>
+                <Divider borderColor="#422D2D" />
+                <Box textAlign="left" w="full" p={10} mt={10}>
+                    <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
+                    <Text mt={5}>
+                        Refined Figma prototype for a high-performance interactive map that enhanced stakeholder engagement.
+                        Developed an accessible version of the map with limitations of Sitecore components to increase audience reach
+                    </Text>
+                </Box>
             </Flex>
             {/* button to go next to other proj */}
             <Footer />

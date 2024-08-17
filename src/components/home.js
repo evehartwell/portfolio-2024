@@ -63,26 +63,26 @@ const Homepage = () => {
                 <Box mt={10} w="full">
                     <Text fontSize="3xl" fontWeight="medium" mb={5}>My Work <Divider borderColor="#422D2D" /></Text>  
             {/* most recent */}
-                <Link to={projects[0].link}> 
-                    <Box w="full" mb={10} position="relative" borderRadius="10px" overflow="hidden">
-                        {projects[0].videoSrc ? (
-                            <video  autoPlay
-                            muted
-                            loop
-                            width="100%"
-                            height="100%"
-                            className="project-media">
-                                <source src={projects[0].videoSrc} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        ) : (
-                            <img src={projects[0].imageSrc} alt={projects[0].title} />
-                        )}
-                        <Box className="project-text-overlay">
-                            <Text className="project-text">{projects[0].title}</Text>
+                    <Link to={projects[0].link}> 
+                        <Box className="project-box" w="full" mb={10} position="relative" borderRadius="10px" overflow="hidden">
+                            {projects[0].videoSrc ? (
+                                <video  autoPlay
+                                muted
+                                loop
+                                width="100%"
+                                height="100%"
+                                className="project-media">
+                                    <source src={projects[0].videoSrc} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            ) : (
+                                <img src={projects[0].imageSrc} alt={projects[0].title} />
+                            )}
+                            <Box className="project-text-overlay">
+                                <Text className="project-text">{projects[0].title}</Text>
+                            </Box>
                         </Box>
-                    </Box>
-                </Link>
+                    </Link>
                 </Box> 
                 {/* previous projects */}
                 <Grid 

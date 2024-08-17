@@ -88,7 +88,8 @@ body {
 
 .navbar-button {
     cursor: pointer;
-    text-transform: uppercase !important;
+    text-transform: uppercase !important; 
+    transition-property: none !important; /* remove chakra default transition */
 }
 
 .navbar-button:hover {
@@ -96,20 +97,33 @@ body {
     border-radius: 30px; 
 }
 
-
 /* portfolio styles */
 
 .project-box {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    background: #FFFFFF;
-    border-radius: 10px; 
-    overflow: hidden; 
+    border-radius: 10px;
+    overflow: hidden;
     margin-bottom: 10px;
-    transition: background 0.5s ease;
-    aspect-ratio: 1.5;  /* ensure preview boxes are same size */
+}
+
+.project-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--box-gradient); 
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+
+.project-box:hover::before,
+.project-box:hover .project-text-overlay {
+    opacity: 0;
 }
 
 .project-image {
@@ -119,31 +133,26 @@ body {
 }
 
 .project-text-overlay {
-    display: flex;
-    align-items: flex-end; 
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 12px; 
+    padding: 12px;
+    display: flex;
+    align-items: flex-end;
     color: white;
-    background: var(--box-gradient);
-    opacity: 1;
-    transition: opacity 0.5s ease, background 0.5s ease;
-}
-
-.project-text-overlay:hover {
-    background: transparent;
-    opacity: 0;
+    z-index: 2; /* Ensure the text is above the gradient */
+    pointer-events: none; /* Allow hover events to pass through to the .project-box */
 }
 
 .project-text {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 /* case study images */
+
 .case-image {
     width: 100%;
     height: 100%;

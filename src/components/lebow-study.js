@@ -7,6 +7,7 @@ import {
     Container,
     Tag,
     Image,
+    Divider,
     List,
     ListItem,
     UnorderedList,
@@ -31,6 +32,7 @@ const LeBowStudy = () => {
                     <Text fontSize="5xl" textTransform="uppercase" fontWeight="regular" lineHeight="3rem">LeBow College of Business</Text>
                     <Flex justify="center" textTransform="uppercase" gap={4} p={6} mt={2}>
                         <Tag className="button">#UX Design</Tag>
+                        <Tag className="button">#Drupal</Tag>
                         <Tag className="button">#Brand Research</Tag>
                     </Flex>
                     <Text mt={2}>
@@ -100,14 +102,6 @@ const LeBowStudy = () => {
                                 Additionally, the outdated Drupal version hindered performance and functionality.
                             </Text>
                         </Box>
-                        <Box textAlign="left" p={4}>
-                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
-                            <UnorderedList mt={2} lineHeight="1.5rem">
-                                <ListItem mb={2}>Successfully redesigned the LeBow website, enhancing user experience and brand consistency.</ListItem>
-                                <ListItem mb={2}>Implemented a new Drupal backend system and built and edited over 100 pages.</ListItem>
-                                <ListItem mb={2}>Improved the visual and functional aspects of the site, contributing to a more engaging and user-friendly experience.</ListItem>
-                            </UnorderedList>
-                        </Box>
                     </Flex>
                 </Flex>
                 <Flex justify="center" gap={4} p={6}>
@@ -138,7 +132,6 @@ const LeBowStudy = () => {
                     w="full" 
                     gap={5} 
                     mt={20}
-                    justify="space-between"
                 >
                     <Box w="full" textAlign="left" p={10}>
                         <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Brand Research</Text>
@@ -158,7 +151,6 @@ const LeBowStudy = () => {
                             src="/images/lebow-ads.png" 
                             alt="" 
                             objectFit="contain"
-                            height="100%" 
                         />
                     </Box>
                 </Flex>
@@ -214,6 +206,15 @@ const LeBowStudy = () => {
                         </Text>
                     </Box>
                 </Flex>
+                <Divider borderColor="#422D2D" mt={10}/>
+                <Box textAlign="left" w="full" p={10} mt={5}>
+                    <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
+                    <Text mt={5}>
+                        Successfully redesigned the LeBow website, enhancing user experience and brand consistency.
+                        Implemented a new Drupal backend system and built and edited over 100 pages.
+                        Improved the visual and functional aspects of the site, contributing to a more engaging and user-friendly experience.
+                    </Text>
+                </Box>
             </Flex>
             {/* button to go next to other proj */}
             <Footer />

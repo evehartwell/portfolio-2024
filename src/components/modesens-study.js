@@ -7,6 +7,7 @@ import {
     Container,
     Tag,
     Image,
+    Divider,
     List,
     ListItem,
     UnorderedList,
@@ -98,13 +99,6 @@ const ModesensStudy = () => {
                                 and unresponsive buttons that fail to perform expected actions, leading to confusion and frustration. Addressing these issues is crucial for creating a more intuitive, user-friendly experience that meets users’ expectations and preferences.
                             </Text>
                         </Box>
-                        <Box textAlign="left" p={4}>
-                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
-                            <Text mt={2}>
-                                The redesigned LUXR app now provides a more intuitive and engaging shopping experience, addressing previous pain points and meeting user needs effectively. 
-                                The streamlined interface, improved microinteractions, and thoughtful UI animations contribute to a seamless user experience, aligning with the app's goals and enhancing overall usability.
-                            </Text>
-                        </Box>
                     </Flex>
                 </Flex>
                 {/* Process Stage 1 */}
@@ -166,6 +160,7 @@ const ModesensStudy = () => {
                             src="/images/LUXR-IXFlow.png" 
                             alt="interaction flow" 
                             objectFit="cover"
+                            width="100%" 
                             height="100%" 
                         />
                     </Box> 
@@ -190,14 +185,12 @@ const ModesensStudy = () => {
                     gap={5} 
                     mt={20}
                 >
-                    <Box>
+                    <Box className="case-image">
                         <Image 
                             src="/images/LUXR-guides.png" 
                             alt="interaction guides" 
-                            objectFit="cover"  
+                            objectFit="cover" 
                             height="100%" 
-                            borderRadius="10px"
-                            outline="1px solid #D6D6D6"
                         />
                     </Box> 
                     <Box textAlign="left" minW="200px" p={10}>
@@ -210,6 +203,14 @@ const ModesensStudy = () => {
                         </Text>
                     </Box>
                 </Flex>
+                <Divider borderColor="#422D2D" />
+                <Box textAlign="left" w="full" p={10} mt={10}>
+                    <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
+                    <Text mt={5}>
+                        The redesigned LUXR app now provides a more intuitive and engaging shopping experience, addressing previous pain points and meeting user needs effectively. 
+                        The streamlined interface, improved microinteractions, and thoughtful UI animations contribute to a seamless user experience, aligning with the app's goals and enhancing overall usability.
+                    </Text>
+                </Box>
             </Flex>
             {/* button to go next to other proj */}
             <Footer />
