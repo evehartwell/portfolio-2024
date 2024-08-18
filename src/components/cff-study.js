@@ -208,7 +208,7 @@ const MapStudy = () => {
                         </Text>
                     </Box>
                 </Flex>
-                <Divider borderColor="#422D2D" />
+                <Divider borderColor="#ababab" />
                 <Box textAlign="left" w="full" p={10} mt={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
                     <Text mt={5}>

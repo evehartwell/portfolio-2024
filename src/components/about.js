@@ -27,19 +27,18 @@ const About = () => {
                         <img className="headshot" src={`${process.env.PUBLIC_URL}/images/Hartwell-Headshot-4.jpg`} alt="headshot"/>
                     </Box>
                     <Box flex="2">
-                        <Text textTransform="uppercase" fontSize="sm">
+                        <Text className="bio-text">
                             With a degree in Information Systems, my expertise lies in functionality and a comprehensive understanding of system management and design. 
                             My background in human-computer interaction enables me to create user-centered experiences that enhance accessibility and ease of use for 
-                            users while reducing stress for development teams.<br />
-                            <br />
-                            My focus areas include designing solutions for e-commerce, fostering community building, and improving information literacy to empower individuals.<br />
-                            <br />
+                            users while reducing stress for development teams.
+                        </Text>
+                        <Text className="bio-text" mt={3}>
+                            My focus areas include designing solutions for e-commerce, fostering community building, and improving information literacy to empower individuals.
                             Currently, I work for a local startup in the governance sector and am seeking my next opportunity in the UX field.
                         </Text>
                     </Box>
                 </Flex>
             </Flex>
-            <Divider borderColor="#422D2D" />
             <CustomTable />
             <Footer />
         </Container>

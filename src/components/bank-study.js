@@ -261,7 +261,7 @@ const BankStudy = () => {
                     </Text>
                 </Box>
             </Flex>
-            <Divider borderColor="#422D2D" mt={10}/>
+            <Divider borderColor="#ababab" mt={10}/>
             <Box textAlign="left" w="full" p={10} mt={5}>
                 <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
                 <Text mt={5}>

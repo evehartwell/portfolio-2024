@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Homepage from './components/home';
 import About from './components/about'; 
 import Contact from './components/contact';
@@ -11,19 +12,25 @@ import BankStudy from './components/bank-study';
 
 const App = () => {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Homepage />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/modesens-study" element={<ModesensStudy />} />
-                <Route path="/bha-study" element={<BlackhippieStudy />} />
-                <Route path="/cff-study" element={<MapStudy />} />
-                <Route path="/lebow-study" element={<LeBowStudy />} />
-                <Route path="/bank-study" element={<BankStudy />} />
-                {/* Add other routes here */}
-            </Routes>
-        </Router>
+        <HelmetProvider>
+            <Helmet>
+                <title>Eve H Portfolio</title>
+                <link rel="icon" href="/images/star.svg" />
+            </Helmet>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Homepage />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/modesens-study" element={<ModesensStudy />} />
+                    <Route path="/bha-study" element={<BlackhippieStudy />} />
+                    <Route path="/cff-study" element={<MapStudy />} />
+                    <Route path="/lebow-study" element={<LeBowStudy />} />
+                    <Route path="/bank-study" element={<BankStudy />} />
+                    {/* Add other routes here */}
+                </Routes>
+            </Router>
+        </HelmetProvider>
     );
 };
 
