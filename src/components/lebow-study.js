@@ -35,8 +35,9 @@ const LeBowStudy = () => {
                         <Tag className="button">#Drupal</Tag>
                         <Tag className="button">#Brand Research</Tag>
                     </Flex>
-                    <Text mt={2}>
-                        Updated the LeBow College branding and redesign website to improve user experience, enhance brand consistency, and update the Drupal backend system.
+                    <Text textAlign="left" mt={2}>
+                        I collaborated with the LeBow College of Business's marketing team to implement their rebrand and website redesign, 
+                        focusing on improving user experience, enhancing brand consistency, and updating the Drupal backend system.
                     </Text> 
                 </Box>
                 {/* Cover Image */} 
@@ -174,11 +175,9 @@ const LeBowStudy = () => {
                 <Box w="full" textAlign="left" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Atomic Design</Text>
                     <Text mt={5}>
-                        We used atomic design principles to ensure efficiency and consistency of the design system.
-                        I collaborated with the design team to brainstorm and iterate on wireframes and design solutions.
-                    </Text>
-                    <Text mt={2}>
-                        Redesigning the website using a modular approach made components scalable and maintainable.
+                        We embraced atomic design principles to ensure efficiency and consistency across the design system. 
+                        Collaborating closely with the design team, we brainstormed and iterated on wireframes and design solutions. 
+                        Using a modular approach, we created scalable and maintainable components, which allowed us to streamline the design process and maintain a cohesive look and feel.
                     </Text>
                 </Box>
                 {/* Process Stage 4 */}
@@ -200,9 +199,9 @@ const LeBowStudy = () => {
                     <Box w="full" textAlign="left" p={10}>
                         <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Web Design</Text>
                         <Text mt={5}>
-                            I created and edited wireframes and graphics that aligned with the updated brand guidelines, 
-                            integrating the updated icons, color palette, and typography consistently throughout the site.
-                            I redesigned the School of Economics to with improved information formatting to present detailed content effectively and highlight its distinct identity.
+                            In the redesign phase, I created and refined wireframes in Figma with graphics from Getty Images that adhered to the updated brand guidelines. 
+                            I integrated new icons, a refreshed color palette, and updated typography throughout the site to ensure a consistent and modern appearance. 
+                            Specifically, I focused on redesigning the School of Economics section, enhancing information formatting to present detailed content more effectively while emphasizing its unique identity.
                         </Text>
                     </Box>
                 </Flex>
@@ -210,9 +209,10 @@ const LeBowStudy = () => {
                 <Box textAlign="left" w="full" p={10} mt={5}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
                     <Text mt={5}>
-                        Successfully redesigned the LeBow website, enhancing user experience and brand consistency.
-                        Implemented a new Drupal backend system and built and edited over 100 pages.
-                        Improved the visual and functional aspects of the site, contributing to a more engaging and user-friendly experience.
+                        The team and I successfully redesigned the LeBow website, significantly improving user experience and brand consistency. 
+                        A new Drupal backend system was implemented and I participated in building and editing over 100 pages. 
+                        This overhaul not only enhanced the visual and functional aspects of the site but also contributed to a more engaging and user-friendly experience. 
+                        My efforts led to a more cohesive brand presentation and a streamlined, efficient website that better serves its users.
                     </Text>
                 </Box>
             </Flex>

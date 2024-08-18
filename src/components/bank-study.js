@@ -35,8 +35,8 @@ const BankStudy = () => {
                         <Tag className="button">#figma</Tag>
                         <Tag className="button">#prototyping</Tag>
                     </Flex>
-                    <Text mt={2}>
-                        Redesigned website to improve accessibility, streamline information architecture, and enhance the overall user experience for an older audience.
+                    <Text textAlign="left" mt={2}>
+                        I redesigned the PA Central Federal Credit Union website to improve accessibility, streamline the information architecture, and enhance the overall user experience, especially for an older audience.
                     </Text> 
                 </Box>
                 {/* Cover Image */} 
@@ -69,7 +69,7 @@ const BankStudy = () => {
                         <Box textAlign="left" p={4}>
                             <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Assignment</Text>
                             <Text mt={2}>
-                                The goal of the assignment is to redesign a website to improve usability and clarity, by comparing the original site with the new version and addressing identified issues. 
+                                Redesign a website to improve usability and clarity, by comparing the original site with the new version and addressing identified issues. 
                                 The redesign must include detailed prototypes and adhere to atomic design principles, with a focus on consistency and user-centered design.
                             </Text>
                             <UnorderedList fontSize="sm" mt={2} lineHeight="1.5rem">
@@ -131,8 +131,8 @@ const BankStudy = () => {
                 <Box w="full" textAlign="left" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Branding</Text>
                     <Text mt={5}>
-                        Created a complementary and accessible color palette to enhance readability and visual appeal.
-                        Designed a simple, evergreen logo to reflect the credit union’s values and modernize its brand image.
+                        I crafted a complementary and accessible color palette to enhance readability and visual appeal. 
+                        I also designed a simple, evergreen logo that reflects the credit union’s values while modernizing its brand image.
                     </Text>
                 </Box>
                 {/* Process Stage 2 */}
@@ -154,10 +154,10 @@ const BankStudy = () => {
                     <Box w="full" textAlign="left" p={5}>
                         <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">User Persona</Text>
                         <Text mt={5}>
-                            The user persona, a retired professional with limited tech familiarity, was pivotal in shaping the PA Central Federal Credit Union website redesign. 
-                            This persona's needs for readable information, accessible UI, and straightforward navigation guided design choices such as a high-contrast color palette and simplified layout. 
-                            Wireframes and prototypes were developed with these requirements in mind, and usability testing was conducted to ensure the design met their expectations. 
-                            This approach led to a more intuitive and user-friendly website, effectively addressing the needs of similar users and enhancing overall satisfaction.
+                            The user persona, representing a retired professional with limited tech familiarity, played a crucial role in shaping my design decisions. 
+                            This persona's need for readable information, accessible UI, and straightforward navigation guided every step of the redesign. 
+                            I developed wireframes and prototypes with these requirements in mind, and usability testing confirmed that the design met their expectations. 
+                            By focusing on these needs, I created a more intuitive and user-friendly website that truly resonated with the target audience.
                         </Text>
                     </Box>
                 </Flex>
@@ -192,8 +192,8 @@ const BankStudy = () => {
                 <Box w="full" textAlign="left" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Information Architecture</Text>
                     <Text mt={5}>
-                        Reorganized the content to reduce redundancy and streamline navigation.
-                        Optimized content hierarchy to increase access to key information and decrease click-throughs.
+                        I reorganized the website's content to reduce redundancy and streamline navigation. Optimizing the content hierarchy 
+                        made key information more accessible, reducing the number of clicks needed to reach important resources.
                     </Text>
                 </Box>
                 {/* Process Stage 4 */}
@@ -216,11 +216,11 @@ const BankStudy = () => {
                 <Box w="full" textAlign="left" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Atomic Design</Text>
                     <Text mt={5}>
-                        Developed low-fidelity wireframes focusing on simplicity and usability for an older audience.
-                        Researched popular layouts of competitor banks to ensure effective design solutions
-                        Designed uniform, reusable components to ensure consistency and streamline updates.
-                        Developed interactive prototypes to visualize user interactions and workflows, allowing for iterative testing and refinement.
-                        Established a comprehensive library to maintain design consistency, ensuring that font and color choices were aligned with accessibility standards and brand guidelines.
+                        I started with low-fidelity wireframes, focusing on simplicity and usability for an older audience. 
+                        I researched popular layouts from competitor banks to inform effective design solutions. 
+                        By designing uniform, reusable components, I ensured consistency and made future updates more efficient. 
+                        Interactive prototypes helped visualize user interactions and workflows, allowing for iterative testing and refinement. 
+                        I also established a comprehensive design library to maintain consistency in fonts, colors, and accessibility standards.
                     </Text>
                 </Box>
                 {/* Process Stage 5 */}
@@ -237,8 +237,8 @@ const BankStudy = () => {
                 <Box w="full" textAlign="left" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Mobile Design Expansion</Text>
                     <Text mt={5}>
-                        Ensured that the design was responsive and scalable across different devices, including tablets and smartphones.
-                        Created a usable and intuitive dashboard and banking interface, optimizing for smaller screens while maintaining functionality and ease of use.
+                        I made sure the design was responsive and scalable across different devices, including tablets and smartphones. 
+                        I created a usable and intuitive dashboard and banking interface, optimizing for smaller screens while maintaining functionality and ease of use.
                     </Text>
                 </Box>
                 {/* Process Stage 6 */}
@@ -255,9 +255,9 @@ const BankStudy = () => {
                 <Box w="full" textAlign="left" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Heuristic Evaluation</Text>
                     <Text mt={5}>
-                        The redesign was evaluated using Jakob Nielsen’s 10 Usability Heuristics, focusing on key areas such as system status visibility, user control, consistency, error prevention, and flexibility. 
-                        Additionally, usability testing sessions with representative users provided insights into their interactions, difficulties, and feedback on specific tasks. 
-                        This heuristic and user testing process was instrumental in refining the website’s design, focusing on a more efficient IA and prioritizing quick-links, resources, and slight redundancies for user's convenience.
+                        I evaluated the redesign using Jakob Nielsen’s 10 Usability Heuristics, focusing on system status visibility, user control, consistency, error prevention, and flexibility. 
+                        Usability testing with representative users provided valuable insights into their interactions and highlighted areas for improvement. 
+                        This process was key to refining the website’s design, making it more efficient and user-friendly.
                     </Text>
                 </Box>
             </Flex>
@@ -265,8 +265,8 @@ const BankStudy = () => {
             <Box textAlign="left" w="full" p={10} mt={5}>
                 <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
                 <Text mt={5}>
-                    A redesigned website with enhanced user experience by making key information more accessible and improving visual clarity. 
-                    The updated design aligned with modern accessibility standards and made for an improved heuristic evaluation in user testing.
+                    The redesigned website offers an enhanced user experience, with key information more accessible and visual clarity improved. 
+                    The updated design aligns with modern accessibility standards, and the improvements were reflected in a better heuristic evaluation during user testing.
                 </Text>
             </Box>
             {/* button to go next to other proj */}

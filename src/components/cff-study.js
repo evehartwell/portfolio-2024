@@ -36,7 +36,7 @@ const MapStudy = () => {
                         <Tag className="button">#UX Design</Tag>
                     </Flex>
                     <Text textAlign="left" mt={2}>
-                        I developed and launched an interactive map to showcase the Center’s capabilities to stakeholders, improve accessibility, and optimize the user experience.
+                        I developed and launched an accessible interactive map to showcase the capabilities of an e-textile innovation center.
                     </Text> 
                 </Box>
                 {/* Cover Image */} 
@@ -139,13 +139,13 @@ const MapStudy = () => {
                     <Box w="full" textAlign="left" p={10}>
                         <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Design</Text>
                         <Text mt={5}>
-                            Designed a version of the map using Sitecore components, ensuring compliance with accessibility standards.
-                            Created an innovative display of manufacturing capabilities to enhance visual appeal and user engagement.
+                            I designed a version of the map using Sitecore components, ensuring it complied with accessibility standards. 
+                            My goal was to create an innovative display of manufacturing capabilities that was visually appealing and engaging for users. 
+                            I developed and evaluated several accessible designs to refine the user experience, balancing ideal design with practical constraints. 
                         </Text>
                         <Text mt={2}>
-                            Developed and evaluated several versions of accessible designs to refine the user experience while balancing ideal design with practical constraints.
-                            Enhanced vector graphics and patterns in Adobe Illustrator and reintegrated the brand color palette for more engaging and visually striking pages.
-                            Ensured that design elements reflected the actual manufacturing materials used.
+                            I enhanced vector graphics and patterns in Adobe Illustrator and reintegrated the brand color palette to make the pages more engaging and visually striking. 
+                            Throughout the process, I made sure the design elements accurately reflected the actual manufacturing materials used.
                         </Text>
                     </Box>
                     <Box>
@@ -176,8 +176,10 @@ const MapStudy = () => {
                 </Flex>
                 <Box w="full" textAlign="left" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Deployment</Text>
-                    <Text textTransform="lowercase" mt={5}>
-                        Created an accessible and visually engaging map using approved Sitecore components, effectively showcasing the Center’s capabilities.
+                    <Text mt={5}>
+                        I developed an accessible and visually engaging map using approved Sitecore components, successfully showcasing the center’s capabilities. 
+                        This process involved extensive video editing to distill the essential elements of the original Figma prototype and present the most crucial and engaging information. 
+                        I also converted natural interactions into distinct pages, allowing each space to be visualized as subpages within the website.
                     </Text>
                 </Box>
                 {/* Process Stage 5 */}
@@ -200,8 +202,9 @@ const MapStudy = () => {
                     <Box w="full" textAlign="left" p={10}>
                         <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">User Testing</Text>
                         <Text mt={5}>
-                            I conducted user testing to gather feedback on web content and usability, using insights to inform design decisions.
-                            I also developed a detailed risk assessment to prioritize updates based on their impact and importance.
+                            User testing provided valuable insights into how users interacted with the new interface. Navigation was a significant challenge, 
+                            as users had difficulty seeing and clicking options on the page. It was also tricky to ensure users knew about the available Figma prototype for enhanced viewing. 
+                            To manage feedback and prioritize issues, I conducted a risk assessment to determine which problems needed addressing before launch and which could be handled later.
                         </Text>
                     </Box>
                 </Flex>
@@ -209,8 +212,11 @@ const MapStudy = () => {
                 <Box textAlign="left" w="full" p={10} mt={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
                     <Text mt={5}>
-                        Refined Figma prototype for a high-performance interactive map that enhanced stakeholder engagement.
-                        Developed an accessible version of the map with limitations of Sitecore components to increase audience reach
+                        This project afforded me a greater degree of independence, which was initially challenging. 
+                        This level of design freedom was new to me, and I had to navigate the process of creating a product that effectively met user needs with limited direction.
+                        Working with a smaller team without a technical background added to the challenge. However, my previous experience with Sitecore was invaluable, 
+                        allowing me to create the interface efficiently with minimal issues. I refined the Figma prototype into a high-performance interactive map that enhanced 
+                        the visibility of the center and developed an accessible version using Sitecore components to broaden audience reach.
                     </Text>
                 </Box>
             </Flex>

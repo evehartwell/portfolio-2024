@@ -74,7 +74,7 @@ const ModesensStudy = () => {
                         <Box textAlign="left" p={4}>
                             <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Assignment</Text>
                             <Text mt={2}>
-                                Redesign a chosen app from start to finish with an emphasis on interaction design using a Figma animation plug-in.
+                                Redesign a chosen app from start to finish with an emphasis on interaction design using a Figma animation plug-in. Focus on a specific user task, identify inefficiencies, and streamline the process.
                             </Text>
                             <UnorderedList fontSize="sm" mt={2} lineHeight="1.5rem">
                                 <ListItem mb={2}><b>Microinteractions:</b> Incorporate intuitive triggers, rules, feedback, and loops to enhance user engagement. Designedinteractions to ensure minimal complexity and clear feedback on user actions.</ListItem>
@@ -94,9 +94,9 @@ const ModesensStudy = () => {
                         <Box textAlign="left" p={4}>
                             <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Problem Space</Text>
                             <Text mt={2}>
-                                The problem space for the Modesens app revolves around several user needs: managing excessive and poorly organized information, which overwhelms users; dealing with a cluttered UI and small text that complicates interaction; 
-                                and lacking customization options for brands and retailers, which limits user control over their shopping experience. Additionally, users face difficulties due to conflicting mental models and inconsistent menus that disrupt navigation, 
-                                and unresponsive buttons that fail to perform expected actions, leading to confusion and frustration. Addressing these issues is crucial for creating a more intuitive, user-friendly experience that meets users’ expectations and preferences.
+                                The Modesens app faced challenges that negatively impacted the user experience. One of the primary issues was a bloated user task flow, 
+                                where excessive and poorly organized information, a cluttered UI, and small text made interactions frustrating. 
+                                Conflicting mental models, inconsistent menus, and unresponsive buttons further disrupted navigation, leading to confusion and a generally poor user experience. 
                             </Text>
                         </Box>
                     </Flex>
@@ -119,8 +119,8 @@ const ModesensStudy = () => {
                     <Box w="full" textAlign="left" p={10}>
                         <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">User Task Flow</Text>
                         <Text mt={5}>
-                            I mapped out the steps users would take to set an alert within the app, ensuring that each interaction is logical and efficient. 
-                            Building a task flow involves detailing every stage of the user's journey, from starting a search to adding an item to a wishlist. 
+                            To begin, I mapped out the steps users would take to set an alert within the app. By detailing every stage of the user's journey, from the landing page to browsing products and adding an item to their wishlist, 
+                            I identified the pages and interactions that distracted from the main task and brainstormed possible interactions that could occur between steps.
                         </Text>
                     </Box>
                 </Flex>
@@ -129,13 +129,14 @@ const ModesensStudy = () => {
                     direction={{ base: 'column', md: 'row' }}  
                     w="full" 
                     gap={5} 
-                    mt={20}
+                    mt={10}
                 >
                     <Box w="full" textAlign="left" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Wireframes</Text>
                     <Text mt={5}>
-                        Wireframes come next, where I outline the app’s basic layout and functionality. By integrating task flows and wireframes, 
-                        I aimed to design a user-centric interface that addressed potential pain points and supported an intuitive and seamless experience.
+                        With the task flow established, I moved on to wireframes, where I sketched the app’s basic layout and functionality. 
+                        I integrated the task flow into the wireframes to design an interface that was focused on setting an alert. 
+                        My goal was to create an experience that felt intuitive for users while also meeting the standards set by competitor apps.
                     </Text>
                 </Box>
                     <Box className="case-image">
@@ -167,14 +168,14 @@ const ModesensStudy = () => {
                     <Box textAlign="left" p={10}>
                         <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Rebranding & New UI</Text>
                         <Text mt={5}>
-                            For rebranding, I gathered inspiration and defined a new visual identity that aligned with the app’s goals and user needs. 
-                            This included updating the color palette, typography, and logo to reflect a fresh, modern look. Throughout the rebranding process, 
-                            I ensured that the new design elements enhanced usability and resonated with the target audience, providing a more engaging and memorable user experience.
+                            Rebranding was a crucial part of this project. I began by gathering inspiration and defining a new visual identity that matched the app’s goals and user needs. 
+                            I updated the color palette, typography, and logo to give the app a fresh and modern look. During the rebranding process, I prioritized usability
+                            to ensure that the new design elements were not only visually appealing but also resonated with the target audience, making their experience more engaging and memorable.
                         </Text>
                         <Text mt={2}>
-                            Next, I developed high-fidelity UI designs, translating wireframes into detailed, polished screens. 
-                            This phase involved selecting appropriate colors, fonts, and images to create a visually appealing and functional interface. 
-                            I focused on ensuring consistency across all screens and interactions, making sure that each element contributed to a cohesive user experience.
+                            After rebranding, I developed high-fidelity UI designs, turning the wireframes into detailed and polished screens. 
+                            I chose colors, fonts, and images with great care, making sure they contributed to a cohesive and functional interface. 
+                            I worked hard to maintain consistency across all screens and interactions, ensuring that every element enhanced the overall user experience.
                         </Text>
                     </Box>
                 </Flex>
@@ -196,19 +197,22 @@ const ModesensStudy = () => {
                     <Box textAlign="left" minW="200px" p={10}>
                         <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">IXFlow & Interaction Guides</Text>
                         <Text mt={5}>
-                            In designing the interaction flow for the LUXR app, I meticulously mapped out the sequence of user interactions with the app’s components, 
-                            detailing how users navigated through features and responded to various triggers, such as button clicks or system notifications. 
-                            This process involved creating interaction guides that outlined each step of the user journey, ensuring that every interaction was clear and aligned with user expectations. 
-                            My goal was to provide a smooth and intuitive experience by visualizing and documenting how users would interact with the app. 
+                            For the interaction flow of the app, I mapped out how users would navigate through the app and respond to triggers like button clicks or swiping motions. 
+                            I created interaction guides that detailed each step of the user journey. These guides were essential for visualizing and documenting how users would interact with the app. 
+                            My goal was to craft a smooth and intuitive experience that aligned with user expectations. This documentation also helped me implement the animations in Jitter.
                         </Text>
                     </Box>
                 </Flex>
-                <Divider borderColor="#422D2D" />
-                <Box textAlign="left" w="full" p={10} mt={10}>
+                <Divider borderColor="#ababab" />
+                <Box textAlign="left" w="full" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
                     <Text mt={5}>
-                        The redesigned LUXR app now provides a more intuitive and engaging shopping experience, addressing previous pain points and meeting user needs effectively. 
-                        The streamlined interface, improved microinteractions, and thoughtful UI animations contribute to a seamless user experience, aligning with the app's goals and enhancing overall usability.
+                        This project taught me the importance of microinteraction in creating a unique tone and voice of a digital experience. 
+                        Taking into consideration timing, movements, and material design was challenging but it showed me what it takes to create a unique and memorable user experience.
+                    </Text>
+                    <Text mt={5}>
+                        The redesigned Modesens app offers a more intuitive and engaging shopping experience. By addressing the initial problems and focusing on user needs, 
+                        I was able to streamline the app's interface with a concise task flow, improved microinteractions, and thoughtful UI animations. 
                     </Text>
                 </Box>
             </Flex>
