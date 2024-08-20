@@ -57,7 +57,7 @@ const Homepage = () => {
                 <Box maxW="50rem" textAlign="center" py={20} mt={10}>
                     <Text fontFamily="'Old London', serif" textTransform="capitalize" fontSize="5xl" fontWeight="medium">Hartwell</Text>
                     <Text mt={8}>
-                        I’m a UX designer and web developer in Philadelphia, blending a passion for HCI and fashion to create impactful user-centered experiences. 
+                        I’m a UX designer and web developer in Philadelphia, dedicated to blending complex data into seamless, human-centered digital experiences. 
                     </Text>
                 </Box>
 

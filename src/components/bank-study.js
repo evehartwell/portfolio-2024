@@ -73,12 +73,12 @@ const BankStudy = () => {
                                 The redesign must include detailed prototypes and adhere to atomic design principles, with a focus on consistency and user-centered design.
                             </Text>
                             <UnorderedList fontSize="sm" mt={2} lineHeight="1.5rem">
-                                <ListItem mb={2}><b>Prototypes:</b> Clear pages for Desktop, Tablet, and Mobile, each with a minimum of eight named frames.</ListItem>
-                                <ListItem mb={2}><b>Atomic Design Page:</b> Includes details on colors, typography, styles, and components.</ListItem>
-                                <ListItem mb={2}><b>Micro-Interactions:</b> At least six interactions per screen prototype, ensuring consistency across all frames.</ListItem>
-                                <ListItem mb={2}><b>Component Naming:</b> All components must be properly named.</ListItem>
-                                <ListItem mb={2}><b>Heuristic Evaluation:</b> Adherence to usability heuristics, including system visibility, user control, consistency, error prevention, and ease of use.</ListItem>
-                                <ListItem mb={2}><b>Evaluation Questions:</b> Assess simplicity, user information clarity, language use, consistency, and scalability.</ListItem>
+                                <ListItem mb={2}>Pages clearly delienating and seperating three screen prototypes (Desktop, Tablet, Mobile)</ListItem>
+                                <ListItem mb={2}>A Page designated for the Atomic Method designating colors, type, styles, components, etc.</ListItem>
+                                <ListItem mb={2}>A minimum of <b>eight different frames</b>, each named, per screen prototype (e.g. Desktop - Homepage, Desktop - Store, Desktop - Product, Desktop - Shopping Cart, Desktop - Checkout, Desktop - Confirmation)</ListItem>
+                                <ListItem mb={2}>A minimum of <b>six micro-interactions</b> across each screen prototype (i.e. five for Desktop, five for Tablet, five for Mobile).</ListItem>
+                                <ListItem mb={2}>Interactions must remain consistent across frames.</ListItem>
+                                <ListItem mb={2}>Components must be named.</ListItem>
                             </UnorderedList>
                         </Box>
                     </Flex>
