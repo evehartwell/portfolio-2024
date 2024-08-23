@@ -2,7 +2,7 @@ import { resolve } from "node:path";
 import { readFileSync } from "node:fs";
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
-import rewriteAll from 'vite-plugin-rewrite-all';
+import Pages from 'vite-plugin-pages';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
     setEnv(mode);
@@ -16,8 +16,12 @@ export default defineConfig(({ mode }) => {
             basePlugin(),
             importPrefixPlugin(),
             htmlPlugin(mode),
-            rewriteAll(),
+            Pages(),
         ],
+        server: {
+            // Serve SPA fallback index.html
+            historyApiFallback: true,
+        },
     };
 });
 function setEnv(mode) {

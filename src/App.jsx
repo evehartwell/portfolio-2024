@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import Homepage from './components/home';
-import About from './components/about'; 
-import Contact from './components/contact';
-import ModesensStudy from './components/modesens-study';
-import BlackhippieStudy from './components/bha-study';
-import MapStudy from './components/cff-study';
-import LeBowStudy from './components/lebow-study';
-import BankStudy from './components/bank-study';
+import Homepage from './pages/home';
+import About from './pages/about'; 
+import Contact from './pages/contact';
+import ModesensStudy from './pages/modesens-study';
+import BlackhippieStudy from './pages/bha-study';
+import MapStudy from './pages/cff-study';
+import LeBowStudy from './pages/lebow-study';
+import BankStudy from './pages/bank-study';
 
 const App = () => {
     return (
