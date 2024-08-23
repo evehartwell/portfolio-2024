@@ -45,7 +45,7 @@ const Footer = () => {
                         className="footer-icon"
                     />
                 </ChakraLink>
-                <ChakraLink href={`${process.env.PUBLIC_URL}/resume-2024.pdf`} isExternal>
+                <ChakraLink href={`${process.env.PUBLIC_URL}/2024-Aug-Resume.pdf`} isExternal>
                     <IconButton
                         icon={<IoDocumentAttachOutline />}
                         aria-label="Resume"
