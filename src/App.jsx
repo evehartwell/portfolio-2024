@@ -9,6 +9,7 @@ import BlackhippieStudy from './pages/bha-study';
 import MapStudy from './pages/cff-study';
 import LeBowStudy from './pages/lebow-study';
 import BankStudy from './pages/bank-study';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <link rel="icon" href="/images/star.svg" />
             </Helmet>
             <Router>
+                <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<Homepage />} />
                     <Route path="/about" element={<About />} />
