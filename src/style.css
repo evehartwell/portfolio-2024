@@ -228,4 +228,8 @@ footer {
         max-width: 100%;
         height: auto;
     }
+    
+    .logo {
+        display: none;
+    }
 }
