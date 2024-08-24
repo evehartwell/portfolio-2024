@@ -114,7 +114,7 @@ const BankStudy = () => {
                     <Box className="case-image">
                         <Image 
                             src="/images/bank-original.png" 
-                            alt="" 
+                            alt="original bank screenshots" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -122,7 +122,7 @@ const BankStudy = () => {
                     <Box className="case-image">
                         <Image 
                             src="/images/bank-style.png" 
-                            alt="" 
+                            alt="original and new color palette" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -146,7 +146,7 @@ const BankStudy = () => {
                     <Box className="case-image">
                         <Image
                             src="/images/bank-persona.png" 
-                            alt="" 
+                            alt="user persona" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -172,7 +172,7 @@ const BankStudy = () => {
                     <Box className="case-image">
                         <Image 
                             src="/images/bank-ia-orig.png" 
-                            alt="" 
+                            alt="original sitemap" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -183,7 +183,7 @@ const BankStudy = () => {
                     <Box className="case-image">
                         <Image 
                             src="/images/bank-ia-new.png" 
-                            alt="" 
+                            alt="new sitemap" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -207,7 +207,7 @@ const BankStudy = () => {
                     <Box className="case-image">
                         <Image 
                             src="/images/bank-figma.png" 
-                            alt="" 
+                            alt="figma design library" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -228,7 +228,7 @@ const BankStudy = () => {
                     <Box className="case-image">
                         <Image 
                             src="/images/bank-mobile.png" 
-                            alt="" 
+                            alt="mobile designs" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -246,7 +246,7 @@ const BankStudy = () => {
                     <Box className="case-image">
                         <Image 
                             src="/images/bank-eval.png" 
-                            alt="" 
+                            alt="radar chart evaluating original vs. new design" 
                             objectFit="cover"  
                             height="100%" 
                         />

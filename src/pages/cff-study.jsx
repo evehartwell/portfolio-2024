@@ -122,7 +122,7 @@ const MapStudy = () => {
                     <Box className="case-image">
                         <Image 
                             src="/images/CFF-figma.png" 
-                            alt="" 
+                            alt="high fidelity wireframes" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -151,7 +151,7 @@ const MapStudy = () => {
                     <Box>
                         <Image 
                             src="/images/CFF-assets.png" 
-                            alt="alt" 
+                            alt="example of design assets" 
                             objectFit="cover"  
                             width="100%"
                         />
@@ -168,7 +168,7 @@ const MapStudy = () => {
                     <Box className="case-image">
                         <Image 
                             src="/images/CFF-desk.png" /* use video instead */
-                            alt="" 
+                            alt="desktop screenshot" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -193,7 +193,7 @@ const MapStudy = () => {
                     <Box>
                         <Image 
                             src="/images/CFF-risk.png" 
-                            alt="alt" 
+                            alt="risk assessment sheet" 
                             objectFit="cover"  
                             width="100%" 
                             height="100%" 

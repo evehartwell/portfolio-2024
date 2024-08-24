@@ -49,7 +49,7 @@ const BlackhippieStudy = () => {
                             height="100%"
                             style={{ objectFit: 'cover' }} 
                         >
-                            <source src={`/media/bha-home.mov`} type="video/mp4" /> {/* record figma proto */} 
+                            <source src={`/media/bha-home.mov`} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </Box>

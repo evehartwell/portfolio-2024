@@ -120,7 +120,7 @@ const LeBowStudy = () => {
                     <Box maxw='lg' className="case-image">
                         <Image 
                             src="/images/lebow-research.png" 
-                            alt="" 
+                            alt="brand research document" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -150,7 +150,7 @@ const LeBowStudy = () => {
                     <Box>
                         <Image 
                             src="/images/lebow-ads.png" 
-                            alt="" 
+                            alt="example of lebow ad design" 
                             objectFit="contain"
                         />
                     </Box>
@@ -166,7 +166,7 @@ const LeBowStudy = () => {
                     <Box maxw='lg' className="case-image">
                         <Image 
                             src="/images/lebow-atomic.png" 
-                            alt="" 
+                            alt="atomic design components" 
                             objectFit="cover"  
                             height="100%" 
                         />
@@ -191,7 +191,7 @@ const LeBowStudy = () => {
                     <Box className="case-image">
                         <Image
                             src="/images/lebow-desk.png" 
-                            alt="" 
+                            alt="desktop high fidelity wireframes" 
                             objectFit="cover" 
                             height="100%" 
                         />
