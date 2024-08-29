@@ -4,8 +4,10 @@
     padding: 0;
     --primary-color-1: #422D2D;
     --primary-color-2: #F8F8F8;
-    --box-gradient: linear-gradient(rgba(217, 217, 217, 0.10), rgba(118, 118, 118, 0.5) 95%);
-    --bg-gradient: linear-gradient(rgba(225, 225, 225, 0) 5%, rgba(248, 248, 248) 95%);
+    --box-gradient: linear-gradient(to bottom, rgba(217, 217, 217, 0.10), rgba(118, 118, 118, 0.5) 95%);
+    --bg-gradient: linear-gradient(to bottom, rgba(225, 225, 225, 0) 5%, rgba(248, 248, 248) 95%);
+    --webkit-box-gradient: -webkit-linear-gradient(to bottom, rgba(217, 217, 217, 0.10), rgba(118, 118, 118, 0.5) 95%);
+    --webkit-bg-gradient: -webkit-linear-gradient(to bottom, rgba(225, 225, 225, 0) 5%, rgba(248, 248, 248) 95%);
     --primary-font: 'Inter', sans-serif;
     --secondary-font: 'Times Now', serif;
     --accent-font: 'Old London', serif;
@@ -36,7 +38,9 @@
 body {
     font-family: var(--primary-font);
     font-weight: 400;
-    background-color: var(--primary-color-2) !important;
+    background:var(--primary-color-2); /* fallback for old browsers */
+    background: var(--webkit-bg-gradient) !important; /* Chrome 10-25, Safari 5.1-6 */
+    background: var(--bg-gradient) !important; 
     color: var(--primary-color-1) !important;
     line-height: 1.5rem;
 }
