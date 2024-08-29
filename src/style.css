@@ -38,7 +38,7 @@
 body {
     font-family: var(--primary-font);
     font-weight: 400;
-    background:var(--primary-color-2); /* fallback for old browsers */
+    background: var(--primary-color-2); /* fallback for old browsers */
     background: var(--webkit-bg-gradient) !important; /* Chrome 10-25, Safari 5.1-6 */
     background: var(--bg-gradient) !important; 
     color: var(--primary-color-1) !important;
