@@ -90,3 +90,14 @@ fastlane/test_output
 iOSInjectionProject/
 
 node_modules/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
