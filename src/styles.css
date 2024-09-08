@@ -166,7 +166,7 @@ body {
     mask-image: linear-gradient(to top, rgb(2, 2, 2), rgba(0, 0, 0, 0)); /* seamless blur blending */
 }
 
-/* case study images */
+/* case study styles */
 
 .case-image {
     width: 100%;
@@ -259,4 +259,15 @@ footer {
         padding: 0.5px 10px; 
         font-size: 0.9rem !important;
     }
+
+    .button {
+        font-size: 0.7rem !important;
+        min-height: 1.2rem !important;
+    }
+
+    .project-text-overlay {
+        padding: 0.5rem;
+        height: 35%;
+    }
+    
 }

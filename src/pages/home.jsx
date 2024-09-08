@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import ProjectBox from "./projectbox";
 import Navbar from './navbar';
 import Footer from './footer';
-import '../style.css';
+import '../styles.css';
 
 
 const projects = [

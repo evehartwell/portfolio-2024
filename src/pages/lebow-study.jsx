@@ -15,7 +15,7 @@ import {
 } from '@chakra-ui/react';
 import Navbar from './navbar';
 import Footer from './footer';
-import '../style.css';
+import '../styles.css';
 
 const LeBowStudy = () => {
     return (

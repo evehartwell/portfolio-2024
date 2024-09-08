@@ -16,7 +16,7 @@ import {
 import Navbar from './navbar';
 import Footer from './footer';
 import { PiArrowRightLight } from "react-icons/pi";
-import '../style.css';
+import '../styles.css';
 
 const BankStudy = () => {
     return (

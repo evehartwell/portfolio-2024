@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex, Table, Thead, Tbody, Tr, Th, Td, Text, Box } from '@chakra-ui/react';
-import '../style.css';
+import '../styles.css';
 
 const CustomTable = () => {
     return (

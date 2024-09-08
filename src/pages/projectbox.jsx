@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex, Box, Text, Image } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import '../style.css';
+import '../styles.css';
 
 const ProjectBox = ({ title, imageSrc, videoSrc, link }) => (
     <Link to={link}>

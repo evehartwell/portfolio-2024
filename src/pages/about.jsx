@@ -10,7 +10,7 @@ import {
 import Navbar from './navbar';
 import CustomTable from './cv-grid';
 import Footer from './footer';
-import '../style.css';
+import '../styles.css';
 
 const About = () => {
     return (

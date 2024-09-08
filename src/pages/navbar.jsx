@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Flex, Button, Link as ChakraLink } from '@chakra-ui/react';
-import '../style.css';
+import '../styles.css';
 
 const Navbar = () => {
     return (

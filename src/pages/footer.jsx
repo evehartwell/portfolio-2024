@@ -3,7 +3,7 @@ import { Flex, Image, IconButton, Link as ChakraLink } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdAlternateEmail } from 'react-icons/md'; 
 import { IoDocumentAttachOutline } from "react-icons/io5";
-import '../style.css';
+import '../styles.css';
 
 const Footer = () => {
     return (
