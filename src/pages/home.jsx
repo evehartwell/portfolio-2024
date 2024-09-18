@@ -1,4 +1,3 @@
-import React from 'react';
 import {
     Box,
     Text,
@@ -6,12 +5,13 @@ import {
     Container,
     Divider,
     Grid,
+    Image,
+    AspectRatio,
+    VStack,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import ProjectBox from "./projectbox";
 import Navbar from './navbar';
 import Footer from './footer';
-import '../styles.css';
 
 
 const projects = [
@@ -43,59 +43,135 @@ const projects = [
     },
 ];
 
+const ProjectBox = ({ title, imageSrc, videoSrc, link }) => (
+    <Box
+        as={Link}
+        to={link}
+        position="relative"
+        borderRadius="10px"
+        overflow="hidden"
+        mb="10px"
+    >
+        <Box
+            position="relative"
+            borderRadius="10px"
+            overflow="hidden"
+            sx={{
+                '&::before': {
+                    content: '""',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    background: 'linear-gradient(to bottom, rgba(217, 217, 217, 0.10), rgba(118, 118, 118, 0.5) 95%)',
+                    zIndex: 1,
+                    transition: 'opacity 0.8s ease',
+                },
+                '&:hover::before, &:hover .project-text-overlay': {
+                    opacity: 0,
+                },
+            }}
+        >
+            {/* image/video styles */}
+            <AspectRatio ratio={3 / 2}>
+                {videoSrc ? (
+                    <Box 
+                        as="video" 
+                        autoPlay 
+                        muted 
+                        loop 
+                        width="100%" 
+                        height="100%" 
+                        objectFit="cover"
+                        borderRadius="10px"
+                    >
+                        <source src={videoSrc} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </Box>
+                ) : (
+                    <Image 
+                        src={imageSrc} 
+                        alt={title} 
+                        objectFit="cover" 
+                        borderRadius="10px"
+                    />
+                )}
+            </AspectRatio>
+        </Box>
+        {/* text overlay image */}
+        <Box
+            position="absolute"
+            bottom="0"
+            left="0"
+            width="100%"
+            height="25%"
+            p="1rem"
+            display="flex"
+            alignItems="flex-end"
+            color="white"
+            zIndex={2}
+            sx={{
+                '&::before': {
+                    content: '""',
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    background: 'rgba(117, 117, 117, 0.634)',
+                    backdropFilter: 'blur(20px)',
+                    zIndex: -1,
+                    maskImage: 'linear-gradient(to top, rgb(2, 2, 2), rgba(0, 0, 0, 0))',
+                    borderBottomLeftRadius: '10px', /* ensure border-radius styles */
+                    borderBottomRightRadius: '10px', 
+                },
+            }}
+        >
+            <Text fontSize="xl" textTransform="uppercase">{title}</Text>
+        </Box>
+    </Box>
+);
+
 const Homepage = () => {
     return (
-        <Container maxW="container.xl" textTransform="uppercase" py={5}>
+        <Container maxW="container.xl" py={5}>
             <Flex justify="flex-start">
                 <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                    <img src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" className="logo" />
+                    <Image 
+                        src="/images/star.svg" 
+                        alt="Logo" 
+                        w="2.5rem" 
+                        filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
+                        position="fixed"
+                        zIndex={1001}
+                        display={{ base: "none", md: "block" }}
+                    />
                 </Link>
             </Flex>
             <Navbar />
-            <Flex direction="column" align="center">
-            {/* Header */}
-                <Box maxW="50rem" textAlign="center" py={20} mt={10}>
+            <VStack spacing={10} align="stretch">
+                <Box textAlign="center" py={20} mt={10} maxW="50rem" mx="auto">
                     <Text fontFamily="'Old London', serif" textTransform="capitalize" fontSize="5xl" fontWeight="medium">Hartwell</Text>
-                    <Text mt={8}>
-                        I’m a UX designer and web developer in Philadelphia, dedicated to building immersive, human-centered digital experiences. 
+                    <Text mt={8} textTransform="uppercase">
+                        I'm a UX designer and web developer in Philadelphia, dedicated to building immersive, human-centered digital experiences. 
                     </Text>
                 </Box>
-
-            {/* portfolio */}
-                <Box mt={10} w="full">
-                    <Text fontSize="3xl" fontWeight="medium" mb={5}>My Work <Divider borderColor="#422D2D" /></Text>  
-            {/* most recent */}
-                    <Link to={projects[0].link}> 
-                        <Box className="project-box" w="full" mb={10} position="relative" borderRadius="10px" overflow="hidden">
-                            {projects[0].videoSrc ? (
-                                <video  autoPlay
-                                muted
-                                loop
-                                width="100%"
-                                height="100%"
-                                className="project-media">
-                                    <source src={projects[0].videoSrc} type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
-                            ) : (
-                                <img src={projects[0].imageSrc} alt={projects[0].title} />
-                            )}
-                            <Box className="project-text-overlay">
-                                <Text className="project-text">{projects[0].title}</Text>
-                            </Box>
-                        </Box>
-                    </Link>
-                </Box> 
-                {/* previous projects */}
+                <Box>
+                    <Text fontSize="3xl" fontWeight="medium" mb={5} textTransform="uppercase">My Work</Text>
+                    <Divider borderColor="#422D2D" mb={5} />
+                    <ProjectBox {...projects[0]} />
+                </Box>
+                {/* project grid */}
                 <Grid 
-                    templateColumns={{ base: '1fr', sm: '1fr 1fr', md: 'repeat(2, 1fr)' }} 
+                    templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)' }} 
                     gap={10}
                 >
                     {projects.slice(1).map((project, index) => (
-                        <ProjectBox key={index} title={project.title} imageSrc={project.imageSrc} link={project.link} />
+                        <ProjectBox key={index} {...project} />
                     ))}
                 </Grid>
-            </Flex>
+            </VStack>
             <Footer />
         </Container>
     );

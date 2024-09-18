@@ -210,6 +210,7 @@ const ModesensStudy = () => {
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
                     <Text mt={5}>
                         This project taught me the importance of microinteraction in creating a unique tone and voice of a digital experience. 
+                        Before this project, I hadn't taken much consideration of motion in my design process until now but I realized this was a key component to building a unique app or web interface. 
                         Taking into consideration timing, movements, and material design was challenging but it showed me what it takes to create a unique and memorable user experience.
                     </Text>
                     <Text mt={5}>

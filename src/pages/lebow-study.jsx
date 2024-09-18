@@ -201,9 +201,9 @@ const LeBowStudy = () => {
                     <Box w="full" textAlign="left" p={10}>
                         <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Web Design</Text>
                         <Text mt={5}>
-                            In the redesign phase, I created and refined wireframes in Figma with graphics from Getty Images that adhered to the updated brand guidelines. 
-                            I integrated new icons, a refreshed color palette, and updated typography throughout the site to ensure a consistent and modern appearance. 
-                            Specifically, I focused on redesigning the School of Economics section, enhancing information formatting to present detailed content more effectively while emphasizing its unique identity.
+                        In the redesign phase, I created and refined wireframes in Figma with chosen graphics from Getty Images that adhered to the updated brand guidelines. 
+                        It was not necessary to create low-fidelity wireframes as the components and site structure were already defined. I focused on integrating the modular design into complex sections of the site. 
+                        I specifically focused on redesigning the School of Economics department, enhancing information formatting to present detailed content more effectively while emphasizing its unique identity.
                         </Text>
                     </Box>
                 </Flex>
@@ -214,7 +214,7 @@ const LeBowStudy = () => {
                         The team and I successfully redesigned the LeBow website, significantly improving user experience and brand consistency. 
                         A new Drupal backend system was implemented and I participated in building and editing over 100 pages. 
                         This overhaul not only enhanced the visual and functional aspects of the site but also contributed to a more engaging and user-friendly experience. 
-                        My efforts led to a more cohesive brand presentation and a streamlined, efficient website that better serves its users.
+                        My efforts led to a more cohesive brand presentation and a streamlined, efficient website that better served its users.
                     </Text>
                 </Box>
             </Flex>

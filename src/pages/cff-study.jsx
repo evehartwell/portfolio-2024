@@ -38,7 +38,7 @@ const MapStudy = () => {
                         <Tag className="button">#UX Design</Tag>
                     </Flex>
                     <Text textAlign="left" mt={2}>
-                        I developed and launched an accessible interactive map to showcase the capabilities of an e-textile innovation center.
+                        I developed and launched an accessible interactive map to showcase the capabilities of a major e-textile research center.
                     </Text> 
                 </Box>
                 {/* Cover Image */} 
@@ -141,11 +141,12 @@ const MapStudy = () => {
                     <Box w="full" textAlign="left" p={10}>
                         <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Design</Text>
                         <Text mt={5}>
+                            I started my design process at the high-fidelity wireframing stage because the components and assets were already defined. 
                             I designed a version of the map using Sitecore components, ensuring it complied with accessibility standards. 
-                            My goal was to create an innovative display of manufacturing capabilities that was visually appealing and engaging for users. 
-                            I developed and evaluated several accessible designs to refine the user experience, balancing ideal design with practical constraints. 
+                            My goal was to create an innovative display of manufacturing capabilities that was visually appealing and easy to understand for users. 
+                            I developed and evaluated several accessible designs with the communications manager to refine the user experience, balancing ideal design with practical constraints.
                         </Text>
-                        <Text mt={2}>
+                        <Text mt={5}>
                             I enhanced vector graphics and patterns in Adobe Illustrator and reintegrated the brand color palette to make the pages more engaging and visually striking. 
                             Throughout the process, I made sure the design elements accurately reflected the actual manufacturing materials used.
                         </Text>
@@ -179,7 +180,8 @@ const MapStudy = () => {
                 <Box w="full" textAlign="left" p={10}>
                     <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Deployment</Text>
                     <Text mt={5}>
-                        I developed an accessible and visually engaging map using approved Sitecore components, successfully showcasing the center’s capabilities. 
+                        After the wireframes were developed, I got to work in Sitecore, iterating with available components and video assets to rebuild the map.
+                        I developed an accessible and visually engaging pages using video clips and informative copy, successfully showcasing the center’s capabilities. 
                         This process involved extensive video editing to distill the essential elements of the original Figma prototype and present the most crucial and engaging information. 
                         I also converted natural interactions into distinct pages, allowing each space to be visualized as subpages within the website.
                     </Text>
@@ -189,7 +191,7 @@ const MapStudy = () => {
                     direction={{ base: 'column', md: 'row' }}  
                     w="full" 
                     gap={5} 
-                    mt={20}
+                    mt={10}
                     justify="space-between"
                 >
                     <Box>
@@ -218,7 +220,7 @@ const MapStudy = () => {
                         This level of design freedom was new to me, and I had to navigate the process of creating a product that effectively met user needs with limited direction.
                         Working with a smaller team without a technical background added to the challenge. However, my previous experience with Sitecore was invaluable, 
                         allowing me to create the interface efficiently with minimal issues. I refined the Figma prototype into a high-performance interactive map that enhanced 
-                        the visibility of the center and developed an accessible version using Sitecore components to broaden audience reach.
+                        the visibility of the Center and developed an accessible version using Sitecore CMS to broaden audience reach.
                     </Text>
                 </Box>
             </Flex>

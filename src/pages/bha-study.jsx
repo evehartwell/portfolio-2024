@@ -105,9 +105,6 @@ const BlackhippieStudy = () => {
                 >
                     <Box textAlign="left" flex="1" minW="200px">
                         <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">What I am working on</Text>
-                        <Text mt={2}>
-                            I am actively managing and enhancing various aspects of Black Hippie Art's digital presence and community engagement.
-                        </Text>
                         <UnorderedList fontSize="sm" mt={2} lineHeight="1.5rem">
                             <ListItem mb={2}><b>Social Media and Engagement:</b>  I am leveraging Meta Business Suite to track growth and interaction, aiming to translate social media success into in-person engagement. I plan to update social media audits, improve Instagram analytics, and schedule posts consistently using Planoly.</ListItem>
                             <ListItem mb={2}><b>Brand and Communication:</b> I am working on comprehensive brand guideline documentation, updating the color palette, and encouraging donations through UX improvements. I’m also setting up a Discord group, connecting it to meetups, and designing a newsletter.</ListItem>
