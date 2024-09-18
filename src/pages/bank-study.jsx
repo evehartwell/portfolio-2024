@@ -23,7 +23,9 @@ const BankStudy = () => {
         <Container maxW="container.xl" lineHeight="2rem" py={5}>
             {/* Navbar */}
             <Flex justify="flex-start">
-                <img src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" className="logo" />
+                <a href="/">
+                    <img src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" className="logo" />
+                </a>
             </Flex>
             <Navbar />
 
