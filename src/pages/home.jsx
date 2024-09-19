@@ -74,30 +74,32 @@ const ProjectBox = ({ title, imageSrc, videoSrc, link }) => (
             }}
         >
             {/* image/video styles */}
-            <AspectRatio ratio={3 / 2}>
-                {videoSrc ? (
-                    <Box 
-                        as="video" 
-                        autoPlay 
-                        muted 
-                        loop 
-                        width="100%" 
-                        height="100%" 
-                        objectFit="cover"
-                        borderRadius="10px"
-                    >
-                        <source src={videoSrc} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </Box>
-                ) : (
-                    <Image 
-                        src={imageSrc} 
-                        alt={title} 
-                        objectFit="cover" 
-                        borderRadius="10px"
-                    />
-                )}
+            {videoSrc ? (
+            <AspectRatio ratio={16 / 9}>
+                <Box
+                as="video"
+                autoPlay
+                muted
+                loop
+                width="100%"
+                height="100%"
+                objectFit="cover"
+                borderRadius="10px"
+                >
+                <source src={videoSrc} type="video/mp4" />
+                Your browser does not support the video tag.
+                </Box>
             </AspectRatio>
+            ) : (
+            <AspectRatio ratio={3 / 2}>
+                <Image
+                src={imageSrc}
+                alt={title}
+                objectFit="cover"
+                borderRadius="10px"
+                />
+            </AspectRatio>
+            )}
         </Box>
         {/* text overlay image */}
         <Box
@@ -111,6 +113,7 @@ const ProjectBox = ({ title, imageSrc, videoSrc, link }) => (
             alignItems="flex-end"
             color="white"
             zIndex={2}
+            fontWeight="medium"
             sx={{
                 '&::before': {
                     content: '""',
@@ -153,7 +156,7 @@ const Homepage = () => {
             <VStack spacing={10} align="stretch">
                 <Box textAlign="center" py={20} mt={10} maxW="50rem" mx="auto">
                     <Text fontFamily="'Old London', serif" textTransform="capitalize" fontSize="5xl" fontWeight="medium">Hartwell</Text>
-                    <Text mt={8} textTransform="uppercase">
+                    <Text fontSize={{ base: 'sm', md: 'md' }}  mt={8} textTransform="uppercase" lineHeight="1.5rem">
                         I'm a UX designer and web developer in Philadelphia, dedicated to building immersive, human-centered digital experiences. 
                     </Text>
                 </Box>
@@ -164,7 +167,7 @@ const Homepage = () => {
                 </Box>
                 {/* project grid */}
                 <Grid 
-                    templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)' }} 
+                    templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }} 
                     gap={10}
                 >
                     {projects.slice(1).map((project, index) => (
