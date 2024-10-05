@@ -154,9 +154,9 @@ const Homepage = () => {
             </Flex>
             <Navbar />
             <VStack spacing={10} align="stretch">
-                <Box textAlign="center" py={20} mt={10} maxW="50rem" mx="auto">
+                <Box textAlign="center" py={20} mt={20} maxW="40rem" mx="auto">
                     <Text fontFamily="'Old London', serif" textTransform="capitalize" fontSize="5xl" fontWeight="medium">Hartwell</Text>
-                    <Text fontSize={{ base: 'sm', md: 'md' }}  mt={8} textTransform="uppercase" lineHeight="1.5rem">
+                    <Text fontFamily="'Times Now', serif" fontSize={{ base: 'sm', md: 'lg' }}  mt={8}>
                         I'm a UX designer and web developer in Philadelphia, dedicated to building immersive, human-centered digital experiences. 
                     </Text>
                 </Box>

@@ -89,8 +89,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-node_modules/
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -101,3 +99,15 @@ node_modules/
 *.njsproj
 *.sln
 *.sw?
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore compiled Python files
+*.pyc
