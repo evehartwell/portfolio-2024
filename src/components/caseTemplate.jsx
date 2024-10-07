@@ -43,7 +43,7 @@ const CaseStudyTemplate = ({
             </Flex>
             <Navbar />
             <Flex direction="column" align="center">
-                <Box maxW="65rem" textAlign="center" mt={28}>
+                <Box maxW="60rem" textAlign="center" mt={28}>
                     <Text fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}  mb={3} textTransform="uppercase" fontWeight="regular">{title}</Text>
                     <Flex justify="center" textTransform="uppercase" gap={4} p={6} flexWrap="wrap">
                         {tags.map((tag) => (
@@ -64,7 +64,7 @@ const CaseStudyTemplate = ({
                         {description}
                     </Text> 
                 </Box>
-                <Flex justify="space-between" mt={10}>
+                <Flex justify="space-between" mt={20}>
                     <Box w="full" mb={20} position="relative" borderRadius="10px" overflow="hidden" outline="1px solid #D6D6D6">
                         {coverMedia}
                     </Box>
@@ -83,18 +83,34 @@ const CaseStudyTemplate = ({
                         flex="1"
                         gap={5}
                     >
-                        <Box textAlign="left" p={4}>
-                            <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">The Team</Text>
-                            <Text mt={2} fontSize={{ base: 'sm', md: 'md' }}>
-                                {context.team}
-                            </Text>
-                        </Box>
-                        <Box textAlign="left" p={4}>
-                            <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">My Role</Text>
-                            <Text mt={2} fontSize={{ base: 'sm', md: 'md' }}>
-                                {context.role}
-                            </Text>
-                        </Box>
+                        {context.team && (
+                            <Box textAlign="left" p={4}>
+                                <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">The Team</Text>
+                                <Text mt={2} fontSize={{ base: 'sm', md: 'md' }}>
+                                    {context.team}
+                                </Text>
+                            </Box>
+                        )}
+                        {context.role && (
+                            <Box textAlign="left" p={4}>
+                                <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">My Role</Text>
+                                <Text mt={2} fontSize={{ base: 'sm', md: 'md' }}>
+                                    {context.role}
+                                </Text>
+                            </Box>
+                        )}
+                        {context.requirements && (
+                            <Box textAlign="left" p={4}>
+                                <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">Requirements</Text>
+                                <UnorderedList fontSize="sm" mt={2}>
+                                    {context.requirements.map((req, index) => (
+                                        <ListItem key={index} mb={1}>
+                                        <b>{req.title}:</b> {req.description}
+                                        </ListItem>
+                                    ))}
+                                </UnorderedList>
+                            </Box>
+                        )}
                     </Flex>
                     <Flex
                         direction="column"
@@ -135,7 +151,7 @@ const CaseStudyTemplate = ({
                         gap={5} 
                         mt={20}
                     >
-                        <Box flex="1" borderRadius="10px" overflow="hidden" outline="1px solid #D6D6D6" order={section.imageOrder}>
+                        <Box flex="1" borderRadius="10px" overflow="hidden" outline={section.imageBorder ? "1px solid #D6D6D6" : "none"} order={section.imageOrder}>
                             <Image 
                                 src={section.imageSrc} 
                                 alt={section.imageAlt} 
