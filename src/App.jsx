@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/home';
 import About from './pages/about'; 
@@ -8,7 +9,6 @@ import MapStudy from './pages/cff-study';
 import LeBowStudy from './pages/lebow-study';
 import BankStudy from './pages/bank-study';
 import ScrollToTop from './components/ScrollToTop';
-import ModesensTest from './pages/modesens-test';
 import CaseStudyTemplate from './components/caseTemplate.jsx';
 
 const App = () => {
@@ -24,7 +24,6 @@ const App = () => {
                 <Route path="/cff-study" element={<MapStudy />} />
                 <Route path="/lebow-study" element={<LeBowStudy />} />
                 <Route path="/bank-study" element={<BankStudy />} />
-                <Route path="/modesens-test" element={<ModesensTest />} />
                 <Route path="/case-temp" element={<CaseStudyTemplate />} />
                 {/* Add other routes here */}
             </Routes>

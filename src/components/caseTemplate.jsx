@@ -2,6 +2,7 @@ import React from 'react';
 import {
     Box,
     Text,
+    VStack,
     Flex,
     Container,
     Tag,
@@ -91,6 +92,14 @@ const CaseStudyTemplate = ({
                                 </Text>
                             </Box>
                         )}
+                        {context.client && (
+                            <Box textAlign="left" p={4}>
+                                <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">The Client</Text>
+                                <Text mt={2} fontSize={{ base: 'sm', md: 'md' }}>
+                                    {context.client}
+                                </Text>
+                            </Box>
+                        )}
                         {context.role && (
                             <Box textAlign="left" p={4}>
                                 <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">My Role</Text>
@@ -171,14 +180,16 @@ const CaseStudyTemplate = ({
 
                 <Divider borderColor="#ababab" my={10} />
 
-                <Box textAlign="left" w="full" p={{ base: '3', md: '4' }}>
-                    <Text fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="medium">Outcomes</Text>
-                    {outcomes.map((outcome, index) => (
-                        <Text key={index} mt={5} fontSize={{ base: 'sm', md: 'md' }}>
-                            {outcome}
+                {outcomes && outcomes.length > 0 && (
+                    <Box flex="1" textAlign="left" p={{ base: '3', md: '4' }}>
+                        <Text fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="medium">Outcomes</Text>
+                        <Text mt={5} fontSize={{ base: 'sm', md: 'md' }}>
+                            {outcomes.map((outcome, index) => (
+                                <Text key={index}>{outcome}</Text>
+                            ))}
                         </Text>
-                    ))}
-                </Box>
+                    </Box>
+                )}
             </Flex>
             <Footer />
         </Container>
