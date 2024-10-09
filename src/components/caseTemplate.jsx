@@ -45,7 +45,7 @@ const CaseStudyTemplate = ({
             <Navbar />
             <Flex direction="column" align="center">
                 <Box maxW="60rem" textAlign="center" mt={28}>
-                    <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}  mb={3} textTransform="uppercase" fontWeight="regular">{title}</Heading>
+                    <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} textTransform="uppercase" fontWeight="regular">{title}</Heading>
                     <Flex justify="center" textTransform="uppercase" gap={4} p={6} flexWrap="wrap">
                         {tags.map((tag) => (
                             <Tag
