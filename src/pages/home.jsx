@@ -156,7 +156,7 @@ const Homepage = () => {
             <VStack spacing={10} align="stretch">
                 <Box textAlign="center" py={20} mt={20} maxW="40rem" mx="auto">
                     <Heading fontFamily="Inter, sans-serif" textTransform="uppercase" fontSize="3xl" fontWeight="regular">Eve Hartwell</Heading>
-                    <Text fontFamily="Times Now, serif" fontSize={{ base: 'sm', md: 'md' }} fontWeight="light" mt={4}>
+                    <Text fontFamily="Times Now, serif" fontSize={{ base: 'md', md: 'lg' }} mt={6}>
                         UX Designer and Web Developer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.
                     </Text>
                 </Box>

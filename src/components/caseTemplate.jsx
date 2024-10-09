@@ -28,7 +28,7 @@ const CaseStudyTemplate = ({
     outcomes
 }) => {
     return (
-        <Container maxW="container.xl" py={5} lineHeight="2rem">
+        <Container maxW="container.xl" py={5}>
             <Flex justify="flex-start">
                 <Box
                     as="a"
@@ -116,7 +116,7 @@ const CaseStudyTemplate = ({
                         {context.requirements && (
                             <Box textAlign="left" p={4}>
                                 <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">Requirements</Heading>
-                                <UnorderedList fontSize="md" mt={2}>
+                                <UnorderedList fontSize="lg" mt={2}>
                                     {context.requirements.map((req, index) => (
                                         <ListItem key={index} mb={1}>
                                         <b>{req.title}:</b> {req.description}

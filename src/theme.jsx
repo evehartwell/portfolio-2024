@@ -18,7 +18,8 @@ const theme = extendTheme({
         body: {
             bg: 'linear-gradient(to bottom, rgba(225, 225, 225, 0.20) 2%, rgb(248, 248, 248) 98%)',
             color: 'primary.1',
-            lineHeight: '1.5rem',
+            lineHeight: '2rem',
+            letterSpacing: '-0.5px'
         },
         },
     },
