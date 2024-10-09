@@ -13,6 +13,7 @@ const Navbar = () => {
             top="0"
             left="0"
             zIndex="1000"
+            fontFamily='Inter, sans-serif'
         >
             <Flex
                 bg="rgba(214, 214, 214, 0.50)"

@@ -9,8 +9,8 @@ const theme = extendTheme({
         },
     },
     fonts: {
-        body: 'Inter, sans-serif',
-        heading: 'Times Now, serif',
+        heading: 'Inter, sans-serif',
+        body: 'Times Now, serif',
         accent: 'Old London, serif',
     },
     styles: {
@@ -18,7 +18,7 @@ const theme = extendTheme({
         body: {
             bg: 'linear-gradient(to bottom, rgba(225, 225, 225, 0.20) 2%, rgb(248, 248, 248) 98%)',
             color: 'primary.1',
-            lineHeight: '2rem',
+            lineHeight: '1.5rem',
         },
         },
     },

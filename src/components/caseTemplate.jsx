@@ -10,6 +10,7 @@ import {
     UnorderedList,
     ListItem,
     Button,
+    Heading,
     Link as ChakraLink,
 } from '@chakra-ui/react';
 import Navbar from '../pages/navbar';
@@ -27,7 +28,7 @@ const CaseStudyTemplate = ({
     outcomes
 }) => {
     return (
-        <Container maxW="container.xl" py={5}>
+        <Container maxW="container.xl" py={5} lineHeight="2rem">
             <Flex justify="flex-start">
                 <Box
                     as="a"
@@ -44,7 +45,7 @@ const CaseStudyTemplate = ({
             <Navbar />
             <Flex direction="column" align="center">
                 <Box maxW="60rem" textAlign="center" mt={28}>
-                    <Text fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}  mb={3} textTransform="uppercase" fontWeight="regular">{title}</Text>
+                    <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}  mb={3} textTransform="uppercase" fontWeight="regular">{title}</Heading>
                     <Flex justify="center" textTransform="uppercase" gap={4} p={6} flexWrap="wrap">
                         {tags.map((tag) => (
                             <Tag
@@ -54,13 +55,14 @@ const CaseStudyTemplate = ({
                                 borderRadius="30px"
                                 outline="1px solid var(--primary-color-1)"
                                 _hover={{ bg: "#D6D6D6" }}
+                                fontFamily="Inter, sans-serif"
                                 fontSize={{ base: 'xs', md: 'sm' }}
                             >
                                 {tag}
                             </Tag>
                         ))}
                     </Flex>
-                    <Text textAlign="center" fontSize={{ base: 'sm', md: 'md' }}>
+                    <Text textAlign="center" fontSize={{ base: 'md', md: 'lg' }}>
                         {description}
                     </Text> 
                 </Box>
@@ -73,7 +75,7 @@ const CaseStudyTemplate = ({
                         )}
                     </Box>
                 </Flex>
-                <Text mb={10} fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="medium">Project Overview</Text>
+                <Heading mb={10} fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="regular">Project Overview</Heading>
                 <Flex
                     direction={{ base: 'column', md: 'row' }}
                     wrap="wrap"
@@ -89,32 +91,32 @@ const CaseStudyTemplate = ({
                     >
                         {context.team && (
                             <Box textAlign="left" p={4}>
-                                <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">The Team</Text>
-                                <Text mt={2} fontSize={{ base: 'sm', md: 'md' }}>
+                                <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">The Team</Heading>
+                                <Text mt={2} fontSize={{ base: 'md', md: 'lg' }}>
                                     {context.team}
                                 </Text>
                             </Box>
                         )}
                         {context.client && (
                             <Box textAlign="left" p={4}>
-                                <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">The Client</Text>
-                                <Text mt={2} fontSize={{ base: 'sm', md: 'md' }}>
+                                <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">The Client</Heading>
+                                <Text mt={2} fontSize={{ base: 'md', md: 'lg' }}>
                                     {context.client}
                                 </Text>
                             </Box>
                         )}
                         {context.role && (
                             <Box textAlign="left" p={4}>
-                                <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">My Role</Text>
-                                <Text mt={2} fontSize={{ base: 'sm', md: 'md' }}>
+                                <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">My Role</Heading>
+                                <Text mt={2} fontSize={{ base: 'md', md: 'lg' }}>
                                     {context.role}
                                 </Text>
                             </Box>
                         )}
                         {context.requirements && (
                             <Box textAlign="left" p={4}>
-                                <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">Requirements</Text>
-                                <UnorderedList fontSize="sm" mt={2}>
+                                <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">Requirements</Heading>
+                                <UnorderedList fontSize="md" mt={2}>
                                     {context.requirements.map((req, index) => (
                                         <ListItem key={index} mb={1}>
                                         <b>{req.title}:</b> {req.description}
@@ -130,8 +132,8 @@ const CaseStudyTemplate = ({
                         gap={5}
                     >
                         <Box textAlign="left" p={4}>
-                            <Text fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="medium">Problem Space</Text>
-                            <Text mt={2} fontSize={{ base: 'sm', md: 'md' }}>
+                            <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">Problem Space</Heading>
+                            <Text mt={2} fontSize={{ base: 'md', md: 'lg' }}>
                                 {problemSpace}
                             </Text>
                         </Box>
@@ -145,7 +147,8 @@ const CaseStudyTemplate = ({
                                 <Button 
                                     className="button" 
                                     textTransform="uppercase" 
-                                    fontWeight={500}
+                                    fontWeight="medium"
+                                    fontFamily="Inter, sans-serif"
                                     p={6}
                                 >
                                     {link.label}
@@ -173,8 +176,8 @@ const CaseStudyTemplate = ({
                             />
                         </Box>
                         <Box flex="1" textAlign="left" p={{ base: '3', md: '4' }} order={section.textOrder}>
-                            <Text fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="medium">{section.title}</Text>
-                            <Text mt={5} fontSize={{ base: 'sm', md: 'md' }}>
+                            <Heading fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="regular">{section.title}</Heading>
+                            <Text mt={5} fontSize={{ base: 'md', md: 'lg' }}>
                                 {section.content}
                             </Text>
                         </Box>
@@ -185,8 +188,8 @@ const CaseStudyTemplate = ({
 
                 {outcomes && outcomes.length > 0 && (
                     <Box flex="1" textAlign="left" p={{ base: '3', md: '4' }}>
-                        <Text fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="medium">Outcomes</Text>
-                        <Text mt={5} fontSize={{ base: 'sm', md: 'md' }}>
+                        <Heading fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="regular">Outcomes</Heading>
+                        <Text mt={5} fontSize={{ base: 'md', md: 'lg' }}>
                             {outcomes.map((outcome, index) => (
                                 <Text key={index}>{outcome}</Text>
                             ))}

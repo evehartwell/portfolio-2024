@@ -8,6 +8,7 @@ import {
     Image,
     AspectRatio,
     VStack,
+    Heading,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import Navbar from './navbar';
@@ -86,8 +87,8 @@ const ProjectBox = ({ title, imageSrc, videoSrc, link }) => (
                 objectFit="cover"
                 borderRadius="10px"
                 >
-                <source src={videoSrc} type="video/mp4" />
-                Your browser does not support the video tag.
+                    <source src={videoSrc} type="video/mp4" />
+                    Your browser does not support the video tag.
                 </Box>
             </AspectRatio>
             ) : (
@@ -113,7 +114,6 @@ const ProjectBox = ({ title, imageSrc, videoSrc, link }) => (
             alignItems="flex-end"
             color="white"
             zIndex={2}
-            fontWeight="medium"
             sx={{
                 '&::before': {
                     content: '""',
@@ -131,7 +131,7 @@ const ProjectBox = ({ title, imageSrc, videoSrc, link }) => (
                 },
             }}
         >
-            <Text fontSize="xl" textTransform="uppercase">{title}</Text>
+            <Heading fontSize="xl" textTransform="uppercase" fontWeight="medium">{title}</Heading>
         </Box>
     </Box>
 );
@@ -155,13 +155,13 @@ const Homepage = () => {
             <Navbar />
             <VStack spacing={10} align="stretch">
                 <Box textAlign="center" py={20} mt={20} maxW="40rem" mx="auto">
-                    <Text fontFamily="'Old London', serif" textTransform="capitalize" fontSize="5xl" fontWeight="medium">Hartwell</Text>
-                    <Text fontSize={{ base: 'sm', md: 'sm' }} textTransform="uppercase" mt={8}>
-                        I'm a UX designer and web developer in Philadelphia, dedicated to building immersive, human-centered digital experiences. 
+                    <Heading fontFamily="Inter, sans-serif" textTransform="uppercase" fontSize="3xl" fontWeight="regular">Eve Hartwell</Heading>
+                    <Text fontFamily="Times Now, serif" fontSize={{ base: 'sm', md: 'md' }} fontWeight="light" mt={4}>
+                        UX Designer and Web Developer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.
                     </Text>
                 </Box>
                 <Box>
-                    <Text fontSize="3xl" fontWeight="medium" mb={5} textTransform="uppercase">My Work</Text>
+                    <Heading fontSize="3xl" fontWeight="regular" mb={5} textTransform="uppercase">My Work</Heading>
                     <Divider borderColor="#422D2D" mb={5} />
                     <ProjectBox {...projects[0]} />
                 </Box>
