@@ -89,8 +89,8 @@ const ModesensStudy = () => {
                 imageSrc: "/images/LUXR-IXFlow.png",
                 imageAlt: "Image 2 description",
                 direction: { base: 'column', md: 'column' },
-                imageOrder: { base: 1, md: 2 },
-                textOrder: { base: 2, md: 1 },
+                imageOrder: { base: 2, md: 1 },
+                textOrder: { base: 1, md: 2 },
                 imageBorder: false
             },
             {
@@ -99,8 +99,8 @@ const ModesensStudy = () => {
                 imageSrc: "/images/LUXR-guides.png",
                 imageAlt: "Image 2 description",
                 direction: { base: 'column', md: 'column' },
-                imageOrder: { base: 1, md: 2 },
-                textOrder: { base: 2, md: 1 },
+                imageOrder: { base: 2, md: 1 },
+                textOrder: { base: 1, md: 2 },
                 imageBorder: true
             },
         // ... more sections

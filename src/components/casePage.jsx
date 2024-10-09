@@ -36,7 +36,8 @@ const casePage = () => {
             imageAlt: "Image 1 description",
             direction: { base: 'column', md: 'row' },
             imageOrder: { base: 1, md: 2 },
-            textOrder: { base: 2, md: 1 }
+            textOrder: { base: 2, md: 1 },
+            imageBorder: true
         },
         {
             title: "Section 2 Title",
@@ -45,7 +46,8 @@ const casePage = () => {
             imageAlt: "Image 2 description",
             direction: { base: 'column', md: 'row' },
             imageOrder: { base: 1, md: 2 },
-            textOrder: { base: 2, md: 1 }
+            textOrder: { base: 2, md: 1 },
+            imageBorder: true
         },
         {
             title: "Section 3 Title",

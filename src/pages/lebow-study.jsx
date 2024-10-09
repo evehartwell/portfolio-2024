@@ -1,227 +1,120 @@
 import React from 'react';
-import {
-    Box,
-    Text,
-    Flex,
-    Button,
-    Container,
-    Tag,
-    Image,
-    Divider,
-    List,
-    ListItem,
-    UnorderedList,
-    Link as ChakraLink,
-} from '@chakra-ui/react';
-import Navbar from './navbar';
-import Footer from './footer';
-import '../styles.css';
+import CaseStudyTemplate from '../components/caseTemplate';
 
 const LeBowStudy = () => {
-    return (
-        <Container maxW="container.xl" lineHeight="2rem" py={5}>
-            {/* Navbar */}
-            <Flex justify="flex-start">
-                <a href="/">
-                    <img src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" className="logo" />
-                </a>
-            </Flex>
-            <Navbar />
+    const caseStudyData = {
+        title: "LeBow College of Business",
+        tags: ["UI Design", "Drupal", "Brand Research"],
+        description: "I collaborated with the LeBow College of Business's marketing team to implement their rebrand and website redesign, focusing on improving user experience, enhancing brand consistency, and updating the Drupal backend system.",
+        coverMedia: "/images/lebow-preview.png",
+        context: {
+            team: "Lead Web Designer, Marketing Team, Development Team ",
+            role: "UX Designer, Web Content Assistant",
+        },
+        problemSpace: "The existing LeBow College of Business website faced challenges amid Drexel University's university-wide digital redesign, which aimed to unify and modernize the online presence across all colleges. The site suffered from outdated design elements, inconsistent branding, and complex information formatting that blurred the distinct identity of the School of Economics compared to the School of Business. Additionally, the outdated Drupal version hindered performance and functionality.",
+        externalLinks: [
+                { label: "Live Site", url: "https://www.lebow.drexel.edu/" },
+            ],
+        processSections: [
+        {
+            title: "Ad Research",
+            content: "I conducted research on competing colleges and analyzed their university-wide ads vs. business college ads to understand industry trends and benchmark against peer institutions.",
+            imageSrc: "/images/lebow-research.png",
+            imageAlt: "ad research document",
+            direction: { base: 'column', md: 'column' },
+            imageOrder: { base: 2, md: 1 },
+            textOrder: { base: 2, md: 1 },
+            imageBorder: true
+        },
+        {
+            title: "New Brand Campaign",
+            content: "The new ads aimed to include messaging that resonated with the target audience—prospective students, alumni, and industry partners. Inspiring copy is not just about catchy phrases but about connecting on an emotional level and conveying the core values and vision of the college. We emphasized narratives that highlighted success stories, student experiences, and the impact of LeBow’s programs.",
+            imageSrc: "/images/lebow-ads.png",
+            imageAlt: "example of lebow ad design",
+            direction: { base: 'column', md: 'row' },
+            imageOrder: { base: 1, md: 2 },
+            textOrder: { base: 2, md: 1 },
+            imageBorder: false
+        },
+        {
+            title: "Focus Groups",
+            content: "I participated in a series of focus group tests to evaluate the effectiveness of design, copy, and photography for the brand campaign. The tests aimed to isolate key variables to determine the most impactful combinations across various marketing channels, including digital screens, billboards, and buses. For design, we assessed three distinct styles while keeping copy and imagery consistent, allowing us to benchmark different visual approaches. The copy tests focused on headline options, exploring variations with and without personal pronouns, and different subcopy themes, such as collaboration and empowerment. Photography tests compared images paired with the taglines emphasizing experience and problem-solving. These insights helped refine the campaign’s messaging and visuals to better resonate with the target audience and drive engagement.",
+            imageSrc: "/images/lebow-copy.png",
+            imageAlt: "quotes of tested phrases",
+            direction: { base: 'column', md: 'row' },
+            imageOrder: { base: 1, md: 2 },
+            textOrder: { base: 2, md: 1 },
+            imageBorder: false
+        },
+        {
+            title: "Site Audit",
+            content: "My first task for the web redesign was tackling what most designers shy away from—a site audit. I systematically reviewed the site’s structure to ensure that content was organized logically and user navigation was intuitive. This involved identifying any outdated or inaccurate information, fixing broken links, correcting typographical errors, and addressing technical issues that impacted the site’s performance. The audit provided a clear roadmap for improving the website's functionality and content accuracy, ensuring a smoother user experience and more reliable site performance.",
+            imageSrc: "/images/lebow-audit.png",
+            imageAlt: "brand research document",
+            direction: { base: 'column', md: 'row' },
+            imageOrder: { base: 2, md: 1 },
+            textOrder: { base: 1, md: 2 },
+            imageBorder: true
+        },
+        {
+            title: "Atomic Design",
+            content: "We embraced atomic design principles to ensure efficiency and consistency across the design system. Collaborating closely with the design team, we brainstormed and iterated on wireframes and design solutions. Using a modular approach, we created scalable and maintainable components, which allowed us to streamline the design process and maintain a cohesive look and feel.",
+            imageSrc: "/images/lebow-atomic.png",
+            imageAlt: "atomic design components",
+            direction: { base: 'column', md: 'row' },
+            imageOrder: { base: 1, md: 2 },
+            textOrder: { base: 2, md: 1 },
+            imageBorder: true
+        },
+        {
+            title: "The School of Economics Project",
+            content: "My primary focus was redesigning the School of Economics page to distinguish it from the broader LeBow College of Business website. To accomplish this, I conducted UX research on competitor college websites, collaborated with the lead web designer to establish key content, then created low fidelity and high fidelity wireframes.",
+            imageSrc: "/images/lebow-econ-orig2.png",
+            imageAlt: "original school of economics page",
+            direction: { base: 'column', md: 'column' },
+            imageOrder: { base: 1, md: 2 },
+            textOrder: { base: 2, md: 1 },
+            imageBorder: true
+        },
+        {
+            title: "UX Research",
+            content: "To design an effective and differentiated page for the School of Economics, I first needed a clear understanding of how other institutions approached similar challenges. I conducted extensive UX research on competitor college websites, examining their UI strategies for individual department pages. This allowed me to pinpoint areas where competitors failed to differentiate their departments, often resulting in a generic look and feel. By contrast, I saw effective examples that utilized bold copy, distinct banners, and visual storytelling to create stronger departmental identities. This informed my design direction for creating a more engaging and distinctive user experience for the School of Economics.",
+            imageSrc: "/images/lebow-econ.png",
+            imageAlt: "desktop high fidelity wireframes",
+            direction: { base: 'column', md: 'column' },
+            imageOrder: { base: 2, md: 1 },
+            textOrder: { base: 2, md: 1 },
+            imageBorder: true
+        },
+        {
+            title: "Wireframes",
+            content: "Working closely with the lead web designer, we developed wireframes that would clearly define the School of Economics’ content, focusing on key areas that would entice new students. The original layout lacked cohesion and a strong visual identity, so we revamped the wireframes to highlight important information while incorporating copy that addressed prospective students' questions and motivations. The new structure emphasized clarity, with clear calls to action and strategically placed content aimed at encouraging enrollment.",
+            imageSrc: "/images/lebow-econ-orig.png",
+            imageAlt: "school of econ wireframe",
+            direction: { base: 'column', md: 'row' },
+            imageOrder: { base: 1, md: 2 },
+            textOrder: { base: 2, md: 1 },
+            imageBorder: true
+        },
+        {
+            title: "UI Design",
+            content: "During the redesign phase, I transformed the wireframes into high-fidelity designs in Figma. I incorporated the library of modular UI elements and selected graphics from Getty Images that adhered to the updated brand guidelines. The design was focused on enhancing information formatting, making complex content more accessible and engaging. By using larger banners and bold headings, I ensured that the School of Economics stood out as a distinct entity within the LeBow website, while still aligning with the overall college branding. The final design improved user navigation, presented detailed content more effectively, and successfully emphasized the School of Economics’ unique identity.",
+            imageSrc: "/images/lebow-econ-new.png",
+            imageAlt: "high fidelity school of econ page",
+            direction: { base: 'column', md: 'column' },
+            imageOrder: { base: 2, md: 1 },
+            textOrder: { base: 2, md: 1 },
+            imageBorder: true
+        },
+        // ... more sections
+        ],
+        outcomes: [
+            "The team and I successfully redesigned the LeBow website, significantly improving user experience and brand consistency. A new Drupal backend system was implemented and I participated in building and editing over 100 pages. This overhaul not only enhanced the visual and functional aspects of the site but also contributed to a more engaging and user-friendly experience. My efforts led to a more cohesive brand presentation and a streamlined, efficient website that better served its users.",
+        // ... more outcomes
+        ]
+    };
 
-            <Flex direction="column" align="center">
-                {/* Title and Description */}
-                <Box maxW="65rem" textAlign="center" mt={20}>
-                    <Text fontSize="5xl" textTransform="uppercase" fontWeight="regular" lineHeight="3rem">LeBow College of Business</Text>
-                    <Flex justify="center" textTransform="uppercase" gap={4} p={6} mt={2}>
-                        <Tag className="button">#UX Design</Tag>
-                        <Tag className="button">#Drupal</Tag>
-                        <Tag className="button">#Brand Research</Tag>
-                    </Flex>
-                    <Text textAlign="left" mt={2}>
-                        I collaborated with the LeBow College of Business's marketing team to implement their rebrand and website redesign, 
-                        focusing on improving user experience, enhancing brand consistency, and updating the Drupal backend system.
-                    </Text> 
-                </Box>
-                {/* Cover Image */} 
-                <Flex justify="space-between" mt={10}>
-                    <Box w="full" mb={20} position="relative" borderRadius="10px" overflow="hidden" className="case-image">
-                        <Image 
-                            src="/images/lebow-preview.png" 
-                            alt="lebow homepage" 
-                            objectFit="cover"  
-                            height="100%" 
-                        />
-                    </Box>
-                </Flex>
-                {/* Overview */} 
-                <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Project Overview</Text>
-                {/* Client and Deliverables */}
-                <Flex
-                    direction={{ base: 'column', md: 'row' }} // Stack vertically on small screens, horizontally on larger screens
-                    wrap="wrap"
-                    gap={5} // Adjust spacing between items
-                    p={5}
-                    w="full"
-                >
-                {/* column 1 */}
-                    <Flex
-                        direction="column" // Stack items vertically in each column
-                        flex="1"
-                        gap={5}
-                    >
-                        <Box textAlign="left" p={4}>
-                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">The Team</Text>
-                            <Text mt={2}>
-                                Lead Web Designer, Marketing Team, Development Team 
-                            </Text>
-                        </Box>
-                        <Box textAlign="left" p={4}>
-                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">My Role</Text>
-                            <Text textTransform="capitalize" mt={2}>
-                                UX Designer, Web Content Assistant
-                            </Text>
-                            <UnorderedList fontSize="sm" mt={2} lineHeight="1.5rem">
-                                <ListItem mb={2}>Supported the redesign of the LeBow website by executing and editing wireframes.</ListItem>
-                                <ListItem mb={2}>Ensured brand consistency across all design elements.</ListItem>
-                                <ListItem mb={2}>Participated in design reviews and collaborated with marketing and development teams.</ListItem>
-                                <ListItem mb={2}>Sourced and edited photography, created graphics, and managed creative assets.</ListItem>
-                                <ListItem mb={2}>Conducted competitor research, monitored industry trends, and reported findings.</ListItem>
-                                <ListItem mb={2}>Contributed to user testing and research, and managed web updates using Monday.com.</ListItem>
-                            </UnorderedList>
-                        </Box>
-                    </Flex>
-                {/* column 2 */}
-                    <Flex
-                        direction="column" // Stack items vertically in each column
-                        flex="1"
-                        gap={5}
-                    >
-                        <Box textAlign="left" p={4}>
-                            <Text fontSize="xl" textTransform="uppercase" fontWeight="medium">Problem Space</Text>
-                            <Text mt={2}>
-                                The existing LeBow College of Business website faced challenges amid Drexel University's university-wide digital redesign, 
-                                which aimed to unify and modernize the online presence across all colleges. The site suffered from outdated design elements, 
-                                inconsistent branding, and complex information formatting that blurred the distinct identity of the School of Economics compared to the School of Business. 
-                                Additionally, the outdated Drupal version hindered performance and functionality.
-                            </Text>
-                        </Box>
-                    </Flex>
-                </Flex>
-                <Flex justify="center" gap={4} p={6}>
-                    <ChakraLink href="https://www.lebow.drexel.edu/" isExternal>
-                        <Button className="button" textTransform="uppercase" p={6}>Visit Website</Button>
-                    </ChakraLink>
-                </Flex>
-                {/* Process Stage 1 */}
-                <Flex 
-                    direction={{ base: 'column', md: 'row' }}  
-                    w="full" 
-                    gap={5} 
-                    mt={20}
-                >
-                    <Box maxw='lg' className="case-image">
-                        <Image 
-                            src="/images/lebow-research.png" 
-                            alt="brand research document" 
-                            objectFit="cover"  
-                            height="100%" 
-                        />
-                    </Box>
-                    
-                </Flex>
-                {/* Process Stage 2 */}
-                <Flex 
-                    direction={{ base: 'column', md: 'row' }}  
-                    w="full" 
-                    gap={5} 
-                    mt={20}
-                >
-                    <Box w="full" textAlign="left" p={10}>
-                        <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Brand Research</Text>
-                        <Text mt={5}>
-                            I conducted research on competing colleges and analyzed their university-wide ads vs. 
-                            business college ads to understand industry trends and benchmark against peer institutions.
-                        </Text>
-                        <Text mt={2}>
-                            The new ads aimed to include messaging that resonated with the target audience—prospective students, alumni, and industry partners. 
-                            Inspiring copy is not just about catchy phrases but about connecting on an emotional level and conveying the core values and vision of the college.
-                            We emphasized narratives that highlighted success stories, student experiences, and the impact of LeBow’s programs. 
-                            This also included calls to action that encouraged engagement, whether it was applying for a program, attending an event, or connecting with the community.
-                        </Text>
-                    </Box>
-                    <Box>
-                        <Image 
-                            src="/images/lebow-ads.png" 
-                            alt="example of lebow ad design" 
-                            objectFit="contain"
-                        />
-                    </Box>
-                </Flex>
-                {/* Process Stage 3 */}
-                <Flex 
-                    direction={{ base: 'column', md: 'row' }}  
-                    w="full" 
-                    gap={5} 
-                    mt={10}
-                    justify="space-between"
-                >
-                    <Box maxw='lg' className="case-image">
-                        <Image 
-                            src="/images/lebow-atomic.png" 
-                            alt="atomic design components" 
-                            objectFit="cover"  
-                            height="100%" 
-                        />
-                    </Box>
-                </Flex>
-                <Box w="full" textAlign="left" p={10}>
-                    <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Atomic Design</Text>
-                    <Text mt={5}>
-                        We embraced atomic design principles to ensure efficiency and consistency across the design system. 
-                        Collaborating closely with the design team, we brainstormed and iterated on wireframes and design solutions. 
-                        Using a modular approach, we created scalable and maintainable components, which allowed us to streamline the design process and maintain a cohesive look and feel.
-                    </Text>
-                </Box>
-                {/* Process Stage 4 */}
-                <Flex 
-                    direction={{ base: 'column', md: 'row' }}  
-                    w="full" 
-                    gap={5} 
-                    mt={20}
-                    justify="space-between"
-                >
-                    <Box className="case-image">
-                        <Image
-                            src="/images/lebow-desk.png" 
-                            alt="desktop high fidelity wireframes" 
-                            objectFit="cover" 
-                            height="100%" 
-                        />
-                    </Box>
-                    <Box w="full" textAlign="left" p={10}>
-                        <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Web Design</Text>
-                        <Text mt={5}>
-                        In the redesign phase, I created and refined wireframes in Figma with chosen graphics from Getty Images that adhered to the updated brand guidelines. 
-                        It was not necessary to create low-fidelity wireframes as the components and site structure were already defined. I focused on integrating the modular design into complex sections of the site. 
-                        I specifically focused on redesigning the School of Economics department, enhancing information formatting to present detailed content more effectively while emphasizing its unique identity.
-                        </Text>
-                    </Box>
-                </Flex>
-                <Divider borderColor="#ababab" mt={10}/>
-                <Box textAlign="left" w="full" p={10} mt={5}>
-                    <Text fontSize="3xl" textTransform="uppercase" fontWeight="medium">Outcomes</Text>
-                    <Text mt={5}>
-                        The team and I successfully redesigned the LeBow website, significantly improving user experience and brand consistency. 
-                        A new Drupal backend system was implemented and I participated in building and editing over 100 pages. 
-                        This overhaul not only enhanced the visual and functional aspects of the site but also contributed to a more engaging and user-friendly experience. 
-                        My efforts led to a more cohesive brand presentation and a streamlined, efficient website that better served its users.
-                    </Text>
-                </Box>
-            </Flex>
-            {/* button to go next to other proj */}
-            <Footer />
-        </Container>
-    );
+    return <CaseStudyTemplate {...caseStudyData} />;
 };
 
 export default LeBowStudy;

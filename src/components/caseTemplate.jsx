@@ -2,7 +2,6 @@ import React from 'react';
 import {
     Box,
     Text,
-    VStack,
     Flex,
     Container,
     Tag,
@@ -67,7 +66,11 @@ const CaseStudyTemplate = ({
                 </Box>
                 <Flex justify="space-between" mt={20}>
                     <Box w="full" mb={20} position="relative" borderRadius="10px" overflow="hidden" outline="1px solid #D6D6D6">
-                        {coverMedia}
+                        {typeof coverMedia === 'string' ? (
+                            <Image src={coverMedia} alt="Cover media" objectFit="cover" w="100%" h="100%" />
+                        ) : (
+                            coverMedia
+                        )}
                     </Box>
                 </Flex>
                 <Text mb={10} fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="medium">Project Overview</Text>
