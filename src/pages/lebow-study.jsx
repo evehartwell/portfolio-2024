@@ -11,14 +11,14 @@ const LeBowStudy = () => {
             team: "Lead Web Designer, Marketing Team, Development Team ",
             role: "UX Designer, Web Content Assistant",
         },
-        problemSpace: "The existing LeBow College of Business website faced challenges amid Drexel University's university-wide digital redesign, which aimed to unify and modernize the online presence across all colleges. The site suffered from outdated design elements, inconsistent branding, and complex information formatting that blurred the distinct identity of the School of Economics compared to the School of Business. Additionally, the outdated Drupal version hindered performance and functionality.",
+        problemSpace: "Drexel University was in the midst of a university-wide digital overhaul, and LeBow's outdated site struggled to align with the new, modernized vision. From inconsistent branding to convoluted information architecture, the site made it difficult for users to differentiate between the School of Economics and the School of Business. Additionally, the outdated Drupal platform hindered site performance and limited its functionality. Fortunately, the team was well-equipped to tackle this redesign. We had a large team with clearly defined roles and a substantial budget. This provided the ideal conditions for thorough research, experimentation, and iteration, ensuring the redesign met the standards of the new digital goals.",
         externalLinks: [
                 { label: "Live Site", url: "https://www.lebow.drexel.edu/" },
             ],
         processSections: [
         {
             title: "Ad Research",
-            content: "I conducted research on competing colleges and analyzed their university-wide ads vs. business college ads to understand industry trends and benchmark against peer institutions.",
+            content: "Initially working with an external design agency slowed our progress as miscommunication delayed key milestones. As a result, we brought much of the design work in-house, which made my brand research critical to the project’s success. To guide the brand redesign, I conducted extensive research on peer institutions. I analyzed the digital presence of competing colleges, comparing their university-wide ads with their business school-specific campaigns. This helped me spot industry trends and assess how LeBow’s branding compared. With this information, I was able to inform key decisions about how to better position LeBow’s identity within Drexel's broader redesign efforts.",
             imageSrc: "/images/lebow-research.png",
             imageAlt: "ad research document",
             direction: { base: 'column', md: 'column' },
@@ -110,6 +110,7 @@ const LeBowStudy = () => {
         ],
         outcomes: [
             "The team and I successfully redesigned the LeBow website, significantly improving user experience and brand consistency. A new Drupal backend system was implemented and I participated in building and editing over 100 pages. This overhaul not only enhanced the visual and functional aspects of the site but also contributed to a more engaging and user-friendly experience. My efforts led to a more cohesive brand presentation and a streamlined, efficient website that better served its users.",
+            "Overall, this project gave me valuable experience in executing a successful redesign in an ideal environment. It enhanced my understanding of the UX design cycle and built my confidence to take on larger projects in the future."
         // ... more outcomes
         ]
     };

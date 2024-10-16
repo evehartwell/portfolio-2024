@@ -191,7 +191,7 @@ const CaseStudyTemplate = ({
                         <Heading fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="regular">Outcomes</Heading>
                         <Text mt={5} fontSize={{ base: 'md', md: 'lg' }}>
                             {outcomes.map((outcome, index) => (
-                                <Text key={index}>{outcome}</Text>
+                                <Text key={index} mb={2}>{outcome}</Text>
                             ))}
                         </Text>
                     </Box>

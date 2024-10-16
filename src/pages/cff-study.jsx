@@ -23,7 +23,7 @@ const MapStudy = () => {
             team: "Communications Manager, Director of Business Development",
             role: "UX Designer, Web Developer",
         },
-        problemSpace: "The initial interactive map prototype was built on a platform that did not meet accessibility standards, limiting its usability for a wider audience. The challenge was to salvage the existing prototype while creating a functional, accessible version that effectively highlighted the Center’s manufacturing capabilities.",
+        problemSpace: "The initial interactive map prototype was built on a platform that did not meet accessibility standards, limiting its usability for a wider audience. The challenge was to salvage aspects of the existing prototype while developing a new, fully accessible version from the ground up. This project presented a series of challenges that required me to wear multiple hats all within a limited budget, a small team, and a tight timeframe.",
         externalLinks: [
                 { label: "Live Site", url: "https://drexel.edu/functional-fabrics/about/virtual-tour/" },
                 { label: "Prototype", url: "https://www.figma.com/proto/5kM4mNOb4njhXKD6ZVL5R1/Interactive-Map?node-id=31-411&scaling=contain&page-id=0%3A1&starting-point-node-id=31%3A375" },
@@ -40,8 +40,29 @@ const MapStudy = () => {
             imageBorder: true
         },
         {
+            title: "Inspiration",
+            content: "This project offered a rare opportunity for creative exploration. I drew inspiration from virtual maps and tours used by institutions like the Metropolitan Museum of Art and the National Gallery of Art, which creatively and functionally displayed their spaces. While the possibilities for this project were boundless, understanding its potential was a major source of inspiration that pushed me to think innovatively about how I could best highlight the Center's capabilities.",
+            imageSrc: "/images/CFF-inspo.png",
+            imageAlt: "screenshot of the metkids interactive map and national gallery of art virtual tour site",
+            direction: { base: 'column', md: 'column' },
+            imageOrder: { base: 1, md: 2 },
+            textOrder: { base: 2, md: 1 },
+            imageBorder: true
+        },
+        {
+            title: "Technology Exploration",
+            content: "Research was essential to identifying the most effective way to launch a fully accessible interactive map. I explored several technological options, including Infogram, a tool that allows the creation of interactive infographics, and Sitecore-compliant CSS classes to ensure the design met accessibility standards. Additionally, I spent some time developing a responsive prototype in html, css, and vanilla javascript. This proof-of-concept was scrapped due to compliance issues but it gave me a better understanding of the technical possibilities for this project.",
+            imageSrc: "/images/blank-img.png",
+            imageAlt: "blank",
+            direction: { base: 'column', md: 'column' },
+            imageOrder: { base: 1, md: 2 },
+            textOrder: { base: 2, md: 1 },
+            imageBorder: false
+        },
+        
+        {
             title: "Design Iterations",
-            content: "My design process started at the high-fidelity wireframing stage because the components and assets were already defined. I designed a version of the map using Sitecore components, ensuring it complied with accessibility standards. My goal was to create an innovative display of manufacturing capabilities that was visually appealing and easy to understand for users. I developed and evaluated several accessible designs with the communications manager to refine the user experience, balancing ideal design with practical constraints.",
+            content: "My design process started at the high-fidelity wireframing stage because the components and assets were already defined. I designed a version of the map using Sitecore components, ensuring it complied with accessibility standards. My objective was to retain as many original assets as possible while incorporating interactivity and vibrant color. However, the interactive elements, such as buttons, felt out of place within the static site and didn’t create an immersive experience. I developed and evaluated several accessible designs with the communications manager to refine the user experience, balancing ideal design with practical constraints.",
             imageSrc: "/images/CFF-figma.png",
             imageAlt: "high fidelity wireframes",
             direction: { base: 'column', md: 'column' },
@@ -92,8 +113,10 @@ const MapStudy = () => {
         // ... more sections
         ],
         outcomes: [
-            "This project afforded me a greater degree of independence, which was initially challenging. This level of design freedom was new to me, and I had to navigate the process of creating a product that effectively met user needs with limited direction. Working with a smaller team without a technical background added to the challenge. However, my previous experience with Sitecore was invaluable, allowing me to create the interface efficiently with minimal issues.",
-            " I salvaged and refined the inaccessible Figma prototype by turning it into a high-performance interactive map that enhanced the visibility of the Center. I also developed an accessible version of the map including six pages of web content using Sitecore CMS to broaden audience reach."
+            "This project was a significant turning point in my journey as a UX designer, presenting me with a unique combination of challenges and opportunities. The freedom to design independently, while initially daunting, allowed me to push my creative boundaries and develop solutions that were both practical and creative.",
+            "Working with a small team that lacked technical expertise forced me to improve my communication skills, simplifying complex ideas and taking on a diverse range of responsibilities. My previous experience with Sitecore proved invaluable, enabling me to overcome technical hurdles quickly and develop the interface with minimal issues.",
+            "The most notable success of this project was transforming an inaccessible Figma prototype into a fully functional, high-performance interactive map. I developed an accessible version of the map alongside six pages of web content using Sitecore CMS, broadening the Center’s audience and adhering to inclusivity standards. Despite the limitations of budget and time, I delivered a solution that not only met user needs but also elevated the Center's digital presence.",
+            "This experience taught me the importance of adaptability, technical expertise, and a user-focused design process in creating meaningful digital solutions. It required me to strike a balance between creativity and practicality, prioritize features strategically, and make independent design decisions under pressure."
         // ... more outcomes
         ]
     };
