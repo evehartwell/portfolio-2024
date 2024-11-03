@@ -112,3 +112,4 @@ node_modules/
 
 # Ignore compiled Python files
 *.pyc
+public/images/.DS_Store
