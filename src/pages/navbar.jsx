@@ -8,7 +8,6 @@ const Navbar = () => {
             as="nav"
             justify={{ base: 'center', md: 'left' }}
             w="100%"
-            p="1rem"
             position="relative"
             top="0"
             left="0"
@@ -16,7 +15,7 @@ const Navbar = () => {
             fontFamily='Inter, sans-serif'
         >
             <Flex
-                gap={{ base: '30px', md: '50px' }}
+                gap={{ base: '2rem', md: '3rem' }}
             >
                 {/* Navbar buttons */}
                 <Link to="/">

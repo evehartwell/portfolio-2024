@@ -102,7 +102,6 @@ iOSInjectionProject/
 
 # Ignore macOS system files
 .DS_Store
-public/images/.DS_Store
 
 # Ignore log files
 *.log

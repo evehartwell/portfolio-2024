@@ -11,7 +11,7 @@ const theme = extendTheme({
     fonts: {
         heading: 'Inter, sans-serif',
         body: 'Times Now, serif',
-        accent: 'Sloop, ScriptTwo, script',
+        accent: 'Sloop, script',
     },
     styles: {
         global: {
@@ -25,20 +25,20 @@ const theme = extendTheme({
     },
     components: {
         Button: {
-        baseStyle: {
-            borderRadius: '30px',
-            _hover: {
-            bg: '#D6D6D6',
+            baseStyle: {
+                borderRadius: '30px',
+                _hover: {
+                bg: '#D6D6D6',
+                },
             },
-        },
-        variants: {
-            outline: {
-            color: 'primary.1',
-            bg: 'transparent',
-            border: '1px solid',
-            borderColor: 'primary.1',
+            variants: {
+                outline: {
+                color: 'primary.1',
+                bg: 'transparent',
+                border: '1px solid',
+                borderColor: 'primary.1',
+                },
             },
-        },
         },
     },
 });

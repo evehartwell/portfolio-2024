@@ -8,7 +8,6 @@ import {
     Divider,
     Stack,
 } from '@chakra-ui/react';
-import '../styles.css';
 
 const Contact = () => {
     return (

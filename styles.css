@@ -1,0 +1,19 @@
+/* Apply this CSS to the `peel-effect` class */
+.peel-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.peel-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, transparent 50%, #f5f5f5 50%);
+    transform: rotate(45deg);
+    transform-origin: top right;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}

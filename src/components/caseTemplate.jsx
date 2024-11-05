@@ -28,21 +28,22 @@ const CaseStudyTemplate = ({
     outcomes
 }) => {
     return (
-        <Container maxW="container.xl" py={5}>
+        <Container maxW="8xl" py={5}>
             <Navbar />
             <Flex direction="column" align="center">
-                <Box maxW="60rem" textAlign="center" mt={28}>
+                <Box maxW="60rem" textAlign="center" mt={20}>
                     <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} textTransform="uppercase" fontWeight="regular">{title}</Heading>
                     <Flex justify="center" textTransform="uppercase" gap={4} p={6} flexWrap="wrap">
                         {tags.map((tag) => (
                             <Tag
                                 key={tag}
                                 bg="transparent"
-                                color="var(--primary-color-1)"
+                                color="primary.1"
                                 borderRadius="30px"
-                                outline="1px solid var(--primary-color-1)"
+                                borderWidth={1}
+                                borderColor="primary.1"
                                 _hover={{ bg: "#D6D6D6" }}
-                                fontFamily="Inter, sans-serif"
+                                fontFamily="heading"
                                 fontSize={{ base: 'xs', md: 'sm' }}
                             >
                                 {tag}
@@ -135,7 +136,11 @@ const CaseStudyTemplate = ({
                                     className="button" 
                                     textTransform="uppercase" 
                                     fontWeight="medium"
-                                    fontFamily="Inter, sans-serif"
+                                    fontFamily="heading"
+                                    backgroundColor='primary.2'
+                                    borderWidth={1}
+                                    borderColor="primary.1"
+                                    _hover={{ bg: "#D6D6D6" }}
                                     p={6}
                                 >
                                     {link.label}
