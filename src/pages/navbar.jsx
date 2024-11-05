@@ -35,7 +35,7 @@ const Navbar = () => {
                             alt="Logo" 
                             w="1.4rem" 
                             filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
-                            display={{ base: "none", md: "block" }}
+                            display="block"
                         />
                         <Text>Work</Text>
                     </Button>
@@ -56,7 +56,7 @@ const Navbar = () => {
                             alt="Logo" 
                             w="1.4rem" 
                             filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
-                            display={{ base: "none", md: "block" }}
+                            display="block"
                         />
                         <Text>About</Text>
                     </Button>
@@ -82,7 +82,7 @@ const Navbar = () => {
                             alt="Logo" 
                             w="1.1rem" 
                             filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
-                            display={{ base: "none", md: "block" }}
+                            display="block"
                         />
                         <Text>Contact</Text>
                     </Button>
