@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Image, IconButton, Link as ChakraLink } from '@chakra-ui/react';
+import { Flex, Text, IconButton, Link as ChakraLink } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdAlternateEmail } from 'react-icons/md'; 
 import { IoDocumentAttachOutline } from "react-icons/io5";
@@ -14,12 +14,7 @@ const Footer = () => {
             p={4}
         >
             <Flex align="center">
-                <Image 
-                    src={`${process.env.PUBLIC_URL}/images/EH.svg`} 
-                    alt="Logo" 
-                    boxSize="8rem"
-                    className="svg"
-                />
+                <Text>Designed and built by Eve Hartwell</Text>
             </Flex>
             <Flex>
                 <ChakraLink href="https://www.linkedin.com/in/eve-hartwell/" isExternal>

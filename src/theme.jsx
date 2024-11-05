@@ -11,7 +11,7 @@ const theme = extendTheme({
     fonts: {
         heading: 'Inter, sans-serif',
         body: 'Times Now, serif',
-        accent: 'Old London, serif',
+        accent: 'Sloop, ScriptTwo, script',
     },
     styles: {
         global: {

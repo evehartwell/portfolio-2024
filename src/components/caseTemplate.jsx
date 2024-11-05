@@ -29,19 +29,6 @@ const CaseStudyTemplate = ({
 }) => {
     return (
         <Container maxW="container.xl" py={5}>
-            <Flex justify="flex-start">
-                <Box
-                    as="a"
-                    href="/"
-                    position="fixed"
-                    width="2.5rem"
-                    zIndex={1001}
-                    filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
-                    display={{ base: 'none', md: 'block' }}
-                >
-                    <Image src={`${process.env.PUBLIC_URL}/images/star.svg`} alt="Logo" />
-                </Box>
-            </Flex>
             <Navbar />
             <Flex direction="column" align="center">
                 <Box maxW="60rem" textAlign="center" mt={28}>

@@ -1,25 +1,23 @@
 import {
     Box,
     Text,
-    Flex,
     Container,
-    Divider,
     Grid,
+    GridItem,
     Image,
     AspectRatio,
     VStack,
     Heading,
+    Button,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import Navbar from './navbar';
 import Footer from './footer';
 
-
 const projects = [
     {
         title: "Modesens",
-        imageSrc: "/images/LUXR-preview.png",
-        videoSrc: "/media/modesens-mobile-edit.mp4",
+        imageSrc: "/images/LUXR-frames.png",
         link: "/modesens-study",
     },
     {
@@ -37,14 +35,9 @@ const projects = [
         imageSrc: "/images/lebow-preview.png",
         link: "/lebow-study",
     },
-    {
-        title: "PA Central Credit Union",
-        imageSrc: "/images/bank-preview.png",
-        link: "/bank-study",
-    },
 ];
 
-const ProjectBox = ({ title, imageSrc, videoSrc, link }) => (
+const ProjectBox = ({ title, imageSrc, link }) => (
     <Box
         as={Link}
         to={link}
@@ -70,64 +63,36 @@ const ProjectBox = ({ title, imageSrc, videoSrc, link }) => (
                     transition: 'opacity 0.8s ease',
                 },
                 '&:hover::before, &:hover .project-text-overlay': {
-                    opacity: 0,
+                    
                 },
             }}
         >
-            {/* image/video styles */}
-            {videoSrc ? (
-            <AspectRatio ratio={16 / 9}>
-                <Box
-                as="video"
-                autoPlay
-                muted
-                loop
-                width="100%"
-                height="100%"
-                objectFit="cover"
-                borderRadius="10px"
-                >
-                    <source src={videoSrc} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </Box>
-            </AspectRatio>
-            ) : (
             <AspectRatio ratio={3 / 2}>
                 <Image
-                src={imageSrc}
-                alt={title}
-                objectFit="cover"
-                borderRadius="10px"
+                    src={imageSrc}
+                    alt={title}
+                    objectFit="cover"
+                    borderRadius="10px"
                 />
             </AspectRatio>
-            )}
         </Box>
-        {/* text overlay image */}
         <Box
+            className="project-title"
             position="absolute"
             bottom="0"
             left="0"
             width="100%"
-            height="25%"
+            height="100%"
             p="1rem"
             display="flex"
             alignItems="flex-end"
             color="white"
             zIndex={2}
+            opacity={0} // Start with opacity 0
+            transition="opacity 0.3s ease" // Smooth transition for opacity
             sx={{
-                '&::before': {
-                    content: '""',
-                    position: 'absolute',
-                    bottom: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    background: 'rgba(117, 117, 117, 0.634)',
-                    backdropFilter: 'blur(20px)',
-                    zIndex: -1,
-                    maskImage: 'linear-gradient(to top, rgb(2, 2, 2), rgba(0, 0, 0, 0))',
-                    borderBottomLeftRadius: '10px', /* ensure border-radius styles */
-                    borderBottomRightRadius: '10px', 
+                '&:hover': {
+                    opacity: 1,
                 },
             }}
         >
@@ -139,42 +104,77 @@ const ProjectBox = ({ title, imageSrc, videoSrc, link }) => (
 const Homepage = () => {
     return (
         <Container maxW="container.xl" py={5}>
-            <Flex justify="flex-start">
-                <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                    <Image 
-                        src="/images/star.svg" 
-                        alt="Logo" 
-                        w="2.5rem" 
-                        filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
-                        position="fixed"
-                        zIndex={1001}
-                        display={{ base: "none", md: "block" }}
-                    />
-                </Link>
-            </Flex>
             <Navbar />
-            <VStack spacing={10} align="stretch">
-                <Box textAlign="center" py={20} mt={20} maxW="40rem" mx="auto">
-                    <Heading fontFamily="Inter, sans-serif" textTransform="uppercase" fontSize="3xl" fontWeight="regular">Eve Hartwell</Heading>
-                    <Text fontFamily="Times Now, serif" fontSize={{ base: 'md', md: 'lg' }} mt={6}>
-                        UX Designer and Web Developer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.
-                    </Text>
-                </Box>
-                <Box>
-                    <Heading fontSize="3xl" fontWeight="regular" mb={5} textTransform="uppercase">My Work</Heading>
-                    <Divider borderColor="#422D2D" mb={5} />
-                    <ProjectBox {...projects[0]} />
-                </Box>
-                {/* project grid */}
-                <Grid 
-                    templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }} 
-                    gap={10}
-                >
-                    {projects.slice(1).map((project, index) => (
-                        <ProjectBox key={index} {...project} />
-                    ))}
-                </Grid>
-            </VStack>
+            <Grid
+                templateColumns={{ base: '1fr', md: '1fr 2fr' }} 
+                gap={6}
+            >
+                {/* Column 1 */}
+                <GridItem>
+                    {/* intro */}
+                    <Box 
+                        outlineColor="primary.1"
+                        h="11rem" 
+                        rounded="md"
+                        p={6}
+                        position="relative"
+                    >
+                        <VStack align="start" spacing={2}>
+                            <Heading fontFamily="accent" size="xl" fontWeight="400">Eve Hartwell</Heading>
+                            <Text lineHeight={1.5}>UX Designer and Web Developer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.</Text>
+                            {/* peel */}
+                        </VStack>
+                    </Box>
+                    <VStack spacing={4} align="stretch" mt={6}>
+                        {/* project 1 */}
+                        <ProjectBox 
+                            title={projects[2].title}
+                            imageSrc={projects[2].imageSrc}
+                            link={projects[2].link}
+                        />
+                        {/* project 2 */}
+                        <ProjectBox 
+                            title={projects[0].title}
+                            imageSrc={projects[0].imageSrc}
+                            link={projects[0].link}
+                        />
+                    </VStack>
+                </GridItem>
+                
+                {/* Column 2 */}
+                <GridItem>
+                    {/* recent project */}
+                    <VStack spacing={4} align="stretch" h="auto">
+                        <ProjectBox 
+                            title={projects[3].title}
+                            imageSrc={projects[3].imageSrc}
+                            link={projects[3].link}
+                        />
+                    </VStack>
+                    <Box 
+                        bg="gray.100" 
+                        h="12.5rem"  // Use auto height to allow resizing
+                        rounded="lg"
+                        p={6}
+                        position="relative"
+                        mt={4}
+                    >
+                        <VStack align="start" spacing={4}>
+                            <Heading size="md">More Info</Heading>
+                            <Text>Brief description</Text>
+                            <Button 
+                                variant="ghost"
+                                size="sm"
+                                position="absolute"
+                                bottom={6}
+                                right={6}
+                            >
+                                View
+                            </Button>
+                        </VStack>
+                    </Box>
+                </GridItem>
+            </Grid>
             <Footer />
         </Container>
     );
