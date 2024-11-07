@@ -28,7 +28,7 @@ const CaseStudyTemplate = ({
     outcomes
 }) => {
     return (
-        <Container maxW="7xl" py={5}>
+        <Container maxW="7xl" py={2}>
             <Navbar />
             <Flex direction="column" align="center">
                 <Box maxW="60rem" textAlign="center" mt={20}>

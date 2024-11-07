@@ -127,7 +127,7 @@ const ProjectBox = ({ title, desc, imageSrc, link, aspectRatio = 3/2 }) => (
 
 const Homepage = () => {
     return (
-        <Container maxW="7xl" py={5}>
+        <Container maxW="7xl" py={2}>
             <Navbar />
             <Box width="100%">
                 <Flex 
