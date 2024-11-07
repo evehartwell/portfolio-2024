@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Flex, Image, Text, Button, Link as ChakraLink } from '@chakra-ui/react';
 
-const Navbar = () => {
+const Navbar = ({ setIsHovered }) => {
     return (
         <Flex
             as="nav"
@@ -15,7 +15,7 @@ const Navbar = () => {
             fontFamily='Inter, sans-serif'
         >
             <Flex
-                gap={{ base: '2rem', md: '3rem' }}
+                gap={{ base: '1rem', md: '2rem' }}
             >
                 {/* Navbar buttons */}
                 <Link to="/">
@@ -26,20 +26,29 @@ const Navbar = () => {
                         variant="ghost"
                         textTransform="lowercase"
                         fontWeight="500"
-                        fontSize={{ base: 'sm', md: 'md' }}
-                        _hover={{ bg: 'none', color: 'primary.3' }}
+                        fontSize='sm'
+                        _hover={{ bg: 'none', color: 'primary.3', '& img': { transform: 'rotate(180deg)' }}}
                     >
                         <Image
                             src="/svg/star.svg" 
                             alt="Logo" 
-                            w="1.4rem" 
+                            w="1.2rem" 
                             filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
                             display="block"
+                            sx={{
+                                transition: "transform 0.3s ease",
+                            }}
                         />
                         <Text>Work</Text>
                     </Button>
                 </Link>
-                <Link to="/about">
+                <Link
+                    to="/about"
+                    /* onMouseEnter={() => setIsHovered(true)}   // Trigger hover
+                    onMouseLeave={() => setIsHovered(false)}  // End hover
+                    textDecoration="none"
+                    _hover={{ textDecoration: 'none', color: 'blue.500' }} // */
+                >
                     <Button
                         display="flex"
                         alignItems="left"
@@ -47,15 +56,18 @@ const Navbar = () => {
                         variant="ghost"
                         textTransform="lowercase"
                         fontWeight="500"
-                        fontSize={{ base: 'sm', md: 'md' }}
-                        _hover={{ bg: 'none', color: 'primary.3' }}
+                        fontSize='sm'
+                        _hover={{ bg: 'none', color: 'primary.3', '& img': { transform: 'rotate(90deg)' }}}
                     >   
                         <Image
                             src="/svg/pointy-star.svg" 
                             alt="Logo" 
-                            w="1.4rem" 
+                            w="1.2rem" 
                             filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
                             display="block"
+                            sx={{
+                                transition: "transform 0.3s ease",
+                            }}
                         />
                         <Text>About</Text>
                     </Button>
@@ -64,7 +76,7 @@ const Navbar = () => {
                     href="mailto:evehartwell@gmail.com" 
                     isExternal
                     textDecoration="none"
-                    _hover={{ textDecoration: 'none' }}
+                    _hover={{ textDecoration: 'none' }} // remove underline
                 > 
                     <Button
                         display="flex"
@@ -73,15 +85,18 @@ const Navbar = () => {
                         variant="ghost"
                         textTransform="lowercase"
                         fontWeight="500"
-                        fontSize={{ base: 'sm', md: 'md' }}
-                        _hover={{ bg: 'none', color: 'primary.3' }}
+                        fontSize='sm'
+                        _hover={{ bg: 'none', color: 'primary.3', '& img': { transform: 'rotate(180deg)' }}}
                     >
                         <Image
                             src="/svg/star-2.svg" 
                             alt="Logo" 
-                            w="1.1rem" 
+                            w="1rem" 
                             filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
                             display="block"
+                            sx={{
+                                transition: "transform 0.3s ease",
+                            }}
                         />
                         <Text>Contact</Text>
                     </Button>

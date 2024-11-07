@@ -27,16 +27,20 @@ const theme = extendTheme({
         Button: {
             baseStyle: {
                 borderRadius: '30px',
-                _hover: {
-                bg: '#D6D6D6',
+                _focus: {
+                    outline: 'transparent', 
+                    boxShadow: 'none',
                 },
             },
             variants: {
-                outline: {
-                color: 'primary.1',
-                bg: 'transparent',
-                border: '1px solid',
-                borderColor: 'primary.1',
+                ghost: {
+                    _focus: {
+                        outline: 'none',  
+                        boxShadow: 'none', 
+                    },
+                    _hover: {
+                        bg: '#D6D6D6',
+                    }
                 },
             },
         },

@@ -12,7 +12,7 @@ import {
 import { Link } from 'react-router-dom';
 import Navbar from './navbar';
 import Footer from './footer';
-import './styles.css';
+import '/styles.css';
 
 const projects = [
     {
@@ -127,7 +127,7 @@ const ProjectBox = ({ title, desc, imageSrc, link, aspectRatio = 3/2 }) => (
 
 const Homepage = () => {
     return (
-        <Container maxW="8xl" py={5}>
+        <Container maxW="7xl" py={5}>
             <Navbar />
             <Box width="100%">
                 <Flex 
@@ -144,12 +144,15 @@ const Homepage = () => {
                         <Box
                             borderWidth={1}
                             borderColor="primary.1"
+                            w="auto"
                             h="auto" 
                             rounded="md"
                             p={6}
                             position="relative"
+                            transition="transform 0.3s ease" // Smooth transition
+                            // transform={isHovered ? 'scale(1.2) rotate(15deg)' : 'scale(1)'}
                         >
-                            <VStack align="start" spacing={2}>
+                            <VStack align="start" spacing={1}>
                                 <Heading fontFamily="accent" size="xl" fontWeight="400">Eve Hartwell</Heading>
                                 <Text fontSize={{ base: 'sm', md: 'md'}} lineHeight={1.5}>UX Designer and Web Developer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.</Text>
                                 <Text fontFamily="heading" fontSize='sm' lineHeight={1.5}>* Co-organizer of <a href="https://phillycodes.rsvp/" style={{ textDecoration: 'underline', textUnderlineOffset: '4px' }}>Code & Coffee Philly</a></Text>
@@ -225,8 +228,8 @@ const Homepage = () => {
                                         fontSize={{ base: 'sm', md: 'md'}}  
                                         lineHeight={1.7}
                                     >
-                                        I create fun digital spaces that make people want to click, tap, and explore. 
-                                        I focus on building websites and apps that help people connect and find little moments of delight in their day. 
+                                        I create digital spaces that spark curiosity and connection.
+                                        I love to build websites and apps that help people connect and find little moments of delight in their day. 
                                         By really listening to what users need and adding creative touches, I design experiences that make people feel at home and want to stick around. 
                                         Team up with me and turn your ideas into something special and show your users something new to love today.
                                     </Text>
