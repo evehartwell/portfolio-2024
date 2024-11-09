@@ -9,9 +9,9 @@ const theme = extendTheme({
         },
     },
     fonts: {
-        heading: 'Inter',
-        body: 'Times Now',
-        accent: 'Sloop',
+        heading: 'Inter, sans-serif',
+        body: 'Times Now, serif',
+        accent: 'Sloop, cursive',
     },
     styles: {
         global: {
