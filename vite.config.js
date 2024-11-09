@@ -22,6 +22,13 @@ export default defineConfig(({ mode }) => {
             // Serve SPA fallback index.html
             historyApiFallback: true,
         },
+        assetsInclude: ['**/*.ttf', '**/*.woff', '**/*.woff2', '**/*.eot'],
+        resolve: {
+            alias: [
+                { find: /^~([^/])/, replacement: "$1" },
+                { find: '@', replacement: '/src' }
+            ],
+        },
     };
 });
 function setEnv(mode) {

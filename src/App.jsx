@@ -10,6 +10,7 @@ import LeBowStudy from './pages/lebow-study';
 import BankStudy from './pages/bank-study';
 import ScrollToTop from './components/ScrollToTop';
 import CaseStudyTemplate from './components/caseTemplate.jsx';
+import '/styles.css'
 
 const App = () => {
     return (

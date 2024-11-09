@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Sloop';
+    src: url('/src/fonts/Sloop/Sloop\ Script\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('/src/fonts/TimesNow/TimesNow-SemiLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/src/fonts/Inter/Inter-VariableFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
