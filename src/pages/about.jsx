@@ -4,7 +4,7 @@ import {
     Text,
     Flex,
     Container,
-    Heading,
+    Image,
 } from '@chakra-ui/react';
 import Navbar from './navbar';
 import Footer from './footer';
@@ -15,7 +15,14 @@ const About = () => {
             <Navbar />
             <Flex direction="column" align="left" flex="1">
                 <Box h="100%" flex="2" m={{ base: '10', md: '40'}} textAlign="left">
-                    <Heading fontFamily="accent" size="xl" fontWeight="400">Eve Hartwell</Heading>
+                    <Image
+                        src="/svg/signature.svg" 
+                        alt="Eve Hartwell" 
+                        w="12rem" 
+                        filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
+                        display="block"
+                        mb={2}
+                    />
                     <Text mt={5}>
                         I’m a tech enthusiast, artist, and cinephile with a passion for creating user-centered experiences. 
                         With a degree in Information Systems, I blend functionality with creativity to design solutions that make life easier for users and development teams alike. 
