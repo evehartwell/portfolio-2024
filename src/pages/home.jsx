@@ -153,7 +153,14 @@ const Homepage = () => {
                             // transform={isHovered ? 'scale(1.2) rotate(15deg)' : 'scale(1)'}
                         >
                             <VStack align="start" spacing={1}>
-                                <Heading fontFamily="accent" size="xl" fontWeight="400">Eve Hartwell</Heading>
+                                <Image
+                                    src="/svg/signature.svg" 
+                                    alt="Eve Hartwell" 
+                                    w="12rem" 
+                                    filter="brightness(0) saturate(100%) invert(16%) sepia(19%) saturate(774%) hue-rotate(314deg) brightness(97%) contrast(91%)"
+                                    display="block"
+                                    mb={2}
+                                />
                                 <Text fontSize={{ base: 'sm', md: 'md'}} lineHeight={1.5}>UX Designer and Web Developer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.</Text>
                                 <Text fontFamily="heading" fontSize='sm' lineHeight={1.5}>* Co-organizer of <a href="https://phillycodes.rsvp/" style={{ textDecoration: 'underline', textUnderlineOffset: '4px' }}>Code & Coffee Philly</a></Text>
                             </VStack>
