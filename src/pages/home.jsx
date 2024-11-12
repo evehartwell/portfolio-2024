@@ -235,10 +235,9 @@ const Homepage = () => {
                                         fontSize={{ base: 'sm', md: 'md'}}  
                                         lineHeight={1.7}
                                     >
-                                        I create digital spaces that spark curiosity and connection.
-                                        I love to build websites and apps that help people connect and find little moments of delight in their day. 
-                                        By really listening to what users need and adding creative touches, I design experiences that make people feel at home and want to stick around. 
-                                        Team up with me and turn your ideas into something special and show your users something new to love today.
+                                        I create digital spaces that bring people together, crafting websites and apps that transform everyday interactions into meaningful connections. 
+                                        By blending thoughtful user research with creative touches, I design experiences that make people feel at home and keep communities coming back for more. 
+                                        Let's collaborate to turn your ideas into vibrant digital spaces that your audience will love.
                                     </Text>
                                 </VStack>
                                 <Button 
