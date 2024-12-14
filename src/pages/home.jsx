@@ -161,7 +161,7 @@ const Homepage = () => {
                                     display="block"
                                     mb={2}
                                 />
-                                <Text fontSize={{ base: 'sm', md: 'md'}} lineHeight={1.5}>UX Designer and Web Developer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.</Text>
+                                <Text fontSize={{ base: 'sm', md: 'md'}} lineHeight={1.5}>Design Engineer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.</Text>
                                 <Text fontFamily="heading" fontSize='sm' lineHeight={1.5}>* Co-organizer of <a href="https://phillycodes.rsvp/" style={{ textDecoration: 'underline', textUnderlineOffset: '4px' }}>Code & Coffee Philly</a></Text>
                             </VStack>
                         </Box>
