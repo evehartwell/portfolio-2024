@@ -10,15 +10,15 @@ import {
     Button,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import Navbar from './navbar';
-import Footer from './footer';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 import '/styles.css';
 
 const projects = [
     {
         title: "Modesens",
-        desc: "Redesigned and simplified a shopping assistant app.",
-        imageSrc: "/images/LUXR-frames.png",
+        desc: "A polished and simplified shopping assistant app.",
+        imageSrc: "/images/modesens-mock-hd.jpeg",
         link: "/modesens-study",
         aspectRatio: 3/2,  // Default aspect ratio
     },
@@ -28,20 +28,20 @@ const projects = [
         imageSrc: "/images/BHA-preview.png",
         link: "/bha-study",
         aspectRatio: 3/2,  // Default aspect ratio
-    },
+    }, */
     {
         title: "Center For Functional Fabrics",
-        desc: "Created an accessible interactive map for e-textile lab.",
-        imageSrc: "/images/CFF-prev.png",
+        desc: "An accessible interactive map for PA e-textile lab.",
+        imageSrc: "/images/cff-lab.jpg",
         link: "/cff-study",
         aspectRatio: 3/2,  // Default aspect ratio
     },
     {
         title: "LeBow College of Business",
-        desc: "Revamped higher-ed web user experience and branding.",
-        imageSrc: "/images/lebow-preview.png",
+        desc: "A brand and web revamp for business college.",
+        imageSrc: "/images/drexel-mock-hd.jpeg",
         link: "/lebow-study",
-        aspectRatio: 5/3,  // Custom aspect ratio for feature project
+        aspectRatio: 3/2,  // Custom aspect ratio for feature project
     },
 ];
 

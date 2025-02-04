@@ -13,8 +13,11 @@ import {
     Heading,
     Link as ChakraLink,
 } from '@chakra-ui/react';
-import Navbar from '../pages/navbar';
-import Footer from '../pages/footer';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
+import CaseStudyNav from '../components/caseNav';
+import CaseList from './caseList';
+import { useLocation } from 'react-router-dom';
 
 const CaseStudyTemplate = ({
     title,
@@ -27,6 +30,16 @@ const CaseStudyTemplate = ({
     processSections,
     outcomes
 }) => {
+    const location = useLocation();
+    const currentRoute = location.pathname;
+
+    // Find the current case study index
+    const currentIndex = CaseList.findIndex(caseStudy => caseStudy.route === currentRoute);
+
+    // Determine previous and next case studies
+    const previousCaseStudy = currentIndex > 0 ? CaseList[currentIndex - 1].route : null;
+    const nextCaseStudy = currentIndex < CaseList.length - 1 ? CaseList[currentIndex + 1].route : null;
+
     return (
         <Container maxW="7xl" py={2}>
             <Navbar />
@@ -140,8 +153,11 @@ const CaseStudyTemplate = ({
                                     backgroundColor='primary.2'
                                     borderWidth={1}
                                     borderColor="primary.1"
-                                    _hover={{ bg: "#D6D6D6" }}
-                                    p={6}
+                                    _hover={{
+                                        bg: "primary.1",     
+                                        color: "primary.2", 
+                                    }}
+                                    p={4}
                                 >
                                     {link.label}
                                 </Button>
@@ -189,6 +205,7 @@ const CaseStudyTemplate = ({
                     </Box>
                 )}
             </Flex>
+            <CaseStudyNav previous={previousCaseStudy} next={nextCaseStudy} />
             <Footer />
         </Container>
     );
