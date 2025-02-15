@@ -26,7 +26,7 @@ const projects = [
         title: "Code & Coffee",
         desc: "A community for tech enthusiasts in Philadelphia.",
         imageSrc: "/images/ccp-mock-hd.png",
-        link: "/",
+        link: "/ccp-study",
         aspectRatio: 3/2,  // Default aspect ratio
     }, 
     /*{
@@ -167,38 +167,71 @@ const Homepage = () => {
                             </Box>
                             <Image
                                 src="/images/stickers/ccp-logo.png"
-                                alt="code and  coffee logo"
+                                alt="code and coffee logo"
                                 w="3rem"
                                 borderRadius="4px"
                                 position="absolute"
                                 top="50%"
-                                right={{ base: '0%', md: '18%'}}
-                                transform="rotate(10deg)"
+                                right={{ base: '0%', md: '18%' }}
+                                transform="rotate(5deg)"
+                                transition="all 0.1s ease-in-out"
+                                boxShadow="0 5px 5px rgba(0, 0, 0, 0.2)"
+                                _hover={{
+                                    transform: "translateY(-3px) rotate(5deg)",
+                                    boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
+                                }}
+                                _active={{
+                                    transform: "translateY(-1px) rotate(5deg)",
+                                    boxShadow: "0 5px 5px rgba(0, 0, 0, 0.2)",
+                                }}
+                                sx={{
+                                    "&::after": {
+                                        content: '""',
+                                        display: "inline-block",
+                                        height: "100%",
+                                        width: "100%",
+                                        borderRadius: "4px",
+                                        position: "absolute",
+                                        top: 0,
+                                        left: 0,
+                                        zIndex: -1,
+                                        transition: "all 0.1s ease-in-out",
+                                    },
+                                    "&:hover::after": {
+                                        transform: "scaleX(1.4) scaleY(1.6)",
+                                        opacity: 0,
+                                    },
+                                }}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setTimeout(() => {
+                                        window.open("https://www.phillycodes.rsvp", "_blank");
+                                    }, 200); // transition duration
+                                }} 
                             />
                         </Box>
                     </Box>
+                    {/* side stickers */}
                     <Box
                         flex="1"
                     >
                         <Image
                             src="/images/stickers/tea.png"
                             alt="I love tea"
-                            display={{ base: 'none', md: 'block' }}
+                            display={{ base: 'none', md: 'block' }} /* hide on mobile */
                             w={{ base: '5rem', md: '6rem'}}
                             position="absolute"
                             top={{ base: '4%', md: '5%'}}
                             right={{ base: '40%', md: '20%'}}
-                            /* hide on mobile */
                         />
                         <Image
                             src="/images/stickers/macaron.png"
                             alt="macaron"
-                            display={{ base: 'none', md: 'block' }}
+                            display={{ base: 'none', md: 'block' }} /* hide on mobile */
                             w={{ base: '5rem', md: '6rem'}}
                             position="absolute"
                             top="10%"
                             right="5%"
-                            /* hide on mobile */
                         />
                         <Image
                             src="/images/stickers/aiga-logo.png"
@@ -209,6 +242,40 @@ const Homepage = () => {
                             top={{ base: '3%', md: '15%'}}
                             right="15%"
                             transform="rotate(-15deg)"
+                            transition="all 0.1s ease-in-out"
+                            boxShadow="0 5px 5px rgba(0, 0, 0, 0.2)"
+                            _hover={{
+                                transform: "translateY(-3px) rotate(-15deg)",
+                                boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
+                            }}
+                            _active={{
+                                transform: "translateY(-1px) rotate(-15deg)",
+                                boxShadow: "0 5px 5px rgba(0, 0, 0, 0.2)",
+                            }}
+                            sx={{
+                                "&::after": {
+                                    content: '""',
+                                    display: "inline-block",
+                                    height: "100%",
+                                    width: "100%",
+                                    borderRadius: "4px",
+                                    position: "absolute",
+                                    top: 0,
+                                    left: 0,
+                                    zIndex: -1,
+                                    transition: "all 0.1s ease-in-out",
+                                },
+                                "&:hover::after": {
+                                    transform: "scaleX(1.4) scaleY(1.6)",
+                                    opacity: 0,
+                                },
+                            }}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setTimeout(() => {
+                                    window.open("https://www.aiga.org", "_blank");
+                                }, 200); // transition duration
+                            }} 
                         />
                     </Box>
                 </Flex>
