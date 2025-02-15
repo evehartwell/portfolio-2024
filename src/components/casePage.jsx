@@ -6,6 +6,7 @@ const casePage = () => {
         title: "Project Title",
         tags: ["", "", ""],
         description: "",
+        coverMedia: "/images/image.png", /* 
         coverMedia: (
             <video
                 autoPlay
@@ -18,7 +19,7 @@ const casePage = () => {
                 <source src="/path/to/your/video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-        ),
+        ), */
         context: {
             team: "Your description...",
             role: "Your description...",
