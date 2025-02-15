@@ -223,6 +223,11 @@ const Homepage = () => {
                             position="absolute"
                             top={{ base: '4%', md: '5%'}}
                             right={{ base: '40%', md: '20%'}}
+                            filter="drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4))"
+                            transition="all 0.1s ease-in-out"
+                            _hover={{
+                                transform: "translateY(-3px) rotate(-10deg)",
+                            }}
                         />
                         <Image
                             src="/images/stickers/macaron.png"
@@ -232,6 +237,11 @@ const Homepage = () => {
                             position="absolute"
                             top="10%"
                             right="5%"
+                            filter="drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4))"
+                            transition="all 0.1s ease-in-out"
+                            _hover={{
+                                transform: "translateY(-3px) rotate(5deg)",
+                            }}
                         />
                         <Image
                             src="/images/stickers/aiga-logo.png"
@@ -243,14 +253,14 @@ const Homepage = () => {
                             right="15%"
                             transform="rotate(-15deg)"
                             transition="all 0.1s ease-in-out"
-                            boxShadow="0 5px 5px rgba(0, 0, 0, 0.2)"
+                            boxShadow="-5px 5px 5px rgba(0, 0, 0, 0.2)"
                             _hover={{
                                 transform: "translateY(-3px) rotate(-15deg)",
-                                boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
+                                boxShadow: "-5px 5px 10px rgba(0, 0, 0, 0.2)",
                             }}
                             _active={{
                                 transform: "translateY(-1px) rotate(-15deg)",
-                                boxShadow: "0 5px 5px rgba(0, 0, 0, 0.2)",
+                                boxShadow: "-5px 5px 5px rgba(0, 0, 0, 0.2)",
                             }}
                             sx={{
                                 "&::after": {
@@ -341,7 +351,6 @@ const Homepage = () => {
                     mt={8}
                     mb={10}
                     position="relative"
-                    overflow="hidden"
                     flex="1"
                     display="flex"
                     flexDirection="column"
@@ -351,7 +360,7 @@ const Homepage = () => {
                         height="100%"
                         justifyContent="space-between"
                     >
-                        <VStack fontFamily="heading" align="start" spacing={2}>
+                        <VStack fontFamily="heading" align="start">
                             <Flex direction="row" justifyContent="space-between" gap={2}>
                                 <Image
                                     src="/svg/heart-2.svg" 
@@ -371,6 +380,8 @@ const Homepage = () => {
                                 fontFamily="body" 
                                 fontSize={{ base: 'sm', sm: 'md', md: 'md'}}  
                                 lineHeight={1.7}
+                                pt={2}
+                                pb={2}
                             >
                                 I create digital spaces that bring people together, crafting websites and apps that transform everyday interactions into meaningful connections. 
                                 By blending thoughtful user research with creative touches, I design experiences that make people feel at home and keep communities coming back for more. 
@@ -399,6 +410,18 @@ const Homepage = () => {
                         >
                             Contact Me
                         </Button>
+                        <Image
+                                src="/images/stickers/cup.png"
+                                alt="code and coffee logo"
+                                w="4rem"
+                                borderRadius="4px"
+                                position="absolute"
+                                top="75%"
+                                right={{ base: '0%', md: '5%' }}
+                                transform="rotate(5deg)"
+                                transition="all 0.1s ease-in-out"
+                                filter="0 5px 5px rgba(0, 0, 0, 0.2)"
+                        />
                     </Flex>
                 </Box>
             </Box>
