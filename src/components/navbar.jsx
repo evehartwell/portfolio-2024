@@ -7,24 +7,19 @@ const Navbar = () => {
         <Flex
             as="nav"
             justify={{ base: 'center', md: 'flex-start' }}
-            alignItems="center"  // Ensures vertical alignment
             w="100%"
             position="relative"
-            top="0"
-            left="0"
             zIndex="1000"
             fontFamily="Inter, sans-serif"
             mb={2}
         >
             <Flex
                 gap={{ base: '1rem', md: '2rem' }}
-                alignItems="center"  // Ensures vertical alignment for child buttons
             >
                 {/* Navbar buttons */}
                 <Link to="/">
                     <Button
                         display="flex"
-                        alignItems="center"  // Ensures vertical alignment within button
                         gap={3}
                         variant="ghost"
                         textTransform="lowercase"
@@ -48,7 +43,6 @@ const Navbar = () => {
                 <Link to="/about">
                     <Button
                         display="flex"
-                        alignItems="center"  // Ensures vertical alignment within button
                         gap={3}
                         variant="ghost"
                         textTransform="lowercase"
@@ -77,7 +71,6 @@ const Navbar = () => {
                 >
                     <Button
                         display="flex"
-                        alignItems="center"  // Ensures vertical alignment within button
                         gap={3}
                         variant="ghost"
                         textTransform="lowercase"

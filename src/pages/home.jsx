@@ -117,9 +117,9 @@ const ProjectBox = ({ title, desc, imageSrc, link, aspectRatio = 3/2 }) => (
 
 const Homepage = () => {
     return (
-        <Container maxW="7xl" py={2}>
+        <Container maxW="5xl" py={2}>
             <Navbar />
-            <Box maxW="4xl" justifySelf="center">
+            <Box>
                 {/* intro */}
                 <Flex
                     direction={{ base: 'column', md: 'row'}}
@@ -179,6 +179,7 @@ const Homepage = () => {
                                 _hover={{
                                     transform: "translateY(-3px) rotate(5deg)",
                                     boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
+                                    cursor: "pointer",
                                 }}
                                 _active={{
                                     transform: "translateY(-1px) rotate(5deg)",
@@ -257,6 +258,7 @@ const Homepage = () => {
                             _hover={{
                                 transform: "translateY(-3px) rotate(-15deg)",
                                 boxShadow: "-5px 5px 10px rgba(0, 0, 0, 0.2)",
+                                cursor: "pointer",
                             }}
                             _active={{
                                 transform: "translateY(-1px) rotate(-15deg)",
@@ -371,6 +373,7 @@ const Homepage = () => {
                                     sx={{
                                         '&:hover': {
                                             content: `url("/svg/heart.svg")`,
+                                            cursor: "pointer",
                                         },
                                     }}
                                 />
@@ -411,16 +414,19 @@ const Homepage = () => {
                             Contact Me
                         </Button>
                         <Image
-                                src="/images/stickers/cup.png"
-                                alt="code and coffee logo"
-                                w="4rem"
-                                borderRadius="4px"
-                                position="absolute"
-                                top="75%"
-                                right={{ base: '0%', md: '5%' }}
-                                transform="rotate(5deg)"
-                                transition="all 0.1s ease-in-out"
-                                filter="0 5px 5px rgba(0, 0, 0, 0.2)"
+                            src="/images/stickers/cup.png"
+                            alt="code and coffee logo"
+                            w="4rem"
+                            borderRadius="4px"
+                            position="absolute"
+                            top="75%"
+                            right={{ base: '0%', md: '5%' }}
+                            transform="rotate(5deg)"
+                            transition="all 0.1s ease-in-out"
+                            filter="drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2))"
+                            _hover={{
+                                transform: "translateY(-3px) rotate(-5deg)",
+                            }}
                         />
                     </Flex>
                 </Box>
