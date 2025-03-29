@@ -11,7 +11,7 @@ import Footer from '../components/footer';
 
 const About = () => {
     return (
-        <Container maxW="7xl" py={2} minHeight="100vh" display="flex" flexDirection="column">
+        <Container maxW="5xl" py={2} minHeight="100vh" display="flex" flexDirection="column">
             <Navbar />
             <Flex direction="column" align="left" flex="1">
                 <Box h="100%" flex="2" m={{ base: '10', md: '40'}} textAlign="left">
