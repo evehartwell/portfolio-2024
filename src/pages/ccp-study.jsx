@@ -8,10 +8,10 @@ const CodeStudy = () => {
         description: "Case coming soon, a community for tech enthusiasts in Philadelphia.",
         coverMedia: "/images/ccp-mock-hd.png",
         context: {
-            team: "nerds",
+            team: "A collective of nerds",
             role: "UX designer, developer, organizer",
         },
-        problemSpace: "",
+        problemSpace: "The city of Philadelphia lacks a casual, free, and open space for tech enthusiasts.",
         externalLinks: [
                 { label: "Live Site", url: "https://www.phillycodes.rsvp" },
             ],
@@ -28,7 +28,7 @@ const CodeStudy = () => {
         },
         ],
         outcomes: [
-            "",
+            "Cultivated a community of over a thousand builders with diverse backgrounds, skill sets, and expertise.",
             "",
         // ... more outcomes
         ]
