@@ -6,7 +6,7 @@ const CodeStudy = () => {
         title: "Code and Coffee Philadelphia",
         tags: ["GitHub", "HTML", "Organizing"],
         description: "Case coming soon, a community for tech enthusiasts in Philadelphia.",
-        coverMedia: "/images/ccp-mock-hd.png",
+        coverMedia: "/images/ccp-mock-hd-2.png",
         context: {
             team: "A collective of nerds",
             role: "UX designer, developer, organizer",

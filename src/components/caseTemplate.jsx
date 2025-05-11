@@ -41,34 +41,32 @@ const CaseStudyTemplate = ({
     const nextCaseStudy = currentIndex < CaseList.length - 1 ? CaseList[currentIndex + 1].route : null;
 
     return (
-        <Container maxW="7xl" py={2}>
+        <Container maxW="8xl" py={2}>
             <Navbar />
             <Flex direction="column" align="center">
-                <Box maxW="60rem" textAlign="center" mt={20}>
-                    <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} textTransform="uppercase" fontWeight="regular">{title}</Heading>
-                    <Flex justify="center" textTransform="uppercase" gap={4} p={6} flexWrap="wrap">
+                <Box maxW="60rem" textAlign="center" mt={10}>
+                    <Heading fontFamily="accent" fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} fontWeight="regular">{title}</Heading>
+                    <Flex justify="center" gap={4} p={6} flexWrap="wrap">
                         {tags.map((tag) => (
                             <Tag
                                 key={tag}
                                 bg="transparent"
-                                color="primary.1"
-                                borderRadius="30px"
+                                color="primary.3"
+                                borderRadius="2px"
                                 borderWidth={1}
-                                borderColor="primary.1"
-                                _hover={{ bg: "#D6D6D6" }}
-                                fontFamily="heading"
-                                fontSize={{ base: 'xs', md: 'sm' }}
+                                borderColor="primary.5"
+                                backgroundColor="primary.4"
                             >
                                 {tag}
                             </Tag>
                         ))}
                     </Flex>
-                    <Text textAlign="center" fontSize={{ base: 'md', md: 'lg' }}>
+                    <Text textAlign="center">
                         {description}
                     </Text> 
                 </Box>
-                <Flex justify="space-between" mt={20}>
-                    <Box w="full" mb={20} position="relative" borderRadius="10px" overflow="hidden" outline="1px solid #D6D6D6">
+                <Flex justify="center" mt={10}>
+                    <Box w="100%" mb={20} position="relative" borderRadius="10px" overflow="hidden" outline="1px solid #D6D6D6">
                         {typeof coverMedia === 'string' ? (
                             <Image src={coverMedia} alt="Cover media" objectFit="cover" w="100%" h="100%" />
                         ) : (
@@ -93,7 +91,7 @@ const CaseStudyTemplate = ({
                         {context.team && (
                             <Box textAlign="left" p={4}>
                                 <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">The Team</Heading>
-                                <Text mt={2} fontSize={{ base: 'md', md: 'lg' }}>
+                                <Text mt={2}>
                                     {context.team}
                                 </Text>
                             </Box>
@@ -101,7 +99,7 @@ const CaseStudyTemplate = ({
                         {context.client && (
                             <Box textAlign="left" p={4}>
                                 <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">The Client</Heading>
-                                <Text mt={2} fontSize={{ base: 'md', md: 'lg' }}>
+                                <Text mt={2}>
                                     {context.client}
                                 </Text>
                             </Box>
@@ -109,7 +107,7 @@ const CaseStudyTemplate = ({
                         {context.role && (
                             <Box textAlign="left" p={4}>
                                 <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">My Role</Heading>
-                                <Text mt={2} fontSize={{ base: 'md', md: 'lg' }}>
+                                <Text mt={2}>
                                     {context.role}
                                 </Text>
                             </Box>
@@ -117,7 +115,7 @@ const CaseStudyTemplate = ({
                         {context.requirements && (
                             <Box textAlign="left" p={4}>
                                 <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">Requirements</Heading>
-                                <UnorderedList fontSize="lg" mt={2}>
+                                <UnorderedList mt={2} fontSize={{ base: 'xs', sm: 'sm' }}>
                                     {context.requirements.map((req, index) => (
                                         <ListItem key={index} mb={1}>
                                         <b>{req.title}:</b> {req.description}
@@ -134,7 +132,7 @@ const CaseStudyTemplate = ({
                     >
                         <Box textAlign="left" p={4}>
                             <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">Problem Space</Heading>
-                            <Text mt={2} fontSize={{ base: 'md', md: 'lg' }}>
+                            <Text mt={2}>
                                 {problemSpace}
                             </Text>
                         </Box>
@@ -147,17 +145,14 @@ const CaseStudyTemplate = ({
                             <ChakraLink key={index} href={link.url} isExternal>
                                 <Button 
                                     className="button" 
-                                    textTransform="uppercase" 
-                                    fontWeight="medium"
-                                    fontFamily="heading"
-                                    backgroundColor='primary.2'
                                     borderWidth={1}
-                                    borderColor="primary.1"
+                                    bg='primary.4'
                                     _hover={{
                                         bg: "primary.1",     
                                         color: "primary.2", 
                                     }}
-                                    p={4}
+                                    p={3}
+                                    h={8}
                                 >
                                     {link.label}
                                 </Button>
@@ -184,8 +179,8 @@ const CaseStudyTemplate = ({
                             />
                         </Box>
                         <Box flex="1" textAlign="left" p={{ base: '3', md: '4' }} order={section.textOrder}>
-                            <Heading fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="regular">{section.title}</Heading>
-                            <Text mt={5} fontSize={{ base: 'md', md: 'lg' }}>
+                            <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">{section.title}</Heading>
+                            <Text mt={5}>
                                 {section.content}
                             </Text>
                         </Box>
@@ -197,7 +192,7 @@ const CaseStudyTemplate = ({
                 {outcomes && outcomes.length > 0 && (
                     <Box flex="1" textAlign="left" p={{ base: '3', md: '4' }}>
                         <Heading fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="regular">Outcomes</Heading>
-                        <Text mt={5} fontSize={{ base: 'md', md: 'lg' }}>
+                        <Text mt={5}>
                             {outcomes.map((outcome, index) => (
                                 <Text key={index} mb={2}>{outcome}</Text>
                             ))}
