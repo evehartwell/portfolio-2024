@@ -104,7 +104,7 @@ const Homepage = () => {
                     mb={{ base: '5', md: '40'}}
                 >
                     <Image 
-                        src="/svg/me3.svg"
+                        src="/images/selfie.png"
                         alt="self portrait" 
                         w="10rem"
                         mx={{ base: 'auto', md: '0' }}
