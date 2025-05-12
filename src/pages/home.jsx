@@ -61,6 +61,7 @@ const ProjectBox = ({ title, desc, imageSrc, link, aspectRatio = 3/2 }) => (
                 alt={title}
                 objectFit="cover"
                 borderRadius="4px"
+                loading="lazy"
             />
         </AspectRatio>
 
