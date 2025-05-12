@@ -101,8 +101,8 @@ const Homepage = () => {
                 <Flex
                     direction={{ base: 'column', md: 'row'}}
                     gap={{ base: '0', md: '4rem'}}
-                    mt={{ base: '10', md: '40'}}
-                    mb={{ base: '5', md: '40'}}
+                    mt={{ base: '10', md: '20'}}
+                    mb={{ base: '5', md: '20'}}
                 >
                     <Image 
                         src="/images/selfie.png"
