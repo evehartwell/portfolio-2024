@@ -52,7 +52,7 @@ const ModesensStudy = () => {
             {
                 title: "User Task Flow",
                 content: "To begin, I mapped out the steps users would take to set an alert within the app. By detailing every stage of the user's journey, from the landing page to browsing products and adding an item to their wishlist, I identified the pages and interactions that distracted from the main task and brainstormed possible interactions that could occur between steps.",
-                imageSrc: "/images/LUXR-tasks.png",
+                imageSrc: "/images/LUXR-tasks.webp",
                 imageAlt: "original app taskflow",
                 direction: { base: 'column', md: 'row' },
                 imageOrder: { base: 2, md: 1 },
@@ -60,7 +60,7 @@ const ModesensStudy = () => {
                 imageBorder: true
             },
             {
-                imageSrc: "/images/LUXR-taskflow.png",
+                imageSrc: "/images/LUXR-taskflow.webp",
                 imageAlt: "zoomed in user task flow",
                 direction: { base: 'column', md: 'column' },
                 imageOrder: { base: 1, md: 2 },
@@ -70,7 +70,7 @@ const ModesensStudy = () => {
             {
                 title: "Wireframes",
                 content: "With the task flow established, I moved on to wireframes, where I sketched the app’s basic layout and functionality. I integrated the task flow into the wireframes to design an interface that was focused on setting an alert. My goal was to create an experience that felt intuitive for users while also meeting the standards set by competitor apps.",
-                imageSrc: "/images/LUXR-sketches-2.png",
+                imageSrc: "/images/LUXR-sketches-2.webp",
                 imageAlt: "New wireframes",
                 direction: { base: 'column', md: 'row' },
                 imageOrder: { base: 1, md: 2 },
@@ -78,7 +78,7 @@ const ModesensStudy = () => {
                 imageBorder: true
             },
             {
-                imageSrc: "/images/LUXR-wires.png",
+                imageSrc: "/images/LUXR-wires.webp",
                 imageAlt: "zoomed in user task flow",
                 direction: { base: 'column', md: 'column' },
                 imageBorder: true
@@ -86,7 +86,7 @@ const ModesensStudy = () => {
             {
                 title: "Rebranding & New UI",
                 content: "Rebranding was a crucial part of this project. I began by gathering inspiration and defining a new visual identity that matched the app’s goals and user needs. I updated the color palette, typography, and logo to give the app a fresh and modern look. During the rebranding process, I prioritized usability to ensure that the new design elements were not only visually appealing but also resonated with the target audience, making their experience more engaging and memorable. After rebranding, I developed high-fidelity UI designs, turning the wireframes into detailed and polished screens. I chose colors, fonts, and images with great care, making sure they contributed to a cohesive and functional interface. I worked hard to maintain consistency across all screens and interactions, ensuring that every element enhanced the overall user experience.",
-                imageSrc: "/images/LUXR-IXFlow.png",
+                imageSrc: "/images/LUXR-IXFlow.webp",
                 imageAlt: "Image 2 description",
                 direction: { base: 'column', md: 'column' },
                 imageOrder: { base: 2, md: 1 },
@@ -96,7 +96,7 @@ const ModesensStudy = () => {
             {
                 title: "IXFlow & Interaction Guides",
                 content: "For the interaction flow of the app, I mapped out how users would navigate through the app and respond to triggers like button clicks or swiping motions. I created interaction guides that detailed each step of the user journey. These guides were essential for visualizing and documenting how users would interact with the app. My goal was to craft a smooth and intuitive experience that aligned with user expectations. This documentation also helped me implement the animations in Jitter.",
-                imageSrc: "/images/LUXR-guides.png",
+                imageSrc: "/images/LUXR-guides.webp",
                 imageAlt: "Image 2 description",
                 direction: { base: 'column', md: 'column' },
                 imageOrder: { base: 2, md: 1 },

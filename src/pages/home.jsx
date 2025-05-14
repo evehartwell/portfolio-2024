@@ -18,34 +18,34 @@ import '/styles.css';
 const projects = [
     {
         title: "Optimizing A University Department's Web Platform Through UX, Branding, and Technical Enhancements",
-        imageSrc: "/images/drexel-mock-hd.jpeg",
+        imageSrc: "/images/drexel-mock-hd.webp",
         link: "/lebow-study",
-        aspectRatio: { base: 3/4, md: 3/2 },  // Custom aspect ratio for feature project
+        aspectRatio: { base: 3/4, md: 3/2 },  
     },
     {
         title: "Redesigning an Interactive E-Textile Map to Reduce Cognitive Load and Expand Public Accessibility",
-        imageSrc: "/images/cff-lab.jpg",
+        imageSrc: "/images/cff-lab.webp",
         link: "/cff-study",
-        aspectRatio: { base: 3/4, md: 3/2 },  // Default aspect ratio
+        aspectRatio: { base: 3/4, md: 3/2 },  
     },
     {
         title: "Reducing Friction in Online Fashion Shopping by Simplifying Task Flows and Enhancing Navigation",
-        imageSrc: "/images/modesens-mock-hd.jpeg",
+        imageSrc: "/images/modesens-mock-hd.webp",
         link: "/modesens-study",
-        aspectRatio: { base: 3/4, md: 3/2 },  // Default aspect ratio
+        aspectRatio: { base: 3/4, md: 3/2 },  
     },
     {
         title: "Building a 1,600+ Member Tech Community by Leveraging Local Sponsorships and Strategic Outreach",
-        imageSrc: "/images/ccp-mock-hd.png",
+        imageSrc: "/images/ccp-mock-hd.webp",
         link: "/ccp-study",
-        aspectRatio: { base: 3/4, md: 3/2 },  // Default aspect ratio
+        aspectRatio: { base: 3/4, md: 3/2 },  
     }, 
     {
         title: "Black Hippie Art",
         desc: "none",
-        imageSrc: "/images/BHA-preview.png",
+        imageSrc: "/images/BHA-preview.webp",
         link: "/bha-study",
-        aspectRatio: { base: 3/4, md: 3/2 },  // Default aspect ratio
+        aspectRatio: { base: 3/4, md: 3/2 },  
     }, 
 ];
 
@@ -105,7 +105,7 @@ const Homepage = () => {
                     mb={{ base: '5', md: '20'}}
                 >
                     <Image 
-                        src="/images/selfie.png"
+                        src="/images/selfie.webp"
                         alt="self portrait" 
                         w="10rem"
                         mx={{ base: 'auto', md: '0' }}

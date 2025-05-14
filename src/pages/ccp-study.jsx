@@ -19,7 +19,7 @@ const CodeStudy = () => {
         {
             title: "In the making",
             content: "",
-            imageSrc: "/images/ccp-meet.JPG",
+            imageSrc: "/images/ccp-meet.webp",
             imageAlt: "Image 1 description",
             direction: { base: 'column', md: 'row' },
             imageOrder: { base: 1, md: 2 },

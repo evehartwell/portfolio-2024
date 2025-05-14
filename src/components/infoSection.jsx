@@ -170,7 +170,7 @@ const InfoSection = () => {
         ),
         'Sites I Love': (
             <>
-                <Text mb={3}>Here’s one of my favorite websites, randomly picked for you &#x2764;&#xfe0e;</Text>
+                <Text mb={3}>Click to be directed to a random awesome website &#x2764;&#xfe0e;</Text>
             </>
         )
     };
@@ -207,7 +207,7 @@ const InfoSection = () => {
                                 bg="none"
                                 _hover={{ color: 'primary.1' }}
                                 onClick={(e) => {
-                                    e.preventDefault(); // prevent default link behavior
+                                    e.preventDefault();
                                     const randomIndex = Math.floor(Math.random() * favSites.length);
                                     const newSite = favSites[randomIndex];
                                     setRandomSite(newSite);

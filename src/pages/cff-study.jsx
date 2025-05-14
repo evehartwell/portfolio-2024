@@ -32,7 +32,7 @@ const MapStudy = () => {
         {
             title: "Prototype Analysis",
             content: "I began the project with a thorough analysis of the original Figma prototype of the interactive map. This step was crucial to understand the design elements, interactions, and flow that had already been conceptualized, as well as identifying what needed to be improved. During this analysis, I pinpointed several areas where the prototype fell short in terms of accessibility and functionality, such as slow performance, disorganized file management, and typographical errors.",
-            imageSrc: "/images/CFF-original.png",
+            imageSrc: "/images/CFF-original.webp",
             imageAlt: "high fidelity wireframes",
             direction: { base: 'column', md: 'row' },
             imageOrder: { base: 1, md: 2 },
@@ -42,7 +42,7 @@ const MapStudy = () => {
         {
             title: "Inspiration",
             content: "This project offered a rare opportunity for creative exploration. I drew inspiration from virtual maps and tours used by institutions like the Metropolitan Museum of Art and the National Gallery of Art, which creatively and functionally displayed their spaces. While the possibilities for this project were boundless, understanding its potential was a major source of inspiration that pushed me to think innovatively about how I could best highlight the Center's capabilities.",
-            imageSrc: "/images/CFF-inspo.png",
+            imageSrc: "/images/CFF-inspo.webp",
             imageAlt: "screenshot of the metkids interactive map and national gallery of art virtual tour site",
             direction: { base: 'column', md: 'column' },
             imageOrder: { base: 1, md: 2 },
@@ -52,7 +52,7 @@ const MapStudy = () => {
         {
             title: "Technology Exploration",
             content: "Research was essential to identifying the most effective way to launch a fully accessible interactive map. I explored several technological options, including Infogram, a tool that allows the creation of interactive infographics, and Sitecore-compliant CSS classes to ensure the design met accessibility standards. Additionally, I spent some time developing a responsive prototype in html, css, and vanilla javascript. This proof-of-concept was scrapped due to compliance issues but it gave me a better understanding of the technical possibilities for this project.",
-            imageSrc: "/images/blank-img.png",
+            imageSrc: "/images/blank-img.webp",
             imageAlt: "blank",
             direction: { base: 'column', md: 'column' },
             imageOrder: { base: 1, md: 2 },
@@ -63,7 +63,7 @@ const MapStudy = () => {
         {
             title: "Design Iterations",
             content: "My design process started at the high-fidelity wireframing stage because the components and assets were already defined. I designed a version of the map using Sitecore components, ensuring it complied with accessibility standards. My objective was to retain as many original assets as possible while incorporating interactivity and vibrant color. However, the interactive elements, such as buttons, felt out of place within the static site and didn’t create an immersive experience. I developed and evaluated several accessible designs with the communications manager to refine the user experience, balancing ideal design with practical constraints.",
-            imageSrc: "/images/CFF-figma.png",
+            imageSrc: "/images/CFF-figma.webp",
             imageAlt: "high fidelity wireframes",
             direction: { base: 'column', md: 'column' },
             imageOrder: { base: 2, md: 1 },
@@ -73,7 +73,7 @@ const MapStudy = () => {
         {
             title: "Asset Designs",
             content: "I enhanced vector graphics and patterns in Adobe Illustrator and reintegrated the brand color palette to make the pages more engaging and visually striking. Throughout the process, I made sure the design elements accurately reflected the actual manufacturing materials used.",
-            imageSrc: "/images/CFF-assets.png",
+            imageSrc: "/images/CFF-assets.webp",
             imageAlt: "example design assets",
             direction: { base: 'column', md: 'row' },
             imageOrder: { base: 1, md: 2 },
@@ -83,7 +83,7 @@ const MapStudy = () => {
         {
             title: "Deployment Process",
             content: "After an extensive wireframing process, I got to work in Sitecore, iterating with available components and video assets to rebuild the map. I developed an accessible and visually engaging pages using video clips and informative copy, successfully showcasing the center’s capabilities. This process involved extensive video editing to distill the essential elements of the original Figma prototype and present the most crucial and engaging information. I also converted natural interactions into distinct pages, allowing each space to be visualized as subpages within the website.",
-            imageSrc: "/images/CFF-preview.png",
+            imageSrc: "/images/CFF-preview.webp",
             imageAlt: "map desktop screenshot",
             direction: { base: 'column', md: 'column' },
             imageOrder: { base: 2, md: 1 },
@@ -93,7 +93,7 @@ const MapStudy = () => {
         {
             title: "User Testing",
             content: "User testing provided valuable insights into how users interacted with the new interface. Navigation was a significant challenge, as users had difficulty seeing and clicking options on the page. It was also tricky to ensure users knew about the available Figma prototype for enhanced viewing. To manage feedback and prioritize issues, I conducted a risk assessment to determine which problems needed addressing before launch and which could be handled later.",
-            imageSrc: "/images/CFF-risk.png",
+            imageSrc: "/images/CFF-risk.webp",
             imageAlt: "risk assessment sheet",
             direction: { base: 'column', md: 'row' },
             imageOrder: { base: 2, md: 1 },
@@ -103,7 +103,7 @@ const MapStudy = () => {
         {
             title: "Critical Tasks",
             content: "The communications manager and I identified a few key critical tasks. Users found the initial 'Programming' slideshow confusing, suggesting that 'Fabrication' or 'Assembly' would be better as the first view. Some participants struggled to choose between the Figma and web versions of the site map, with many not noticing the Figma link at first. Based on feedback, we prioritized showing the Figma prototype. Additionally, the Figma link itself often went unnoticed, prompting us to enhance its visibility with text styling. After addressing these issues and running additional tests, we improved navigation flow and ensured key elements were more visible for users.",
-            imageSrc: "/images/CFF-tasks.png",
+            imageSrc: "/images/CFF-tasks.webp",
             imageAlt: "selected notes from risk assessment",
             direction: { base: 'column', md: 'row' },
             imageOrder: { base: 1, md: 2 },

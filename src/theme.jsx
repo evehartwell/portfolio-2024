@@ -20,7 +20,7 @@ const theme = extendTheme({
             body: {
                 bg: 'primary.2',
                 color: 'primary.1',
-                lineHeight: '1.2rem',
+                lineHeight: '1.4rem',
                 letterSpacing: '-0.6px',
             },
             '*': {
