@@ -3,22 +3,6 @@ import { Box, Button, Text, VStack, Link, Image } from '@chakra-ui/react';
 
 const InfoSection = () => {
     const [selected, setSelected] = useState('In Practice');
-    const [randomSite, setRandomSite] = useState(null);
-
-    const favSites = [
-        { label: 'Vishnu', url: 'https://vivime.info/' },
-        { label: 'Acne Studios', url: 'https://www.acnestudios.com/' },
-        { label: 'Are.na', url: 'https://are.na' },
-        { label: 'GoodThings', url: 'https://www.goodthingsphl.com/' },
-        { label: 'Yowie', url: 'https://helloyowie.com/' },
-    ];
-
-    useEffect(() => {
-        if (selected === 'Sites I Love') {
-          const randomIndex = Math.floor(Math.random() * favSites.length);
-            setRandomSite(favSites[randomIndex]);
-        }
-    }, [selected]);
 
     const content = {
         'In Practice': ( 
@@ -37,7 +21,7 @@ const InfoSection = () => {
                     w="3rem"
                     borderRadius="4px"
                     position="relative"
-                    top="60%"
+                    top="20%"
                     left="85%"
                     transform="rotate(5deg)"
                     transition="all 0.1s ease-in-out"
@@ -73,7 +57,7 @@ const InfoSection = () => {
                         e.preventDefault();
                         setTimeout(() => {
                             window.open("https://www.phillycodes.rsvp", "_blank");
-                        }, 200); // transition duration
+                        }, 200); 
                     }} 
                 /> 
                 <Image
@@ -117,7 +101,7 @@ const InfoSection = () => {
                         e.preventDefault();
                         setTimeout(() => {
                             window.open("https://www.aiga.org", "_blank");
-                        }, 200); // transition duration
+                        }, 200); 
                     }} 
                 /> 
             </>
@@ -132,24 +116,11 @@ const InfoSection = () => {
                     display="block" 
                     w="4rem"
                     position="relative"
-                    left={{ base: '5%', md: '25%'}}
-                    filter="drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25))"
-                    transition="all 0.1s ease-in-out"
-                    _hover={{
-                        transform: "translateY(-3px) rotate(-8deg)",
-                    }}
-                />
-                <Image
-                    src="/images/stickers/macaron.png"
-                    alt="macaron"
-                    display="block" 
-                    w="4rem"
-                    position="relative"
                     left={{ base: '80%', md: '85%'}}
                     filter="drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25))"
                     transition="all 0.1s ease-in-out"
                     _hover={{
-                        transform: "translateY(-3px) rotate(5deg)",
+                        transform: "translateY(-3px) rotate(-8deg)",
                     }}
                 />
                 <Image
@@ -167,11 +138,6 @@ const InfoSection = () => {
                     }}
                 />
             </>
-        ),
-        'Sites I Love': (
-            <>
-                <Text mb={3}>Click to be directed to a random awesome website &#x2764;&#xfe0e;</Text>
-            </>
         )
     };
 
@@ -187,42 +153,7 @@ const InfoSection = () => {
                     w="100%"
                     textAlign="left"
                 >
-                    {[...Object.keys(content)].map((item) => {
-                        if (item === 'Sites I Love' && randomSite) {
-                        return (
-                            // needed a way to contain external links inside one list item, looks clunky but works
-                            <Button
-                                as="a"
-                                key={item}
-                                href={randomSite?.url ?? '#'}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                variant="ghost"
-                                fontSize={{ base: 'xs', sm: 'sm' }}
-                                p={0}
-                                justifyContent="flex-start"
-                                textAlign="left"
-                                w="100%"
-                                color={selected === item ? 'primary.1' : 'primary.3'}
-                                bg="none"
-                                _hover={{ color: 'primary.1' }}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    const randomIndex = Math.floor(Math.random() * favSites.length);
-                                    const newSite = favSites[randomIndex];
-                                    setRandomSite(newSite);
-                                    setSelected(item);
-                                    window.open(newSite.url, "_blank");
-                                }}
-                            >
-                                <Text letterSpacing="normal" fontWeight="normal">
-                                    {item}
-                                </Text>
-                            </Button>
-                        );
-                    }
-
-                    return (
+                    {Object.keys(content).map((item) => (
                         <Button
                             key={item}
                             variant="ghost"
@@ -238,13 +169,12 @@ const InfoSection = () => {
                         >
                             {item}
                         </Button>
-                        );
-                    })}
+                    ))}
                 </VStack>
             </Box>
 
             <Box align="start" ml={{ base: 0, md: '21rem' }} maxW="xl">
-                <Text>{content[selected]}</Text>
+                {content[selected]}
             </Box>
         </>
     );

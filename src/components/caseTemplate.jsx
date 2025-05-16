@@ -51,6 +51,7 @@ const CaseStudyTemplate = ({
                             <Tag
                                 key={tag}
                                 bg="transparent"
+                                fontSize={{ base: 'xs', md: 'sm' }}
                                 color="primary.3"
                                 borderRadius="2px"
                                 borderWidth={1}
@@ -145,6 +146,7 @@ const CaseStudyTemplate = ({
                             <ChakraLink key={index} href={link.url} isExternal>
                                 <Button 
                                     className="button" 
+                                    fontSize={{ base: 'xs', md: 'sm' }}
                                     borderWidth={1}
                                     bg='primary.4'
                                     _hover={{

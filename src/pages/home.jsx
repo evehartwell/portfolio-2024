@@ -17,7 +17,7 @@ import '/styles.css';
 
 const projects = [
     {
-        title: "Optimizing A University Department's Web Platform Through UX, Branding, and Technical Enhancements",
+        title: "Redesigning a University Department’s Website with UX Strategy and Visual Branding",
         imageSrc: "/images/drexel-mock-hd.webp",
         link: "/lebow-study",
         aspectRatio: { base: 3/4, md: 3/2 },  
