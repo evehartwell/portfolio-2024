@@ -9,6 +9,7 @@ import {
     Divider,
     SimpleGrid,
 } from '@chakra-ui/react';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
@@ -82,6 +83,7 @@ const ProjectBox = ({ title, desc, imageSrc, link, aspectRatio = 3/2 }) => (
                     p={0}
                     color="primary.3"
                     bg="transparent"
+                    rightIcon={<ArrowForwardIcon />}
                     _hover={{   
                         color: "primary.1", 
                     }}
