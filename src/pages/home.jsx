@@ -108,7 +108,7 @@ const Homepage = () => {
                     <Image 
                         src="/images/selfie.webp"
                         alt="self portrait" 
-                        w="10rem"
+                        w="11rem"
                         mx={{ base: 'auto', md: '0' }}
                     />
                     <Box
