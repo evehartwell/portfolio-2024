@@ -27,6 +27,9 @@ const theme = extendTheme({
                 padding: 0,
                 margin: 0,
             },
+            '*:focus': {
+                bg: 'none !important',
+            },
         },
     },
     components: {
