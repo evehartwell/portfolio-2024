@@ -109,7 +109,6 @@ const Homepage = () => {
                         src="/images/selfie.webp"
                         alt="self portrait" 
                         w="11rem"
-                        objectFit="contain"
                         mx={{ base: 'auto', md: '0' }}
                     />
                     <Box

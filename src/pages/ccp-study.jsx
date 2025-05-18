@@ -35,7 +35,7 @@ const CodeStudy = () => {
                 imageAlt: "screenshot of discord invite",
                 direction: { base: 'column', md: 'row' },
                 imageOrder: { base: 2, md: 1 },
-                textOrder: { base: 2, md: 1 },
+                textOrder: { base: 1, md: 2 },
                 imageBorder: true
             },
             {
@@ -54,8 +54,8 @@ const CodeStudy = () => {
                 imageSrc: "/images/blank-img.png",
                 imageAlt: "blank",
                 direction: { base: 'column', md: 'column' },
-                imageOrder: { base: 2, md: 1 },
-                textOrder: { base: 1, md: 2 },
+                imageOrder: { base: 1, md: 2 },
+                textOrder: { base: 2, md: 1 },
                 imageBorder: false
             },
             {
@@ -82,8 +82,8 @@ const CodeStudy = () => {
                 imageAlt: "code & coffee brand sheet",
                 direction: { base: 'column', md: 'row' },
                 imageOrder: { base: 1, md: 2 },
-                textOrder: { base: 2, md: 1 },
-                imageBorder: true
+                textOrder: { base: 1, md: 1 },
+                imageBorder: false
             },
             {
                 title: "Partnership & Expansion",
@@ -97,8 +97,8 @@ const CodeStudy = () => {
             },
         ],
         outcomes: [
-            "Over time, the community has grown to over 1,700 members on Meetup, with 15–30 people attending weekly events and over 200 active participants on our Discord server. The consistency and intentionality behind our events has cultivated a sense of trust, leading to strong growth and repeat attendance.",
-            "The website and Discord server has centralized resources for new and returning members, offering clear access instructions, event details, and community links. Our open-source codebase welcomes community contributions, reinforcing our collaborative ethos.",
+            "Over time, the community grew to over 1,700 members on Meetup, with 15–30 people attending weekly events and over 200 active participants on our Discord server. The consistency and intentionality behind our events cultivated a sense of trust, leading to strong growth and repeat attendance.",
+            "The website and Discord server became centralized resources for new and returning members, offering clear access instructions, event details, and community links. Our open-source codebase welcomed community contributions, reinforcing our collaborative ethos.",
             "During Philly Tech Week, we organized a multi-day hackathon in partnership with Comcast LIFT Labs, marking a milestone moment that brought increased visibility to our grassroots efforts and demonstrated the community’s potential to scale while staying inclusive and beginner-friendly.",
         // ... more outcomes
         ]
