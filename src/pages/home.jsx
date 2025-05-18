@@ -18,7 +18,7 @@ import '/styles.css';
 
 const projects = [
     {
-        title: "Growing a 1,700+ Member Tech Community Through Local Sponsorship and Inclusive Design",
+        title: "Growing a 1,700+ Member Tech Community in One Year Through Local Sponsorship and Inclusive Design",
         imageSrc: "/images/ccp-mock-hd.webp",
         link: "/ccp-study",
         aspectRatio: { base: 3/4, md: 3/2 },  
