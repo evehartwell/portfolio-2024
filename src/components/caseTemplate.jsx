@@ -182,7 +182,7 @@ const CaseStudyTemplate = ({
                         </Box>
                         <Box flex="1" textAlign="left" p={{ base: '3', md: '4' }} order={section.textOrder}>
                             <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">{section.title}</Heading>
-                            <Text mt={5}>
+                            <Text mt={5} whiteSpace="pre-line">
                                 {section.content}
                             </Text>
                         </Box>
@@ -192,7 +192,7 @@ const CaseStudyTemplate = ({
                 <Divider borderColor="#ababab" my={10} />
 
                 {outcomes && outcomes.length > 0 && (
-                    <Box flex="1" textAlign="left" p={{ base: '3', md: '4' }}>
+                    <Box w="full" textAlign="left" p={{ base: '3', md: '4' }}>
                         <Heading fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="regular">Outcomes</Heading>
                         <Text mt={5}>
                             {outcomes.map((outcome, index) => (

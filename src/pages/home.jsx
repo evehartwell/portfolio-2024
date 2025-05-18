@@ -17,6 +17,12 @@ import '/styles.css';
 
 const projects = [
     {
+        title: "Growing a 1,700+ Member Tech Community Through Local Sponsorship and Inclusive Design",
+        imageSrc: "/images/ccp-mock-hd.webp",
+        link: "/ccp-study",
+        aspectRatio: { base: 3/4, md: 3/2 },  
+    }, 
+    {
         title: "Redesigning a University Department’s Website with UX Strategy and Visual Branding",
         imageSrc: "/images/drexel-mock-hd.webp",
         link: "/lebow-study",
@@ -28,6 +34,7 @@ const projects = [
         link: "/cff-study",
         aspectRatio: { base: 3/4, md: 3/2 },  
     },
+    {/* 
     {
         title: "Reducing Friction in Online Fashion Shopping by Simplifying Task Flows and Enhancing Navigation",
         imageSrc: "/images/modesens-mock-hd.webp",
@@ -35,18 +42,12 @@ const projects = [
         aspectRatio: { base: 3/4, md: 3/2 },  
     },
     {
-        title: "Building a 1,600+ Member Tech Community by Leveraging Local Sponsorships and Strategic Outreach",
-        imageSrc: "/images/ccp-mock-hd.webp",
-        link: "/ccp-study",
-        aspectRatio: { base: 3/4, md: 3/2 },  
-    }, 
-    {
         title: "Black Hippie Art",
         desc: "none",
         imageSrc: "/images/BHA-preview.webp",
         link: "/bha-study",
         aspectRatio: { base: 3/4, md: 3/2 },  
-    }, 
+    },  */}
 ];
 
 const ProjectBox = ({ title, desc, imageSrc, link, aspectRatio = 3/2 }) => (
@@ -127,6 +128,9 @@ const Homepage = () => {
                             </Text>
                             <Text mb={4}>
                                 Design Engineer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.
+                            </Text>
+                            <Text mb={4}>
+                                * Current UX lead on an AI startup for federal contractors.
                             </Text>
                         </Box>
                     </Box>
