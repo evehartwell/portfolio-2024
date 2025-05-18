@@ -7,16 +7,13 @@ import ModesensStudy from './pages/modesens-study';
 import BlackhippieStudy from './pages/bha-study';
 import MapStudy from './pages/cff-study';
 import LeBowStudy from './pages/lebow-study';
-import BankStudy from './pages/bank-study';
 import CodeStudy from './pages/ccp-study';
-import ScrollToTop from './components/ScrollToTop';
 import CaseStudyTemplate from './components/caseTemplate.jsx';
 import '/styles.css'
 
 const App = () => {
     return (
         <Router>
-            <ScrollToTop />
             <Routes>
                 <Route path="/case-temp" element={<CaseStudyTemplate />} />
                 <Route path="/" element={<Homepage />} />
@@ -26,7 +23,6 @@ const App = () => {
                 <Route path="/bha-study" element={<BlackhippieStudy />} />
                 <Route path="/cff-study" element={<MapStudy />} />
                 <Route path="/lebow-study" element={<LeBowStudy />} />
-                <Route path="/bank-study" element={<BankStudy />} />
                 <Route path="/ccp-study" element={<CodeStudy />} />
                 
                 {/* Add other routes here */}

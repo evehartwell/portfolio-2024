@@ -52,7 +52,7 @@ const MapStudy = () => {
         {
             title: "Technology Exploration",
             content: "Research was essential to identifying the most effective way to launch a fully accessible interactive map. I explored several technological options, including Infogram, a tool that allows the creation of interactive infographics, and Sitecore-compliant CSS classes to ensure the design met accessibility standards. Additionally, I spent some time developing a responsive prototype in html, css, and vanilla javascript. This proof-of-concept was scrapped due to compliance issues but it gave me a better understanding of the technical possibilities for this project.",
-            imageSrc: "/images/blank-img.webp",
+            imageSrc: "/images/blank-img.png",
             imageAlt: "blank",
             direction: { base: 'column', md: 'column' },
             imageOrder: { base: 1, md: 2 },

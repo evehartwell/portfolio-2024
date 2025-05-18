@@ -6,10 +6,10 @@ import theme from './theme'
 import '/styles.css'
 
 createRoot(document.getElementById('root')).render(
-    <ChakraProvider theme={theme}>
-        <StrictMode>
+    <StrictMode>
+        <ChakraProvider theme={theme}>
             <App />
-        </StrictMode>
-    </ChakraProvider>
+        </ChakraProvider>
+    </StrictMode>
 
 )

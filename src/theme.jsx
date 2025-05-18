@@ -27,11 +27,6 @@ const theme = extendTheme({
                 padding: 0,
                 margin: 0,
             },
-            '*:focus': {
-                outline: 'none !important',
-                boxShadow: 'none !important',
-                bg: 'none !important',
-            },
         },
     },
     components: {
@@ -49,22 +44,12 @@ const theme = extendTheme({
             baseStyle: {
                 fontSize: { base: 'xs', sm: 'sm' },
                 borderRadius: '2px',
-                color: "primary.3",
-                bg: 'primary.4',
-                borderColor: 'primary.5',
                 fontWeight: '400',
+                color: "primary.2", 
+                borderColor: 'primary.5',
                 _focus: {
-                    outline: 'none', 
-                },
-            },
-            variants: {
-                ghost: {
-                    _focus: {
-                        outline: 'none',  
-                    },
-                    _hover: {
-                        bg: 'primary.5',
-                    }
+                    bg: 'primary.4',
+                    color: 'primary.3',
                 },
             },
         },

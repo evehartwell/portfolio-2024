@@ -145,10 +145,15 @@ const CaseStudyTemplate = ({
                         {externalLinks.map((link, index) => (
                             <ChakraLink key={index} href={link.url} isExternal>
                                 <Button 
-                                    className="button" 
+                                    as="a"
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     fontSize={{ base: 'xs', md: 'sm' }}
                                     borderWidth={1}
                                     bg='primary.4'
+                                    color='primary.3'
+                                    outline='primary.3'
                                     _hover={{
                                         bg: "primary.1",     
                                         color: "primary.2", 
