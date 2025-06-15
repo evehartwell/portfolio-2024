@@ -24,13 +24,13 @@ const projects = [
         aspectRatio: { base: 3/4, md: 3/2 },  
     }, 
     {
-        title: "Redesigning a University Department’s Website with UX Strategy and Visual Branding",
+        title: "Boosting Grad Admissions by 26% Through University Web Redesign and UX Strategy",
         imageSrc: "/images/drexel-mock-hd.webp",
         link: "/lebow-study",
         aspectRatio: { base: 3/4, md: 3/2 },  
     },
     {
-        title: "Redesigning an Interactive E-Textile Map to Reduce Cognitive Load and Expand Public Accessibility",
+        title: "Delivering a 60% Faster Interactive E-Textile Map from Figma to Launch",
         imageSrc: "/images/cff-lab.webp",
         link: "/cff-study",
         aspectRatio: { base: 3/4, md: 3/2 },  
@@ -97,27 +97,29 @@ const ProjectBox = ({ title, desc, imageSrc, link, aspectRatio = 3/2 }) => (
 
 const Homepage = () => {
     return (
-        <Container maxW="8xl" py={2}>
+        <Container maxW="7xl" py={2}>
             <Navbar />
             <Box>
                 {/* intro */}
                 <Flex
                     direction={{ base: 'column', md: 'row'}}
-                    gap={{ base: '0', md: '4rem'}}
+                    gap={{ base: '0', md: '3rem'}}
                     mt={{ base: '10', md: '20'}}
                     mb={{ base: '5', md: '20'}}
+                    m={20}
                 >
                     <Image 
                         src="/images/selfie.webp"
                         alt="self portrait" 
-                        w="11rem"
-                        mx={{ base: 'auto', md: '0' }}
+                        w="100%"
+                        h="100%"
+                        maxW="10rem"
                     />
                     <Box
                         flex="2" mt={{ base: '0', md: '14'}} mb={8}
                     >
                         <Box 
-                            w={{ base: '100%', md: '60%'}} 
+                            w={{ base: '100%', md: '80%'}} 
                             align={{ base: 'center', md: 'left'}} 
                             spacing={1}
                         >

@@ -17,9 +17,9 @@ const theme = extendTheme({
     },
     styles: {
         global: {
-            body: {
+            body: { 
                 bg: 'primary.2',
-                color: 'primary.1',
+                color: 'primary.1', 
                 lineHeight: '1.4rem',
                 letterSpacing: '-0.6px',
             },
@@ -50,10 +50,6 @@ const theme = extendTheme({
                 fontWeight: '400',
                 color: "primary.2", 
                 borderColor: 'primary.5',
-                _focus: {
-                    bg: 'primary.4',
-                    color: 'primary.3',
-                },
             },
         },
     },

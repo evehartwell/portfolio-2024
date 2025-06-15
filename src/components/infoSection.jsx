@@ -14,7 +14,7 @@ const InfoSection = () => {
                     {' '}<Link href="https://apps.apple.com/us/app/cross-locked/id6503719487" isExternal color="primary.3">Cross Locked</Link>. 
                 </Text>
                 <Text mb={3}>My strengths include creative branding and shipping polished websites (whether using CMS platforms or developing them from scratch). I’m also available for consultation or quick fixes.</Text>
-                <Text mb={3}>Currently, I’m looking for my next opportunity in UX.</Text>
+                <Text mb={3}>Currently looking for my next opportunity in UX or Front-End.</Text>
                 <Image
                     src="/images/stickers/ccp-logo.png"
                     alt="code and coffee logo"
@@ -66,7 +66,7 @@ const InfoSection = () => {
                     w="3rem"
                     borderRadius="4px"
                     position="relative"
-                    right={{ base: "-10%", md: "30%"}}
+                    right={{ base: "-10%", md: "15%"}}
                     transform="rotate(-15deg)"
                     transition="all 0.1s ease-in-out"
                     boxShadow="-5px 5px 5px rgba(0, 0, 0, 0.15)"
@@ -108,8 +108,8 @@ const InfoSection = () => {
         ),
         'Behind The Scenes': (
             <>
-                <Text mb={3}>When I'm not coding or tinkering in Figma, I’m diving into the things that keep me creatively satiated, from drawing and building mechanical keyboards to obsessing over film scores. I’m an artist, cinephile, and music nerd at heart, usually found updating my Notion movie database, fine-tuning a custom PC build, or headbanging at a local DIY show.</Text>
-                <Text mb={3}>Currently reading Blood Meridian by Cormac McCarthy and it's ruined my life :)</Text>
+                <Text mb={3}>When I'm not coding or tinkering in Figma, I’m diving into the things that keep me creatively satiated, from drawing and building mechanical keyboards to obsessing over film scores. I’m an artist, cinephile, and music nerd at heart, usually found updating my Notion movie database, customizing a PC build, or headbanging at a local DIY show.</Text>
+                <Text mb={3}>Recently started reading Blood Meridian by Cormac McCarthy and it's ruined my life :)</Text>
                 <Image
                     src="/images/stickers/tea.png"
                     alt="I love tea"
@@ -173,7 +173,7 @@ const InfoSection = () => {
                 </VStack>
             </Box>
 
-            <Box align="start" ml={{ base: 0, md: '21rem' }} maxW="xl">
+            <Box align="start" ml={{ base: 0, md: '17.5rem' }} maxW={{ base: '100%', md: '50%' }}>
                 {content[selected]}
             </Box>
         </>

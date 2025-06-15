@@ -158,6 +158,14 @@ const CaseStudyTemplate = ({
                                         bg: "primary.1",     
                                         color: "primary.2", 
                                     }}
+                                    _focus={{
+                                        bg: 'primary.4',
+                                        color: 'primary.3'
+                                    }}
+                                    _active={{
+                                        bg: 'primary.4',
+                                        color: 'primary.3'
+                                    }}
                                     p={3}
                                     h={8}
                                 >
