@@ -41,7 +41,7 @@ const CaseStudyTemplate = ({
     const nextCaseStudy = currentIndex < CaseList.length - 1 ? CaseList[currentIndex + 1].route : null;
 
     return (
-        <Container maxW="8xl" py={2}>
+        <Container maxW="7xl" py={2}>
             <Navbar />
             <Flex direction="column" align="center">
                 <Box maxW="60rem" textAlign="center" mt={10}>
