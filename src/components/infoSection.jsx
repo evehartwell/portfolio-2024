@@ -144,7 +144,7 @@ const InfoSection = () => {
     return (
         <>
             <Box
-                fontSize={{ base: 'xs', sm: 'sm' }}
+                fontSize={{ base: 'sm', sm: 'sm' }}
                 h={{ base: '10rem', md: '25rem' }}
             >
                 <VStack
@@ -157,7 +157,7 @@ const InfoSection = () => {
                         <Button
                             key={item}
                             variant="ghost"
-                            fontSize={{ base: 'xs', sm: 'sm' }}
+                            fontSize={{ base: 'sm', sm: 'sm' }}
                             p={0}
                             justifyContent="flex-start"
                             textAlign="left"

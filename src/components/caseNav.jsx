@@ -21,7 +21,7 @@ const CaseStudyNav = ({ previous, next }) => {
                 textTransform="capitalize" 
                 fontWeight="medium"
                 fontFamily="heading"
-                fontSize={{ base: 'xs', sm: 'sm'}}
+                fontSize={{ base: 'sm', sm: 'sm'}}
                 bg='primary.4'
                 borderWidth={1}
                 _hover={{
@@ -39,7 +39,7 @@ const CaseStudyNav = ({ previous, next }) => {
                 textTransform="capitalize" 
                 fontWeight="medium"
                 fontFamily="heading"
-                fontSize={{ base: 'xs', sm: 'sm'}}
+                fontSize={{ base: 'sm', sm: 'sm'}}
                 bg='primary.4'
                 borderWidth={1}
                 _hover={{
@@ -56,7 +56,7 @@ const CaseStudyNav = ({ previous, next }) => {
                 textTransform="capitalize" 
                 fontWeight="medium"
                 fontFamily="heading"
-                fontSize={{ base: 'xs', sm: 'sm'}}
+                fontSize={{ base: 'sm', sm: 'sm'}}
                 bg='primary.4'
                 borderWidth={1}
                 _hover={{

@@ -50,7 +50,7 @@ const MapStudy = () => {
                     },
                     {
                         text: "A lot of issues popped up: slow load times, messy file organization, and even typos throughout.",
-                        highlight: ["slow load times, messy file organization", "typos throughout"]
+                        highlight: ["slow load times, messy file organization,", "typos throughout"]
                     },
                     {
                         text: "It was clear that without cleanup, the prototype would not be sustainable for users or the team.",
@@ -116,7 +116,7 @@ const MapStudy = () => {
                     },
                     {
                         text: "They inspired me to approach this project not just as a fix, but as a chance to build something engaging and memorable.",
-                        highlight: ["build something engaging and memorable"]
+                        highlight: ["build something engaging and memorable."]
                     },
                 ],
                 imageSrc: "/images/CFF-inspo.webp",
@@ -186,7 +186,7 @@ const MapStudy = () => {
                     },
                     {
                         text: "I paid close attention to materials and textures to make sure the visuals reflected real equipment and processes.",
-                        highlight: ["reflected real equipment and processes"]
+                        highlight: ["reflected real equipment and processes."]
                     },
                 ],
                 imageSrc: "/images/CFF-assets.webp",

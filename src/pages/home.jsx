@@ -106,7 +106,8 @@ const Homepage = () => {
                     gap={{ base: '0', md: '3rem'}}
                     mt={{ base: '10', md: '20'}}
                     mb={{ base: '5', md: '20'}}
-                    m={20}
+                    m={{ base: '0', md: '20'}}
+                    align={{ base: 'center', md: 'flex-start' }}
                 >
                     <Image 
                         src="/images/selfie.webp"
@@ -117,16 +118,17 @@ const Homepage = () => {
                     />
                     <Box
                         flex="2" mt={{ base: '0', md: '14'}} mb={8}
+                        textAlign={{ base: 'center', md: 'left' }}
                     >
                         <Box 
                             w={{ base: '100%', md: '80%'}} 
-                            align={{ base: 'center', md: 'left'}} 
                             spacing={1}
                         >
                             <Text 
                                 fontFamily="accent" 
                                 fontSize="2xl"
-                                mb={4} 
+                                mb={6}
+                                
                             >
                                 Eve Hartwell
                             </Text>

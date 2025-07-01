@@ -35,7 +35,7 @@ const theme = extendTheme({
     components: {
         Text: {
             baseStyle: {
-            fontSize: { base: 'xs', sm: 'sm' },
+            fontSize: { base: 'sm', sm: 'sm' },
             },
         },
         Heading: {

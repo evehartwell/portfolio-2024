@@ -170,7 +170,7 @@ const CaseStudyTemplate = ({
                                     href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    fontSize={{ base: 'xs', md: 'sm' }}
+                                    fontSize={{ base: 'sm', md: 'sm' }}
                                     borderWidth={1}
                                     bg='primary.4'
                                     color='primary.3'
@@ -217,7 +217,7 @@ const CaseStudyTemplate = ({
                         </Box>
                         <Box flex="1" textAlign="left" p={{ base: '3', md: '4' }} order={section.textOrder}>
                             <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">{section.title}</Heading>
-                            <List fontSize={{ base: 'xs', sm: 'sm' }} as="ul" styleType="disc" pl={6} spacing={3} mt={5}>
+                            <List fontSize={{ base: 'sm', sm: 'sm' }} as="ul" styleType="disc" pl={6} spacing={3} mt={5}>
                                 {section.bulletPoints.map((point, idx) => (
                                     <ListItem key={idx}>
                                         {/* Check if the current bullet point is a simple string */}
@@ -255,7 +255,7 @@ const CaseStudyTemplate = ({
                                 Array.isArray(item) ? (
                                     <UnorderedList key={index} pl={6} mb={4}>
                                         {item.map((bullet, i) => (
-                                        <ListItem key={i} fontSize={{ base: 'xs', sm: 'sm' }}>
+                                        <ListItem key={i} fontSize={{ base: 'sm', sm: 'sm' }}>
                                             {bullet}
                                         </ListItem>
                                         ))}

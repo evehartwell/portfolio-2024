@@ -55,7 +55,7 @@ const LeBowStudy = () => {
                 bulletPoints: [
                     {
                         text: "I helped the marketing team develop campaign messaging targeted at prospective students, alumni, and industry partners.",
-                        highlight: ["targeted at", "prospective students, alumni, and industry partners."]
+                        highlight: ["targeted at", "prospective students, alumni,", "industry partners."]
                     },
                     {
                         text: "I supported crafting narratives around student outcomes, impact stories, and career pathways.",
