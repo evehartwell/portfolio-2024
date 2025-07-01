@@ -5,7 +5,7 @@ const MapStudy = () => {
     const caseStudyData = {
         title: "Center for Functional Fabrics",
         tags: ["Sitecore", "Web Development", "User Testing"],
-        description: "I developed and launched an accessible interactive map to showcase the capabilities of a major e-textile research center.",
+        description: "I developed and launched an accessible interactive map for a Drexel research lab backed by the Pentagon and Department of Defense. The final Sitecore-based site replaced an inaccessible prototype, showcasing advanced e-textile technologies to partners and defense stakeholders.",
         coverMedia: (
             <video
                 autoPlay
@@ -23,100 +23,262 @@ const MapStudy = () => {
             team: "Communications Manager, Director of Business Development",
             role: "UX Designer, Web Developer",
         },
-        problemSpace: "The initial interactive map prototype was built on a platform that did not meet accessibility standards, limiting its usability for a wider audience. The challenge was to salvage aspects of the existing prototype while developing a new, fully accessible version from the ground up. This project presented a series of challenges that required me to wear multiple hats all within a limited budget, a small team, and a tight timeframe.",
+        problemSpace: {
+            text: "The original interactive map prototype was not accessible to screen readers or keyboard navigation, limiting usability and reach. Built in Figma, it also suffered from performance issues due to disorganized layers and oversized assets. With a small team, tight timeline, and limited budget, I needed to transform the prototype into an accessible, maintainable web experience without sacrificing interactivity or visual quality.",
+            highlight: ["limiting usability and reach", "performance issues", "without sacrificing interactivity"],
+        },
+        approach: {
+            text: "Rather than rebuild from scratch, I explored ways to preserve the visual storytelling of the original Figma prototype while addressing its performance and accessibility shortcomings. I conducted a prototype audit to pinpoint inefficiencies, then tested performance improvements. I assessed accessibility risks, researched compliant design patterns, and consulted with stakeholders to understand user needs. Through user testing and a risk assessment framework, I identified pain points which informed the final launch.",
+            highlight: ["preserve the visual", "storytelling", "prototype audit", "tested performance", "user testing", "risk assessment"],
+        },
+        solution: {
+            text: "I delivered a hybrid experience: a fully accessible, WCAG-compliant website built in Sitecore, plus a link to the original Figma prototype for power users seeking an immersive experience. I translated complex interactions into static, navigable subpages and repurposed video assets to explain equipment and workflows more clearly. Visual continuity was preserved by reusing graphics and color from the prototype.",
+            highlight: ["WCAG-compliant", "website", "power users", "static, navigable subpages"],
+        },
+        outcome: "Prototype speed improved by 60% after Figma optimization. The final site provided accessible, engaging access to the Center’s capabilities to a broader audience.",
         externalLinks: [
                 { label: "Live Site", url: "https://drexel.edu/functional-fabrics/about/virtual-tour/" },
                 { label: "Prototype", url: "https://www.figma.com/proto/5kM4mNOb4njhXKD6ZVL5R1/Interactive-Map?node-id=31-411&scaling=contain&page-id=0%3A1&starting-point-node-id=31%3A375" },
             ],
         processSections: [
-        {
-            title: "Prototype Analysis",
-            content: "I began the project with a thorough analysis of the original Figma prototype of the interactive map. This step was crucial to understand the design elements, interactions, and flow that had already been conceptualized, as well as identifying what needed to be improved. During this analysis, I pinpointed several areas where the prototype fell short in terms of accessibility and functionality, such as slow performance, disorganized file management, and typographical errors.",
-            imageSrc: "/images/CFF-original.webp",
-            imageAlt: "high fidelity wireframes",
-            direction: { base: 'column', md: 'row' },
-            imageOrder: { base: 1, md: 2 },
-            textOrder: { base: 2, md: 1 },
-            imageBorder: true
-        },
-        {
-            title: "Inspiration",
-            content: "This project offered a rare opportunity for creative exploration. I drew inspiration from virtual maps and tours used by institutions like the Metropolitan Museum of Art and the National Gallery of Art, which creatively and functionally displayed their spaces. While the possibilities for this project were boundless, understanding its potential was a major source of inspiration that pushed me to think innovatively about how I could best highlight the Center's capabilities.",
-            imageSrc: "/images/CFF-inspo.webp",
-            imageAlt: "screenshot of the metkids interactive map and national gallery of art virtual tour site",
-            direction: { base: 'column', md: 'column' },
-            imageOrder: { base: 1, md: 2 },
-            textOrder: { base: 2, md: 1 },
-            imageBorder: true
-        },
-        {
-            title: "Technology Exploration",
-            content: "Research was essential to identifying the most effective way to launch a fully accessible interactive map. I explored several technological options, including Infogram, a tool that allows the creation of interactive infographics, and Sitecore-compliant CSS classes to ensure the design met accessibility standards. Additionally, I spent some time developing a responsive prototype in html, css, and vanilla javascript. This proof-of-concept was scrapped due to compliance issues but it gave me a better understanding of the technical possibilities for this project.",
-            imageSrc: "/images/blank-img.png",
-            imageAlt: "blank",
-            direction: { base: 'column', md: 'column' },
-            imageOrder: { base: 1, md: 2 },
-            textOrder: { base: 2, md: 1 },
-            imageBorder: false
-        },
-        
-        {
-            title: "Design Iterations",
-            content: "My design process started at the high-fidelity wireframing stage because the components and assets were already defined. I designed a version of the map using Sitecore components, ensuring it complied with accessibility standards. My objective was to retain as many original assets as possible while incorporating interactivity and vibrant color. However, the interactive elements, such as buttons, felt out of place within the static site and didn’t create an immersive experience. I developed and evaluated several accessible designs with the communications manager to refine the user experience, balancing ideal design with practical constraints.",
-            imageSrc: "/images/CFF-figma.webp",
-            imageAlt: "high fidelity wireframes",
-            direction: { base: 'column', md: 'column' },
-            imageOrder: { base: 2, md: 1 },
-            textOrder: { base: 2, md: 1 },
-            imageBorder: true
-        },
-        {
-            title: "Asset Designs",
-            content: "I enhanced vector graphics and patterns in Adobe Illustrator and reintegrated the brand color palette to make the pages more engaging and visually striking. Throughout the process, I made sure the design elements accurately reflected the actual manufacturing materials used.",
-            imageSrc: "/images/CFF-assets.webp",
-            imageAlt: "example design assets",
-            direction: { base: 'column', md: 'row' },
-            imageOrder: { base: 1, md: 2 },
-            textOrder: { base: 2, md: 1 },
-            imageBorder: false
-        },
-        {
-            title: "Deployment Process",
-            content: "After an extensive wireframing process, I got to work in Sitecore, iterating with available components and video assets to rebuild the map. I developed an accessible and visually engaging pages using video clips and informative copy, successfully showcasing the center’s capabilities. This process involved extensive video editing to distill the essential elements of the original Figma prototype and present the most crucial and engaging information. I also converted natural interactions into distinct pages, allowing each space to be visualized as subpages within the website.",
-            imageSrc: "/images/CFF-preview.webp",
-            imageAlt: "map desktop screenshot",
-            direction: { base: 'column', md: 'column' },
-            imageOrder: { base: 2, md: 1 },
-            textOrder: { base: 2, md: 1 },
-            imageBorder: true
-        },
-        {
-            title: "User Testing",
-            content: "User testing provided valuable insights into how users interacted with the new interface. Navigation was a significant challenge, as users had difficulty seeing and clicking options on the page. It was also tricky to ensure users knew about the available Figma prototype for enhanced viewing. To manage feedback and prioritize issues, I conducted a risk assessment to determine which problems needed addressing before launch and which could be handled later.",
-            imageSrc: "/images/CFF-risk.webp",
-            imageAlt: "risk assessment sheet",
-            direction: { base: 'column', md: 'row' },
-            imageOrder: { base: 2, md: 1 },
-            textOrder: { base: 2, md: 1 },
-            imageBorder: false
-        },
-        {
-            title: "Critical Tasks",
-            content: "The communications manager and I identified a few key critical tasks. Users found the initial 'Programming' slideshow confusing, suggesting that 'Fabrication' or 'Assembly' would be better as the first view. Some participants struggled to choose between the Figma and web versions of the site map, with many not noticing the Figma link at first. Based on feedback, we prioritized showing the Figma prototype. Additionally, the Figma link itself often went unnoticed, prompting us to enhance its visibility with text styling. After addressing these issues and running additional tests, we improved navigation flow and ensured key elements were more visible for users.",
-            imageSrc: "/images/CFF-tasks.webp",
-            imageAlt: "selected notes from risk assessment",
-            direction: { base: 'column', md: 'row' },
-            imageOrder: { base: 1, md: 2 },
-            textOrder: { base: 2, md: 1 },
-            imageBorder: false
-        },
-        // ... more sections
+            {
+                title: "Prototype Analysis",
+                bulletPoints: [
+                    {
+                        text: "I started by digging into the original Figma file to understand what was already working and what wasn’t.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "A lot of issues popped up: slow load times, messy file organization, and even typos throughout.",
+                        highlight: ["slow load times, messy file organization", "typos throughout"]
+                    },
+                    {
+                        text: "It was clear that without cleanup, the prototype would not be sustainable for users or the team.",
+                        highlight: ["would not be sustainable"]
+                    },
+                ],
+                imageSrc: "/images/CFF-original.webp",
+                imageAlt: "high fidelity wireframes",
+                direction: { base: 'column', md: 'row' },
+                imageOrder: { base: 1, md: 2 },
+                textOrder: { base: 2, md: 1 },
+                imageBorder: true
+            },
+            {
+                title: "Prototype Optimization",
+                bulletPoints: [
+                    {
+                        text: "I pinpointed what was slowing things down! Duplicate hidden layers, oversized media, and scattered assets.",
+                        highlight: ["Duplicate hidden layers", "oversized media", "scattered assets"]
+                    },
+                    {
+                        text: "I introduced clear layer naming conventions, utilizing Sections to organize the file into logical, scannable project areas.",
+                        highlight: ["clear layer naming conventions", "utilizing Sections"]
+                    },
+                    {
+                        text: "I built modular Components with clear labels to streamline updates and reduce file clutter, helping the prototype load faster and animations run smoothly.",
+                        highlight: ["load faster", "animations run", "smoothly"]
+                    },
+                    {
+                        text: "I converted assets into Variants and grouped them into interaction states to reduce duplication and ensure smooth animations.",
+                        highlight: ["smooth animations"]
+                    },
+                    {
+                        text: "I flattened complex vectors to reduce file size while keeping the visuals sharp and intact.",
+                        highlight: ["reduce file size"]
+                    },
+                    {
+                        text: "I also swapped out heavy GIFs with optimized, lightweight versions to improve speed without sacrificing quality.",
+                        highlight: ["improve speed"]
+                    },
+                    {
+                        text: "These improvements led to a 60% increase in prototype speed, allowing smoother stakeholder demos and faster team collaboration.",
+                        highlight: ["60% increase in prototype speed"]
+                    },
+                ],
+                imageSrc: "/images/cff-layers.webp",
+                imageAlt: "high fidelity wireframes",
+                direction: { base: 'column', md: 'row' },
+                imageOrder: { base: 2, md: 1 },
+                textOrder: { base: 2, md: 1 },
+                imageBorder: false
+            },
+            {
+                title: "Inspiration",
+                bulletPoints: [
+                    {
+                        text: "Working on ideas for the site, I drew inspiration of interactive maps from institutions like The Metropolitan Museum of Art and the National Gallery of Art.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "These examples helped me see what was possible: creative layouts, thoughtful storytelling, and detailed assets.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "They inspired me to approach this project not just as a fix, but as a chance to build something engaging and memorable.",
+                        highlight: ["build something engaging and memorable"]
+                    },
+                ],
+                imageSrc: "/images/CFF-inspo.webp",
+                imageAlt: "screenshot of the metkids interactive map and national gallery of art virtual tour site",
+                direction: { base: 'column', md: 'column' },
+                imageOrder: { base: 1, md: 2 },
+                textOrder: { base: 2, md: 1 },
+                imageBorder: true
+            },
+            {
+                title: "Technology Exploration",
+                bulletPoints: [
+                    {
+                        text: "I explored a few different tools and platforms to figure out what would actually work.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "I considered Infogram as a method to get around the structured CMS, and I even tried building a custom prototype in vanilla JavaScript.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "In the end, I aligned with the team on using Sitecore. It met accessibility needs and fit into their existing CMS ecosystem.",
+                        highlight: [""]
+                    },
+                ],
+                imageSrc: "/images/blank-img.png",
+                imageAlt: "blank",
+                direction: { base: 'column', md: 'column' },
+                imageOrder: { base: 1, md: 2 },
+                textOrder: { base: 2, md: 1 },
+                imageBorder: false
+            },
+            
+            {
+                title: "Design Iterations",
+                bulletPoints: [ 
+                    {
+                        text: "Since we already had defined assets and were short on time, I jumped straight into high-fidelity wireframes.",
+                        highlight: ["high-fidelity wireframes"]
+                    },
+                    {
+                        text: "I tried to keep the colorful, immersive feeling of the prototype while making it usable in a more static format.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "Some features didn’t translate well, like floating buttons, so I worked closely with the Communications Manager to find the right balance between creativity and practicality.",
+                        highlight: ["creativity and practicality"]
+                    },
+                ],
+                imageSrc: "/images/CFF-figma.webp",
+                imageAlt: "high fidelity wireframes",
+                direction: { base: 'column', md: 'column' },
+                imageOrder: { base: 2, md: 1 },
+                textOrder: { base: 2, md: 1 },
+                imageBorder: true
+            },
+            {
+                title: "Asset Designs",
+                bulletPoints: [ 
+                    {
+                        text: "I cleaned up and rebuilt vector graphics in Illustrator to sharpen the look and improve performance.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "Wherever I could, I pulled in the brand’s color palette and visual language to keep everything cohesive.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "I paid close attention to materials and textures to make sure the visuals reflected real equipment and processes.",
+                        highlight: ["reflected real equipment and processes"]
+                    },
+                ],
+                imageSrc: "/images/CFF-assets.webp",
+                imageAlt: "example design assets",
+                direction: { base: 'column', md: 'row' },
+                imageOrder: { base: 1, md: 2 },
+                textOrder: { base: 2, md: 1 },
+                imageBorder: false
+            },
+            {
+                title: "Deployment Process",
+                bulletPoints: [ 
+                    {
+                        text: "Once the design was locked in, I rebuilt the experience directly in Sitecore using their component system.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "I edited and embedded video clips, wrote supporting copy, and created clear subpages to replace complex interactions.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "It wasn’t just about launching pages, I was attempting to translate a creative concept into something accessible and tangible.",
+                        highlight: [""]
+                    },
+                ],
+                imageSrc: "/images/CFF-preview.webp",
+                imageAlt: "map desktop screenshot",
+                direction: { base: 'column', md: 'column' },
+                imageOrder: { base: 2, md: 1 },
+                textOrder: { base: 2, md: 1 },
+                imageBorder: true
+            },
+            {
+                title: "User Testing",
+                bulletPoints: [ 
+                    {
+                        text: "The Communications Manager and I ran user tests with both stakeholders and students to understand where people got stuck.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "A few common problems came up: confusing slideshow labels, hard-to-find links, unclear navigation.",
+                        highlight: ["confusing slideshow labels", "hard-to-find links", "unclear navigation"]
+                    },
+                    {
+                        text: "I used a risk assessment matrix to sort out which fixes were most urgent before launch.",
+                        highlight: ["most urgent"]
+                    },
+                ],
+                imageSrc: "/images/CFF-risk.webp",
+                imageAlt: "risk assessment sheet",
+                direction: { base: 'column', md: 'row' },
+                imageOrder: { base: 2, md: 1 },
+                textOrder: { base: 2, md: 1 },
+                imageBorder: false
+            },
+            {
+                title: "Critical Tasks",
+                bulletPoints: [ 
+                    {
+                        text: "I organized a list of the most critical issues that had to be addressed before launch.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "Users were confused by the first slide being “Programming” — we decided to move “Fabrication” forward to better match expectations.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "The Figma prototype link was going unnoticed, so I restyled it with clearer text and positioning.",
+                        highlight: [""]
+                    },
+                    {
+                        text: "After another round of testing, the flow felt more natural and users found key information faster.",
+                        highlight: [""]
+                    },
+                ],
+                imageSrc: "/images/CFF-tasks.webp",
+                imageAlt: "selected notes from risk assessment",
+                direction: { base: 'column', md: 'row' },
+                imageOrder: { base: 1, md: 2 },
+                textOrder: { base: 2, md: 1 },
+                imageBorder: false
+            },
+            // ... more sections
         ],
-        outcomes: [
-            "This project was a significant turning point in my journey as a UX designer, presenting me with a unique combination of challenges and opportunities. The freedom to design independently, while initially daunting, allowed me to push my creative boundaries and develop solutions that were both practical and creative.",
-            "Working with a small team that lacked technical expertise forced me to improve my communication skills, simplifying complex ideas and taking on a diverse range of responsibilities. My previous experience with Sitecore proved invaluable, enabling me to overcome technical hurdles quickly and develop the interface with minimal issues.",
-            "The most notable success of this project was transforming an inaccessible Figma prototype into a fully functional, high-performance interactive map. I developed an accessible version of the map alongside six pages of web content using Sitecore CMS, broadening the Center’s audience and adhering to inclusivity standards. Despite the limitations of budget and time, I delivered a solution that not only met user needs but also elevated the Center's digital presence.",
-            "This experience taught me the importance of adaptability, technical expertise, and a user-focused design process in creating meaningful digital solutions. It required me to strike a balance between creativity and practicality, prioritize features strategically, and make independent design decisions under pressure."
+        impact: [
+            "Improving the visibility of the Center's capabilities supported efforts to secure strategic partnerships and grants in advanced materials and defense tech:",
+            [
+                "Achieved a 60% increase in prototype performance, enabling smoother demos and faster updates.",
+                "Delivered six WCAG-compliant pages in Sitecore that replaced the inaccessible Figma prototype.",
+                "Enhanced discoverability and navigation through targeted user testing and refinements."
+            ],
+            "This project taught me how to translate high-concept design into accessible, efficient deliverables, working independently across design and development while adapting quickly to technical and organizational constraints."
         // ... more outcomes
         ]
     };

@@ -1,17 +1,28 @@
-import React from 'react';
 import CaseStudyTemplate from '../components/caseTemplate.jsx';
 
 const CodeStudy = () => {
     const caseStudyData = {
         title: "Code and Coffee Philadelphia",
-        tags: ["GitHub", "Discord", "Organizing"],
-        description: "(In the making) Creating an inclusive, rapidly growing tech meetup and online experience for developers and designers in Philadelphia",
-        coverMedia: "/images/ccp-mock-hd.webp",
+        tags: ["GitHub", "Discord", "Figma"],
+        description: "A beginner-friendly tech community in Philadelphia. With a small team of organizers, I helped launch an inclusive in-person and digital experience for new developers and designers.",
+        coverMedia: "/images/ccp-mock-2.webp",
         context: {
-            team: "A collective of software engineers, organizers, nerds, and one designer (me)",
+            team: "Two Software Engineers and a UX Designer",
             role: "UX Designer, Developer, Organizer",
         },
-        problemSpace: "Philadelphia lacked a beginner-friendly, welcoming, and free tech community space. Especially one that catered to introverted, new, or underrepresented technologists. In-person logistics were often intimidating or unclear, and no central digital resource existed to guide people through the experience.",
+        problemSpace: {
+            text: "Philadelphia lacked a free, inclusive tech community that consistently supported both early-career technologists and senior developers seeking reconnection. Existing events often felt intimidating, disorganized, or inaccessible, with no centralized digital resource to help newcomers navigate the local scene or feel a sense of belonging.",
+            highlight: ["intimidating, disorganized, or", "inaccessible"],
+        },
+        approach: {
+            text: "I gathered feedback through in-person conversations, contextual inquiry, and participatory feedback in our Discord's #venue-hunt channel. By asking members about their goals and experience levels, I uncovered key motivators around access, consistency, and community. These insights informed our event structure, site content, and tone. I collaborated with co-organizers to create wireframes and iterated based on live feedback to make participation easy and welcoming.",
+            highlight: ["in-person conversations, contextual inquiry,", "participatory feedback", "access, consistency, and community", "inaccessible"],
+        },
+        solution:  {
+            text: "We created a recurring event series supported by a mobile-friendly website, Discord server, and global sponsorships to offer a low-pressure, accessible space for programmers. By combining in-person gatherings with digital support, we made participation easy, consistent, and community-driven.",
+            highlight: ["recurring event series", "mobile-friendly", "website", "Discord server", "global sponsorships"],
+        },
+        outcome: "Grew to 1,700+ members, 60+ weekly attendees, and 200+ active Discord users in one year — all with zero marketing budget and support from nine sponsors.",
         externalLinks: [
                 { label: "Live Site", url: "https://www.phillycodes.rsvp" },
                 { label: "Repositories", url: "https://github.com/Coffee-Code-Philly-Accelerator"},
@@ -19,18 +30,13 @@ const CodeStudy = () => {
             ],
         processSections: [
             {
-                title: "Venue Experimenting",
-                content: "Throughout the growth of the chapter, we explored multiple venues to better understand how physical environments shaped attendee experience. Our first location, Chapterhouse Cafe, was cozy and inviting but suffered from inconsistent seating availability and a hard-to-find location, two issues that made first-time attendance feel risky. As the community grew, we transitioned to Capital One Cafe, which offered a friendly, open atmosphere and bookable rooms. However, those rooms quickly became a competitive resource, making it difficult to reliably secure space. Eventually, we partnered with The Yard, a coworking space that offered greater capacity but introduced new challenges, including multiple locked doors and unclear entry procedures. \n\nThese evolving venue constraints underscored a key insight: seemingly minor logistical barriers like ambiguous access or a too-formal environment, had outsized effects on participation and retention. The ideal space needed to feel low-pressure, intuitive, and easy to enter both physically and socially.",
-                imageSrc: "/images/ccp-venue.webp",
-                imageAlt: "group of people coding at the yard coworking space",
-                direction: { base: 'column', md: 'row' },
-                imageOrder: { base: 1, md: 2 },
-                textOrder: { base: 2, md: 1 },
-                imageBorder: true
-            },
-            {
                 title: "Community Infrastructure",
-                content: "Beyond the events themselves, we invested in building digital infrastructure to extend the community’s reach and support system. We launched a 200+ member Discord server with dedicated channels for tech questions, peer support, casual conversation, and resources. Event logistics were streamlined through phillycodes.rsvp, a custom site that consolidated RSVP links and updates, while Meetup remained a key channel for attracting new attendees and tracking interest. \n\nMessaging across platforms was intentionally friendly and informal, reinforcing a brand of inclusivity and approachability. Event cadence was kept consistent to build momentum, while formats emphasized drop-in participation and learning-by-doing, rather than structured talks or competitive hackathons. These systems helped foster a sense of belonging and made it easier for newcomers to engage at their own pace.",
+                bulletPoints: [
+                    "Launched a 200+ member Discord for ongoing support, resources, and announcements.",
+                    "Built static brochure style site to centralize RSVPs, community projects, photos, and event details.",
+                    "Created weekly Meetup event series leveraging partnership with Code & Coffee to manage event costs.",
+                    "Partnered with Comcast LiftLabs for a multi-day hackathon event alongside six other sponsors.",
+                ],
                 imageSrc: "/images/ccp-discord.webp",
                 imageAlt: "screenshot of discord invite",
                 direction: { base: 'column', md: 'row' },
@@ -39,8 +45,19 @@ const CodeStudy = () => {
                 imageBorder: true
             },
             {
-                title: "User Research Insights",
-                content: "To better understand the needs of our community, I conducted lightweight but targeted research through a combination of Discord polls, observational field notes during weekly meetups, and a review of attendance patterns and comments on Meetup. \n\nThese insights revealed consistent behavioral and emotional patterns. Many participants were either new to tech or self-identified as shy and found conventional tech environments intimidating or unwelcoming. Accessibility to venues emerged as a significant barrier: locked doors, unclear signage, and complicated entry instructions caused confusion and deterred some attendees from showing up or returning. Community members expressed a clear preference for a casual, low-pressure environment that allowed for spontaneous participation rather than heavily structured programming. \n\nOver time, I observed that trust and repeat attendance were largely driven by consistency, personal invitations, and positive word-of-mouth, highlighting the need for both reliable logistics and a socially safe atmosphere.",
+                title: "Growing Attendance",
+                bulletPoints: [
+                    {
+                        text: "Through in-person feedback, we tried different methods to improve member entry in a highly secured building.",
+                    },
+                    {
+                        text: "We tested entry signage with live phone support for venue access which resulted in an overwhelming amount of phone calls and some miscommunication.",
+                    },
+                    {
+                        text: "We discovered that using a Discord bot with a live QR code for contact-less entry, and a real-time help channel led to a 140% increase in return attendees.",
+                        highlight: ["140% increase"]
+                    },
+                ],
                 imageSrc: "/images/ccp-sign.webp",
                 imageAlt: "event signage on door",
                 direction: { base: 'column', md: 'row' },
@@ -49,18 +66,51 @@ const CodeStudy = () => {
                 imageBorder: true
             },
             {
-                title: "Smart Venue Access",
-                content: "Access and onboarding proved to be critical pain points for new attendees, especially in venues with locked entrances or non-obvious directions. We tested multiple approaches to guide users in. A call-based access system offered direct human support but required constant monitoring and real-time availability. We later introduced a Discord bot that could automatically provide door codes, but adoption was low. Most users were unfamiliar with command-based interfaces and found the system confusing. To reduce friction, we iterated on signage, simplified entry instructions, and set up live support channels in Discord to assist people arriving at events. These improvements helped reduce drop-offs and ensured attendees could enter without feeling stressed or left out.",
-                imageSrc: "/images/blank-img.png",
-                imageAlt: "blank",
+                title: "Key Insights",
+                bulletPoints: [
+                    "Environment matters: Seemingly small details (locked doors, large crowds) made a huge difference in whether someone felt safe to show up.",
+                    "Informality builds trust: Friendly messaging and low-pressure formats helped retain shy and first-time attendees.",
+                    "Consistency = belonging: Regular events and clear communication led to stronger word-of-mouth and return rates.",
+                ],
+                imageSrc: "/images/ccp-venue.webp",
+                imageAlt: "group of people coding at the yard coworking space",
+                direction: { base: 'column', md: 'row' },
+                imageOrder: { base: 1, md: 2 },
+                textOrder: { base: 2, md: 1 },
+                imageBorder: true
+            },
+            {
+                title: "Visual Identity",
+                bulletPoints: [
+                    "Inspired by our partners at Socratica, we wanted our site and branding to reflect academia and café notions. Simple, yet playful, I iterated on a calm and welcoming visual identity with academic serif type, handwritten script, and muted, warm colors.",
+                    "I iterated on logo ideas, incorporating retro tech, coding references, and coffee. I created a concept of a retro computer with our title inside the screen. The team decided that the title wasn't super legible so I pivoted to a symbolistic approach, prioritizing a simple coffee design with code brackets. We had a pixel artist refine the design.",
+                ],    
+                imageSrc: "/images/ccp-brand.webp",
+                imageAlt: "code & coffee brand sheet",
+                direction: { base: 'column', md: 'column' },
+                imageOrder: { base: 1, md: 2 },
+                textOrder: { base: 1, md: 1 },
+                imageBorder: true
+            },
+            {
+                title: "Details",
+                bulletPoints: [
+                    "I spent time working on hand-drawn digital assets to support the brand, illustrated in Figma.",
+                ],                
+                imageSrc: "/images/ccp-sketch.webp",
+                imageAlt: "brand sketches",
                 direction: { base: 'column', md: 'column' },
                 imageOrder: { base: 1, md: 2 },
                 textOrder: { base: 2, md: 1 },
                 imageBorder: false
             },
             {
-                title: "Building Our Digital Presence",
-                content: "We designed and launched a mobile-first website with HTML, CSS, and vanilla Javascript. The site prioritized clarity and ease of use, featuring straightforward event information, integrated RSVP functionality, and community resources. Recognizing that many attendees would be checking details on the go, the responsive layout was optimized for mobile devices, ensuring users could quickly find essential information anytime, anywhere. \n\nI started out with a low-fi wireframe taking inspiration from similar tech community sites. I knew the site needed clear information on who we are, what we do, a call to action, enticing photography, descriptive information and instructions for newcomers, and a project showcase to add a collaborative feel. It felt natural to move in with simple branding and sample photography. I used the first two layouts as a launching pad for creativity. Inspired by niche collectives and portfolio sites, I hand-drew graphics to emphasize our playful, homegrown feel. The final site was agreed upon by all organizers as having the right balance of minimalism, fun, creativity, and relevant information.",
+                title: "Site Iterations",
+                bulletPoints: [
+                    "The site had a few clear objectives including event information, CTA's, photography, and community projects.",
+                    "I started with a low fidelity wireframe prioritizing that information while slowly tightening up the layout with feedback from the software engineers.",
+                    "The final design, as seen on the live site, reflected our goal of adding playfulness to a minimalist foundation. The addition of photography of our live event added color and dimension to the site.",
+                ],                
                 imageSrc: "/images/ccp-iterating.webp",
                 imageAlt: "screenshot of site wireframes",
                 direction: { base: 'column', md: 'column' },
@@ -68,39 +118,16 @@ const CodeStudy = () => {
                 textOrder: { base: 2, md: 1 },
                 imageBorder: true
             },
-            {
-                title: "Visual Identity",
-                content: (
-                    <>
-                        Our branding drew inspiration from{' '}
-                        <a href="https://www.socratica.info/" target="_blank" rel="noopener noreferrer" style={{color: "#686868", textDecoration: 'none'}}>
-                            Socratica
-                        </a>{' '}and its chapter websites, aiming to evoke an academic yet approachable atmosphere that blended technology with the warm, relaxed vibes of a café. The visual identity used clean typography and a calm color palette to communicate professionalism without intimidation, while subtle design elements referenced community and learning. This balance helped position Code and Coffee as both a welcoming social space and a place for tech exploration, reinforcing the inclusive and thoughtful spirit of the chapter.
-                    </>
-                ),
-                imageSrc: "/images/ccp-brand.webp",
-                imageAlt: "code & coffee brand sheet",
-                direction: { base: 'column', md: 'row' },
-                imageOrder: { base: 1, md: 2 },
-                textOrder: { base: 1, md: 1 },
-                imageBorder: false
-            },
-            {
-                title: "Partnership & Expansion",
-                content: "To support and sustain our growing community, we collaborated with the national Code and Coffee chapter to align on values, share resources, and organize consistent funding for our local events. We also collaborated and drew inspiration from Socratica, whose academic tone and design language influenced both our branding and community approach. During Philly Tech Week, we faciliated a multi-day hackathon and partnered with Comcast LIFT Labs, securing a high-visibility venue that allowed us to host a collaborative, in-person experience for our members. These partnerships played a key role in scaling our impact while maintaining our grassroots, inclusive culture.",
-                imageSrc: "/images/ccp-collab.webp",
-                imageAlt: "logos for Comcast Lift Labs, Socratica, and Code & Coffee",
-                direction: { base: 'column', md: 'column' },
-                imageOrder: { base: 1, md: 2 },
-                textOrder: { base: 2, md: 1 },
-                imageBorder: false
-            },
         ],
-        outcomes: [
-            "Over time, the community grew to over 1,700 members on Meetup, with 15–30 people attending weekly events and over 200 active participants on our Discord server. The consistency and intentionality behind our events cultivated a sense of trust, leading to strong growth and repeat attendance.",
-            "The website and Discord server became centralized resources for new and returning members, offering clear access instructions, event details, and community links. Our open-source codebase welcomed community contributions, reinforcing our collaborative ethos.",
-            "During Philly Tech Week, we organized a multi-day hackathon in partnership with Comcast LIFT Labs, marking a milestone moment that brought increased visibility to our grassroots efforts and demonstrated the community’s potential to scale while staying inclusive and beginner-friendly.",
-        // ... more outcomes
+        impact: [
+            "This initiative helped establish a new scalable, low-barrier tech community in Philadelphia:",
+            [
+                "Increased weekly attendance by over 140% after improving access systems", 
+                "Built sustainable infrastructure through repeatable event models and modular digital tools",
+                "Strengthened trust and retention by centering inclusive design decisions"
+            ],
+            "By combining in-person gatherings with digital support, we made participation easy, consistent, and community-driven.",
+            "Additionally, this project reinforced my ability to contribute strategic design leadership within early-stage, community-driven products!"
         ]
     };
 

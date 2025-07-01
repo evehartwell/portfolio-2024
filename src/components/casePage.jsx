@@ -24,7 +24,16 @@ const casePage = () => {
             team: "Your description...",
             role: "Your description...",
         },
-        problemSpace: "Your problem space description...",
+        problemSpace: {
+            text: "problem space...",
+            highlight: [""],
+        },
+        approach: {
+            text: "problem space...",
+            highlight: [""],
+        },
+        solution: "Your solution description...",
+        outcome: "Your outcome description...",
         externalLinks: [
                 { label: "Live Site", url: "/" },
                 { label: "Prototype", url: "/" },
@@ -32,7 +41,25 @@ const casePage = () => {
         processSections: [
         {
             title: "Section 1 Title",
-            content: "Section 1 content...",
+            bulletPoints: [
+                /* withOUT highlights */
+                "",
+                "",
+
+                /* with highlights */
+                {
+                    text: "",
+                    highlight: []
+                },
+                {
+                    text: "",
+                    highlight: [],
+                },
+                {
+                    text: "",
+                    highlight: []
+                },
+            ],
             imageSrc: "/path/to/image1.png",
             imageAlt: "Image 1 description",
             direction: { base: 'column', md: 'row' },
@@ -69,12 +96,12 @@ const casePage = () => {
             textOrder: { base: 2, md: 1 }
         },
         // ... more sections
-        ],
-        outcomes: [
-            "Outcome 1...",
-            "Outcome 2...",
+        ], 
+        impact: [
+            "Take 1...",
+            "Take 2...",
         // ... more outcomes
-        ]
+        ] 
     };
 
     return <CaseStudyTemplate {...caseStudyData} />;

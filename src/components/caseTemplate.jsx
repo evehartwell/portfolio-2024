@@ -1,4 +1,3 @@
-import React from 'react';
 import {
     Box,
     Text,
@@ -8,9 +7,12 @@ import {
     Image,
     Divider,
     UnorderedList,
+    List,
     ListItem,
+    ListIcon,
     Button,
     Heading,
+    Highlight,
     Link as ChakraLink,
 } from '@chakra-ui/react';
 import Navbar from '../components/navbar';
@@ -26,9 +28,12 @@ const CaseStudyTemplate = ({
     coverMedia,
     context,
     problemSpace,
+    approach,
+    solution,
+    outcome,
     externalLinks,
     processSections,
-    outcomes
+    impact,
 }) => {
     const location = useLocation();
     const currentRoute = location.pathname;
@@ -39,6 +44,21 @@ const CaseStudyTemplate = ({
     // Determine previous and next case studies
     const previousCaseStudy = currentIndex > 0 ? CaseList[currentIndex - 1].route : null;
     const nextCaseStudy = currentIndex < CaseList.length - 1 ? CaseList[currentIndex + 1].route : null;
+
+    function renderHighlight(field) {
+    // If field is a string, no highlights
+        if (typeof field === "string") {
+            return <Text>{field}</Text>;
+        }
+        // If it's an object with text and highlight keys
+        return (
+            <Text>
+            <Highlight query={field.highlight || []} styles={{ bg: "yellow.200" }}>
+                {field.text}
+            </Highlight>
+            </Text>
+        );
+    }
 
     return (
         <Container maxW="7xl" py={2}>
@@ -75,70 +95,71 @@ const CaseStudyTemplate = ({
                         )}
                     </Box>
                 </Flex>
+
                 <Heading mb={10} fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="regular">Project Overview</Heading>
                 <Flex
                     direction={{ base: 'column', md: 'row' }}
-                    wrap="wrap"
                     gap={5}
                     pt={5}
                     mb={10}
                     w="full"
-                >
-                    <Flex
-                        direction="column"
-                        flex="1"
-                        gap={5}
                     >
+                    {/* Left Column */}
+                    <Flex direction="column" flex="1" gap={5}>
                         {context.team && (
                             <Box textAlign="left" p={4}>
                                 <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">The Team</Heading>
-                                <Text mt={2}>
-                                    {context.team}
-                                </Text>
+                                <Text mt={2}>{context.team}</Text>
                             </Box>
                         )}
                         {context.client && (
                             <Box textAlign="left" p={4}>
                                 <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">The Client</Heading>
-                                <Text mt={2}>
-                                    {context.client}
-                                </Text>
+                                <Text mt={2}>{context.client}</Text>
                             </Box>
                         )}
                         {context.role && (
                             <Box textAlign="left" p={4}>
                                 <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">My Role</Heading>
-                                <Text mt={2}>
-                                    {context.role}
-                                </Text>
+                                <Text mt={2}>{context.role}</Text>
                             </Box>
                         )}
-                        {context.requirements && (
-                            <Box textAlign="left" p={4}>
-                                <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">Requirements</Heading>
-                                <UnorderedList mt={2} fontSize={{ base: 'xs', sm: 'sm' }}>
-                                    {context.requirements.map((req, index) => (
-                                        <ListItem key={index} mb={1}>
-                                        <b>{req.title}:</b> {req.description}
-                                        </ListItem>
-                                    ))}
-                                </UnorderedList>
-                            </Box>
-                        )}
-                    </Flex>
-                    <Flex
-                        direction="column"
-                        flex="1"
-                        gap={5}
-                    >
                         <Box textAlign="left" p={4}>
                             <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">Problem Space</Heading>
-                            <Text mt={2}>
-                                {problemSpace}
-                            </Text>
+                            <Text mt={2}>{renderHighlight(problemSpace)}</Text>
+                        </Box>
+                    </Flex>
+
+                    {/* Right Column */}
+                    <Flex direction="column" flex="1" gap={5}>
+                        <Box textAlign="left" p={4}>
+                            <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">Approach</Heading>
+                            <Text mt={2}>{renderHighlight(approach)}</Text>
+                        </Box>
+                        <Box textAlign="left" p={4}>
+                            <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">Solution</Heading>
+                            <Text mt={2}>{renderHighlight(solution)}</Text>
                         </Box>
                     </Flex>
                 </Flex>
+
+                <Box
+                    textAlign="center"
+                    p={6}
+                    mt={0}
+                    mb={10}
+                    w="full"
+                    maxW="3xl"
+                    mx="auto"
+                    border="1px solid"
+                    borderColor="primary.5"
+                    borderRadius="md"
+                >
+                    <Heading fontSize={{ base: 'xl', md: '2xl' }} textTransform="uppercase" fontWeight="regular">
+                        Outcome
+                    </Heading>
+                    <Text mt={4}>{renderHighlight(outcome)}</Text>
+                </Box>
                 
                 {externalLinks && externalLinks.length > 0 && (
                     <Flex justify="center" gap={10} p={6} flexWrap="wrap">
@@ -175,6 +196,7 @@ const CaseStudyTemplate = ({
                         ))}
                     </Flex>
                 )}
+                <Divider borderColor="primary.5" my={10} />
                 
                 {processSections.map((section, index) => (
                     <Flex 
@@ -184,7 +206,7 @@ const CaseStudyTemplate = ({
                         gap={5} 
                         mt={20}
                     >
-                        <Box flex="1" borderRadius="10px" overflow="hidden" outline={section.imageBorder ? "1px solid #D6D6D6" : "none"} order={section.imageOrder}>
+                        <Box flex="1" borderRadius="6px" overflow="hidden" outline={section.imageBorder ? "1px solid #D6D6D6" : "none"} order={section.imageOrder}>
                             <Image 
                                 src={section.imageSrc} 
                                 alt={section.imageAlt} 
@@ -195,23 +217,56 @@ const CaseStudyTemplate = ({
                         </Box>
                         <Box flex="1" textAlign="left" p={{ base: '3', md: '4' }} order={section.textOrder}>
                             <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">{section.title}</Heading>
-                            <Text mt={5} whiteSpace="pre-line">
-                                {section.content}
-                            </Text>
+                            <List fontSize={{ base: 'xs', sm: 'sm' }} as="ul" styleType="disc" pl={6} spacing={3} mt={5}>
+                                {section.bulletPoints.map((point, idx) => (
+                                    <ListItem key={idx}>
+                                        {/* Check if the current bullet point is a simple string */}
+                                        {typeof point === "string" ? (
+                                            /* if so, render directly */
+                                            <Highlight
+                                                query={[]}
+                                                styles={{bg: 'yellow.200' }}
+                                            >
+                                                {point}
+                                            </Highlight>
+                                            ) : (
+                                            /* if NOT, render text and highlight explicit words */
+                                            <Highlight
+                                                query={point.highlight || []}
+                                                styles={{bg: 'yellow.200' }}
+                                            >
+                                                {point.text}
+                                            </Highlight>
+                                        )}
+                                    </ListItem>
+                                ))}
+                            </List>
                         </Box>
                     </Flex>
                 ))}
 
-                <Divider borderColor="#ababab" my={10} />
+                <Divider borderColor="primary.5" my={10} />
 
-                {outcomes && outcomes.length > 0 && (
+                {impact && impact.length > 0 && (
                     <Box w="full" textAlign="left" p={{ base: '3', md: '4' }}>
-                        <Heading fontSize={{ base: '2xl', md: '3xl' }} textTransform="uppercase" fontWeight="regular">Outcomes</Heading>
-                        <Text mt={5}>
-                            {outcomes.map((outcome, index) => (
-                                <Text key={index} mb={2}>{outcome}</Text>
+                        <Heading fontSize={{ base: 'lg', md: 'xl' }} textTransform="uppercase" fontWeight="regular">Impact</Heading>
+                        <Box mt={5}>
+                            {impact.map((item, index) => (
+                                Array.isArray(item) ? (
+                                    <UnorderedList key={index} pl={6} mb={4}>
+                                        {item.map((bullet, i) => (
+                                        <ListItem key={i} fontSize={{ base: 'xs', sm: 'sm' }}>
+                                            {bullet}
+                                        </ListItem>
+                                        ))}
+                                    </UnorderedList>
+                                ) : (
+                                    <Text key={index} mb={3}>
+                                        {item}
+                                    </Text>
+                                )
                             ))}
-                        </Text>
+                        </Box>
                     </Box>
                 )}
             </Flex>
