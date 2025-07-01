@@ -3,11 +3,11 @@ import CaseStudyTemplate from '../components/caseTemplate';
 const LeBowStudy = () => {
     const caseStudyData = {
         title: "LeBow College of Business",
-        tags: ["UI Design", "Drupal", "Brand Research"],
+        tags: ["Figma", "UI", "Drupal", "WCAG", "Content Strategy", "Brand Research"],
         description: "I collaborated with LeBow College of Business’s marketing and design teams to lead key UX and brand updates during a major website redesign. My focus included improving site usability, refining content structure, enhancing brand consistency, and designing scalable components within a new Drupal-based system.",
         coverMedia: "/images/lebow-preview.webp",
         context: {
-            team: "Lead Web Designer, Marketing Team, Development Team ",
+            team: "Lead Web Designer, Marketing Team, Development Team",
             role: "UX Designer, Web Content Assistant",
         },
         problemSpace: {

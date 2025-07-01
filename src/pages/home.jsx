@@ -24,7 +24,7 @@ const projects = [
         aspectRatio: { base: 3/4, md: 3/2 },  
     }, 
     {
-        title: "Boosting Grad Admissions by 20% Through Web Redesign and Brand Strategy",
+        title: "Boosting MBA Admissions by 20% Through Web Redesign and Brand Strategy",
         imageSrc: "/images/lebow-mock-hd.webp",
         link: "/lebow-study",
         aspectRatio: { base: 3/4, md: 3/2 },  

@@ -4,7 +4,7 @@ import CaseStudyTemplate from '../components/caseTemplate.jsx';
 const MapStudy = () => {
     const caseStudyData = {
         title: "Center for Functional Fabrics",
-        tags: ["Sitecore", "Web Development", "User Testing"],
+        tags: ["Figma Prototype", "Sitecore", "Motion Design", "Web Development", "User Testing"],
         description: "I developed and launched an accessible interactive map for a Drexel research lab backed by the Pentagon and Department of Defense. The final Sitecore-based site replaced an inaccessible prototype, showcasing advanced e-textile technologies to partners and defense stakeholders.",
         coverMedia: (
             <video
