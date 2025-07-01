@@ -8,9 +8,10 @@ import {
     Button,
     Divider,
     SimpleGrid,
+    Link as ChakraLink
 } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from "react-router-dom";
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import InfoSection from '../components/infoSection';
@@ -51,34 +52,36 @@ const projects = [
     },  */}
 ];
 
-const ProjectBox = ({ title, desc, imageSrc, link, aspectRatio = 3/2 }) => (
+const ProjectBox = ({ title, imageSrc, link, aspectRatio = 3/2 }) => (
     <Box
         position="relative"
         overflow="hidden"
     >
         {/* Image container with custom aspect ratio */}
-        <AspectRatio ratio={aspectRatio}>
-            <Image
-                src={imageSrc}
-                alt={title}
-                objectFit="cover"
-                borderRadius="4px"
-                loading="lazy"
-            />
-        </AspectRatio>
+        <ChakraLink as={RouterLink} to={link} _hover={{ textDecoration: "none" }}>
+            <AspectRatio ratio={aspectRatio}>
+                <Image
+                    src={imageSrc}
+                    alt={title}
+                    objectFit="cover"
+                    borderRadius="4px"
+                    loading="lazy"
+                />
+            </AspectRatio>
+        </ChakraLink>
 
         {/* Text description */}
         <Flex
             direction="column"
         >
-            <Text mt={4} fontSize={{ base: 'xs', sm: 'sm' }}>
+            <Text mt={4}>
                 {title}
             </Text>
             <Flex>
                 <Button 
-                    as={Link}
+                    as={RouterLink}
                     to={link}
-                    fontSize={{ base: 'xs', sm: 'sm' }}
+                    fontSize={{ base: 'sm', sm: 'sm' }}
                     justifyContent="left"
                     p={0}
                     color="primary.3"
