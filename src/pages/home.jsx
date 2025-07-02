@@ -31,7 +31,7 @@ const projects = [
         aspectRatio: { base: 3/4, md: 3/2 },  
     },
     {
-        title: "Delivering a 60% Faster Interactive E-Textile Map from Figma to Launch",
+        title: "Delivering a 60% Faster Interactive E-Textile Map for DoD-Funded Research Lab",
         imageSrc: "/images/cff-lab.webp",
         link: "/cff-study",
         aspectRatio: { base: 3/4, md: 3/2 },  
