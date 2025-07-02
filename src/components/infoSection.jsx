@@ -14,7 +14,7 @@ const InfoSection = () => {
                     {' '}<Link href="https://apps.apple.com/us/app/cross-locked/id6503719487" isExternal color="primary.3">Cross Locked</Link>. 
                 </Text>
                 <Text mb={3}>My strengths include creative branding and shipping polished websites (whether using CMS platforms or developing them from scratch). I’m also available for consultation or quick fixes.</Text>
-                <Text mb={3}>Currently looking for my next opportunity in UX or Front-End.</Text>
+                <Text mb={3}>Open to long-term roles in UX or front-end, with a strong interest in contributing to mission-driven SaaS products that value accessibility, clarity, and thoughtful design.</Text>
                 <Image
                     src="/images/stickers/ccp-logo.png"
                     alt="code and coffee logo"
