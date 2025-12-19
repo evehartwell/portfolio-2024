@@ -2,7 +2,6 @@ import React from 'react';
 import { Flex, Text, IconButton, Tooltip, Link as ChakraLink } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdAlternateEmail } from 'react-icons/md'; 
-import { IoDocumentAttachOutline } from "react-icons/io5";
 
 const Footer = () => {
     return (
@@ -44,17 +43,6 @@ const Footer = () => {
                         <IconButton
                             icon={<MdAlternateEmail />}
                             aria-label="Email"
-                            backgroundColor="none"
-                            bg="transparent"
-                            _hover={{ bg: "transparent" }}
-                        />
-                    </Tooltip>
-                </ChakraLink>
-                <ChakraLink href={`${process.env.PUBLIC_URL}/Hartwell-UX-Resume.pdf`} isExternal>
-                    <Tooltip label="Resume" aria-label="Resume tooltip" backgroundColor="primary.1" borderRadius={5}>
-                        <IconButton
-                            icon={<IoDocumentAttachOutline />}
-                            aria-label="Resume"
                             backgroundColor="none"
                             bg="transparent"
                             _hover={{ bg: "transparent" }}

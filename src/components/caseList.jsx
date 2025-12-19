@@ -10,7 +10,11 @@ const CaseList = [
     {
         title: "Center for Functional Fabrics",
         route: "/cff-study"
-    }, /*
+    }, 
+    {   title: "Govcomp.ai",
+        route: "/gov-study"
+    },
+    /*
     {
         title: "Modesens App",
         route: "/modesens-study"

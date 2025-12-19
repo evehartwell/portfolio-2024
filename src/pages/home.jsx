@@ -8,6 +8,7 @@ import {
     Button,
     Divider,
     SimpleGrid,
+    Tag,
     Link as ChakraLink
 } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
@@ -19,22 +20,33 @@ import '/styles.css';
 
 const projects = [
     {
-        title: "Growing a 1,700+ Member Tech Community in One Year Through Local Sponsorship and Inclusive Design",
+        title: "Growing a 1,700+ Member Tech Community in One Year Through Inclusive Design",
         imageSrc: "/images/ccp-mock-2.webp",
         link: "/ccp-study",
-        aspectRatio: { base: 3/4, md: 3/2 },  
+        tags: ["Accessibility", "Branding", "Mobile",],
+        aspectRatio: 3/2,  
     }, 
     {
         title: "Boosting MBA Admissions by 20% Through Web Redesign and Brand Strategy",
         imageSrc: "/images/lebow-mock-hd.webp",
         link: "/lebow-study",
-        aspectRatio: { base: 3/4, md: 3/2 },  
+        tags: ["Higher-Ed", "Branding", "CMS", "UX Research",],
+        aspectRatio: 3/2,  
     },
     {
         title: "Delivering a 60% Faster Interactive E-Textile Map for DoD-Funded Research Lab",
         imageSrc: "/images/cff-lab.webp",
         link: "/cff-study",
-        aspectRatio: { base: 3/4, md: 3/2 },  
+        tags: ["Motion Design", "User Testing", "CMS"],
+        aspectRatio: 3/2,  
+    },
+    {
+        title: "Driving $650K in Pipeline by Redesigning Procurement Workflows with a Scalable Design System",
+        imageSrc: "/images/govcomp-prev-mock.png",
+        link: "/",
+        tags: ["GovTech", "Design System", "Data Viz"], 
+        showCTA: false,
+        aspectRatio: 3/2,  
     },
     {/* 
     {
@@ -52,7 +64,7 @@ const projects = [
     },  */}
 ];
 
-const ProjectBox = ({ title, imageSrc, link, aspectRatio = 3/2 }) => (
+const ProjectBox = ({ title, imageSrc, link, aspectRatio = 3/2, tags = [], showCTA = true, ctaLabel = "Read Case Study", }) => (
     <Box
         position="relative"
         overflow="hidden"
@@ -77,30 +89,51 @@ const ProjectBox = ({ title, imageSrc, link, aspectRatio = 3/2 }) => (
             <Text mt={4}>
                 {title}
             </Text>
-            <Flex>
-                <Button 
-                    as={RouterLink}
-                    to={link}
-                    fontSize={{ base: 'sm', sm: 'sm' }}
-                    justifyContent="left"
-                    p={0}
-                    color="primary.3"
-                    bg="transparent"
-                    rightIcon={<ArrowForwardIcon />}
-                    _hover={{   
-                        color: "primary.1", 
-                    }}
-                >
-                    Read Case Study 
-                </Button>
-            </Flex>
+
+            {Array.isArray(tags) && tags.length > 0 && (
+                <Flex justify="left" gap={2} pl={0} pt={2} flexWrap="wrap">
+                    {tags.map((tag) => (
+                        <Tag
+                            key={tag}
+                            bg="transparent"
+                            fontSize={{ base: "xs", md: "sm" }}
+                            color="primary.3"
+                            borderRadius="2px"
+                            borderWidth={1}
+                            borderColor="primary.5"
+                            backgroundColor="primary.4"
+                        >
+                            {tag}
+                        </Tag>
+                    ))}
+                </Flex>
+            )}
+            
+            {showCTA && link && (
+                <Flex>
+                    <Button
+                        as={RouterLink}
+                        to={link}
+                        fontSize={{ base: "sm", sm: "sm" }}
+                        justifyContent="left"
+                        pt={2}
+                        pl={0}
+                        color="primary.3"
+                        bg="transparent"
+                        rightIcon={<ArrowForwardIcon />}
+                        _hover={{ color: "primary.1" }}
+                    >
+                        {ctaLabel}
+                    </Button>
+                </Flex>
+            )}
         </Flex>
     </Box>
 );
 
 const Homepage = () => {
     return (
-        <Container maxW="7xl" py={2}>
+        <Container maxW="6xl" py={2}>
             <Navbar />
             <Box>
                 {/* intro */}
@@ -129,31 +162,32 @@ const Homepage = () => {
                         >
                             <Text 
                                 fontFamily="accent" 
-                                fontSize="2xl"
-                                mb={6}
+                                fontSize="3xl"
+                                mb={4}
                                 
                             >
                                 Eve Hartwell
                             </Text>
                             <Text mb={4}>
-                                Design Engineer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.
+                                UX Designer in Philadelphia, dedicated to community building and creating immersive, human-centered digital experiences.
                             </Text>
                             <Text mb={4}>
-                                * Current UX lead on an AI startup for federal contractors.
+                                * UX Team Lead for Top AI Research Lab.
                             </Text>
                         </Box>
                     </Box>
                 </Flex>
                 
                 {/* projects */}
-                <Text fontFamily="heading">Portfolio Work</Text>
-                <Divider borderColor="primary.1" mt={1} mb={6}/>
+                <Text fontFamily="heading" fontSize="md">Portfolio Work</Text>
+                <Divider borderColor="primary.3" mt={2} mb={4}/>
                 <SimpleGrid 
                     columns={{ base: 1, sm: 2, md: 3 }} 
-                    spacing={4}
+                    spacingX={4}         
+                    spacingY={8}
                     width="100%"
-                    >
-                    {projects.slice(0, 3).map((project, i) => (
+                >
+                    {projects.slice(0, 4).map((project, i) => (
                         <ProjectBox key={i} {...project} />
                     ))}
                 </SimpleGrid>

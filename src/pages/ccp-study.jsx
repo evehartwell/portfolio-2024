@@ -3,7 +3,7 @@ import CaseStudyTemplate from '../components/caseTemplate.jsx';
 const CodeStudy = () => {
     const caseStudyData = {
         title: "Code and Coffee Philadelphia",
-        tags: ["GitHub", "Discord", "Figma", "Tech Education", "Accessibility", "Facilitation"],
+        tags: ["Figma", "Tech Education", "Accessibility", "Facilitation"],
         description: "I co-founded a beginner-friendly tech community in Philadelphia aimed at supporting new developers and designers. Alongside a small team, I helped create inclusive in-person and online spaces where people could learn, build, and connect.",
         coverMedia: "/images/ccp-mock-2.webp",
         context: {

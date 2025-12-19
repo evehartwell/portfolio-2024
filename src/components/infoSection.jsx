@@ -7,14 +7,14 @@ const InfoSection = () => {
     const content = {
         'In Practice': ( 
             <>
-                <Text mb={3}>I’m a designer with a technical background, passionate about building digital spaces that are both exciting to use and rooted in community. I’ve crafted systems and interfaces for local startups and initiatives in Philadelphia, including
+                <Text mb={3}>I’m a designer who is passionate about building digital spaces that are both exciting to use and rooted in community. I’ve crafted systems and interfaces for local startups and initiatives in Philadelphia, including
                     {' '}<Link href="https://blackhippieart.com" isExternal color="primary.3">Black Hippie Art</Link>,
                     GovComp,
                     {' '}<Link href="https://www.thiswayout.life/" isExternal color="primary.3">This Way Out</Link>, and 
                     {' '}<Link href="https://apps.apple.com/us/app/cross-locked/id6503719487" isExternal color="primary.3">Cross Locked</Link>. 
                 </Text>
                 <Text mb={3}>My strengths include creative branding and shipping polished websites (whether using CMS platforms or developing them from scratch). I’m also available for consultation or quick fixes.</Text>
-                <Text mb={3}>Open to long-term roles in UX or front-end, with a strong interest in contributing to mission-driven SaaS products that value accessibility, clarity, and thoughtful design.</Text>
+                <Text mb={3}>Open to long-term roles in UI/UX, with a strong interest in contributing to mission-driven SaaS products that value accessibility, clarity, and thoughtful design.</Text>
                 <Image
                     src="/images/stickers/ccp-logo.png"
                     alt="code and coffee logo"
@@ -108,8 +108,7 @@ const InfoSection = () => {
         ),
         'Behind The Scenes': (
             <>
-                <Text mb={3}>When I'm not coding or tinkering in Figma, I’m diving into the things that keep me creatively satiated, from drawing and building mechanical keyboards to obsessing over film scores. I’m an artist, cinephile, and music nerd at heart, usually found updating my Notion movie database, customizing a PC build, or headbanging at a local DIY show.</Text>
-                <Text mb={3}>Recently started reading Blood Meridian by Cormac McCarthy and it's ruined my life :)</Text>
+                <Text mb={3}>When I'm not coding or tinkering in Figma, I’m diving into the things that keep me creatively satiated, from drawing and building mechanical keyboards to obsessing over film scores. I’m an artist, cinephile, and music nerd at heart, usually found updating my Notion movie database, customizing a PC build, or headbanging at a DIY show.</Text>
                 <Image
                     src="/images/stickers/tea.png"
                     alt="I love tea"
@@ -137,6 +136,13 @@ const InfoSection = () => {
                         transform: "translateY(-3px) rotate(1deg)",
                     }}
                 />
+            </>
+        ),
+        'Engagements': (
+            <>
+                <Text mb={3}>Rutgers University: UI/UX Speaker Panel | Dec 2025</Text>
+                <Text mb={3}>PhillyCHI: {' '}<Link href="https://www.youtube.com/watch?v=dmgSINxG0tM" isExternal color="primary.3">Freelancing: Building Your Independent UX Career</Link> | Sept 2025</Text>
+                <Text mb={3}>More to come!</Text>
             </>
         )
     };
@@ -173,7 +179,7 @@ const InfoSection = () => {
                 </VStack>
             </Box>
 
-            <Box align="start" ml={{ base: 0, md: '17.5rem' }} maxW={{ base: '100%', md: '50%' }}>
+            <Box align="start" ml={{ base: 0, md: '12rem' }} maxW={'100%'}>
                 {content[selected]}
             </Box>
         </>

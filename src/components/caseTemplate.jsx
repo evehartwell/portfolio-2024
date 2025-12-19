@@ -61,7 +61,7 @@ const CaseStudyTemplate = ({
     }
 
     return (
-        <Container maxW="7xl" py={2}>
+        <Container maxW="6xl" py={2}>
             <Navbar />
             <Flex direction="column" align="center">
                 <Box maxW="60rem" textAlign="center" mt={10}>
