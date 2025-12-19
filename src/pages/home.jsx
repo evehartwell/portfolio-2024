@@ -41,7 +41,7 @@ const projects = [
         aspectRatio: 3/2,  
     },
     {
-        title: "Driving $650K in Pipeline by Redesigning Procurement Workflows with a Scalable Design System",
+        title: "Driving $650K in Pipeline with a Scalable Procurement Design System",
         imageSrc: "/images/govcomp-prev-mock.png",
         link: "/",
         tags: ["GovTech", "Design System", "Data Viz"], 
