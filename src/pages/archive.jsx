@@ -45,19 +45,19 @@ const projects = [
     {
         title: "Modesens App Redesign",
         imageSrc: "/images/modesens-mock-hd.webp",
-        link: "/modesens-study",
+        link: "/",
         aspectRatio: 3/2,
     },
     {
         title: "Brand Personality Picker",
         imageSrc: "/images/brand-picker.png",
-        link: "/y",
+        link: "/",
         aspectRatio: 3/2,
     },
     {
         title: "Sustainable Fashion Hub",
         imageSrc: "/images/capstone.png",
-        link: "/y",
+        link: "/",
         aspectRatio: 3/2,
     },
 ];
